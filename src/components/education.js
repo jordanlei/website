@@ -1,0 +1,52 @@
+import React, { Component } from 'react';
+import { Row, Col } from 'reactstrap';
+import "../css/welcome.css"
+
+class Education extends Component {
+  
+  render() {
+    return (
+      <div className="dark-container">            
+        <div>
+        <Row>
+          <Col md={3}>
+            <h3>
+              I've learned a thing or two over the past few years
+            </h3>
+          </Col>
+          <Col md={9}>
+          <Row>
+            <Col md={3}>
+            </Col>
+            <Col md={9}>
+            <p>
+            <b>University of Pennsylvania</b> <br/>
+            <b>Jerome Fisher Program in Management and Technology</b> <br/>
+            GPA: 3.88,  Class of 2020 <br/>
+            Bachelor of Science in Economics, Behavioral Economics, The Wharton School<br/>
+            Bachelor of Science in Engineering, Computer Science, School of Engineering and Applied Sciences<br/><br/>
+            </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={3}>
+            </Col>
+            <Col md={9}>
+            <p>
+            <b>Westview High School</b> <br/>
+            <b>Jerome Fisher Program in Management and Technology</b> <br/>
+            GPA: 4.7,  Class of 2016 <br/>
+            Valedictorian, Class Rank 1st of 603<br/>
+            National Merit Scholar Finalist, Presidential Scholar Semifinalist
+            </p>
+            </Col>
+          </Row>
+          </Col>
+        </Row>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Education;

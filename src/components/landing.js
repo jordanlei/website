@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
+import '../css/standard.css';
+import Welcome from './welcome';
+import About from './about';
+import Education from './education';
+import Experience from './experience';
+import ArtBanner from './artbanner';
+import Projects from './projects';
+import BlogBanner from './blogbanner';
+import ContactBanner from './contactbanner';
 
 class Landing extends Component {
   
   render() {
     return (
       <div className="landing-container">
-        <Row>
-          <Col md={8} className="welcome-container">
-            <p>Hello World</p>
-          </Col>
-          <Col md={4} className="login-container">
-            <p>This is a panel.</p>
-          </Col>
-        </Row>
+        <Welcome/>
+        <About/>
+        <Education/>
+        <Experience/>
+        <ArtBanner/>
+        <Projects/>
+        <BlogBanner/>
+        <ContactBanner/>
       </div>
     );
   }
