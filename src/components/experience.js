@@ -19,8 +19,11 @@ class Experience extends Component {
             <p>
               <b>Finance Intern, Unilever</b><br/>
               <i>May-August</i><br/>
-              Will be working as a finance intern at Unilever
-              US Headquarters in Englewood Cliffs, NJ. 
+              Automated rate validation processes
+              for the monthly rolling forecast as part of 
+              Sales and Operations Planning in the Finance
+              Excellence Team. Created RateDash, a functional
+              dashboard for online deployment of rate validation.
             </p>
             <br/><br/>
           </Col>
