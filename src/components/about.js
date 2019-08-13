@@ -19,7 +19,7 @@ class About extends Component {
           </Col>
           <Col md={7}>
             <p>
-            I'm a junior in the <b>Jerome Fisher Program in 
+            I'm a senior in the <b>Jerome Fisher Program in 
             Management and Technology</b> at the <b>University of Pennsylvania.</b> <br/>
             I consider myself an inquisitive person - I love figuring 
             out what makes things tick - maybe that's why I chose to 

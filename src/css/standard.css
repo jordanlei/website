@@ -14,65 +14,64 @@
 .landing-container h1{
 	text-transform: none;
 	font-weight: 400;
-	font-size: 5em;
+	font-size: 4em;
 	letter-spacing: 4px;
 }
 
 .landing-container h2{
     text-transform: none;
     font-weight: 100;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 2px;
 }
 
 .landing-container h3{
 	text-transform: none;
 	font-weight: 100;
-  font-size: 3.5em;
+  font-size: 2em;
   letter-spacing: 1px;
 }
 
 .landing-container h4{
 	text-transform: none;
 	font-weight: 100;
-  font-size: 2.5em;
+  font-size: 30px;
   letter-spacing: 1px;
 }
 
 .landing-container p{
 	text-transform: none;
 	font-weight: 150;
-  font-size: 1.5em;
-  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .dark-container{
   color: rgba(255, 255, 255, 0.9);
   background-color:rgba(0, 0, 0, 0.9); 
   padding: 5%;
-  padding-left: 10%;
-  padding-right:10%;
+  padding-left: 20%;
+  padding-right:20%;
 }
 
 .light-container{
   background-color: rgba(194, 202, 221, 1.0);
   color:rgba(0, 0, 0, 0.9); 
   padding: 5%;
-  padding-left: 10%;
-  padding-right:10%;
+  padding-left: 20%;
+  padding-right:20%;
   font-weight: 300;
 }
 
 .experience-container{
-  background-image: linear-gradient(rgb(213, 218, 230), rgb(171, 178, 197), rgb(137, 151, 187));
+  background-image: linear-gradient(rgb(245, 245, 245), rgb(179, 182, 189));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color:rgba(0, 0, 0, 0.9); 
   padding: 5%;
-  padding-left: 10%;
-  padding-right:10%;
+  padding-left: 20%;
+  padding-right:20%;
   font-weight: 300;
 }
 
@@ -92,11 +91,12 @@
 .project-card{
   padding: 10%;
   margin-bottom: 8%;
-  background-image: linear-gradient(rgb(234, 238, 245), rgb(154, 164, 180));
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(192, 196, 199));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 0px;
 
 }
 
