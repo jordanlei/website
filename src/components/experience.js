@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import "../css/experience.css"
+import "../css/experience.css";
+import Fade from 'react-reveal';
 
 class Experience extends Component {
   
   render() {
     return (
-      <div className="experience-container">            
+      <div className="light-container">            
         <div className="center-row">
+        <Fade bottom duration={5000}>
         <h3>
           Here are some things I've done
         </h3>
+        </Fade>
         </div>
         <div className= "experience-entries">
         <Row>

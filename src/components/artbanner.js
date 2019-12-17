@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import "../css/welcome.css"
+import "../css/welcome.css";
+import Fade from 'react-reveal';
 
 class ArtBanner extends Component {
   
@@ -8,7 +9,11 @@ class ArtBanner extends Component {
     return (
       <div className="art-banner-container">   
       <div className="center-row">
-        <h3>Join me on an art adventure</h3>
+        <Fade bottom duration={5000}>
+          <h3>
+            Join me on an art adventure
+          </h3>
+        </Fade>
       </div>
       <div style={{paddingTop: 5 + '%'}} >         
         <p>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import "../css/welcome.css"
+import "../css/welcome.css";
+import Fade from 'react-reveal';
 
 class ContactBanner extends Component {
   
@@ -10,9 +11,11 @@ class ContactBanner extends Component {
         <div>
         <Row>
           <Col md={4}>
+          <Fade bottom duration={5000}>
             <h3>
               Let's get in touch
             </h3>
+          </Fade>
           </Col>
           <Col md={1}>
           </Col>

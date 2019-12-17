@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Media} from 'reactstrap';
 import "../css/welcome.css"
+import Fade from 'react-reveal';
 
 class Education extends Component {
   
@@ -10,14 +11,16 @@ class Education extends Component {
         <div>
         <Row>
           <Col md={3}>
-            <h3>
-              I've learned a thing or two over the past few years
-            </h3>
+            <Fade bottom duration={5000}>
+              <h3>
+                I've learned a thing or two over the past few years
+              </h3>
+            </Fade>
           </Col>
-          <Col md={9}>
+          <Col md={1}>
+          </Col>
+          <Col md={7}>
           <Row>
-            <Col md={3}>
-            </Col>
             <Col md={9}>
             <p>
             <b>University of Pennsylvania</b> <br/>
@@ -27,10 +30,11 @@ class Education extends Component {
             Bachelor of Science in Engineering, Computer Science, School of Engineering and Applied Sciences<br/><br/>
             </p>
             </Col>
+            <Col md={3}>
+              <img src={require('../images/logo-penn.png')} style={{display: "block", padding: "5%", width: "300px"}}alt="Logo Penn"/>
+            </Col>
           </Row>
           <Row>
-            <Col md={3}>
-            </Col>
             <Col md={9}>
             <p>
             <b>Westview High School</b> <br/>
@@ -39,6 +43,9 @@ class Education extends Component {
             Valedictorian, Class Rank 1st of 603<br/>
             National Merit Scholar Finalist, Presidential Scholar Semifinalist
             </p>
+            </Col>
+            <Col md={3}>
+              <img src={require('../images/logo-wv.png')} style={{display: "block", padding: "5%", width: "300px"}}alt="Logo WV"/>
             </Col>
           </Row>
           </Col>

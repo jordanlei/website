@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, CardGroup, CardColumns, Button} from 'reactstrap';
-import "../css/experience.css"
+import "../css/experience.css";
+import Fade from 'react-reveal';
 
 class Projects extends Component {
   
@@ -8,9 +9,11 @@ class Projects extends Component {
     return (
       <div className="experience-container">            
         <div className="center-row">
+        <Fade bottom duration={5000}>
         <h3>
           View some of my projects
         </h3>
+        </Fade>
         <CardGroup style={{paddingTop: 5+'%'}}>
         <CardColumns>
           <Card className= "project-card">

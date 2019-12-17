@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import "../css/welcome.css"
+import "../css/welcome.css";
+import Fade from 'react-reveal';
 
 class BlogBanner extends Component {
   
@@ -10,10 +11,12 @@ class BlogBanner extends Component {
         <div>
         <Row>
           <Col md={4}>
+          <Fade bottom duration={5000}>
             <h3>
               Oh geez, 
               another blog
             </h3>
+          </Fade>
           </Col>
           <Col md={1}>
           </Col>

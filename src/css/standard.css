@@ -1,3 +1,34 @@
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  top: 30vh;
+  left: 50px;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a{
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.sidenav a:hover {
+  text-decoration: none; 
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sidenav a:active{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+
 .landing-container{
   overflow: hidden;
   position: relative;
@@ -28,7 +59,7 @@
 .landing-container h3{
 	text-transform: none;
 	font-weight: 100;
-  font-size: 2em;
+  font-size: 40px;
   letter-spacing: 1px;
 }
 
@@ -42,23 +73,23 @@
 .landing-container p{
 	text-transform: none;
 	font-weight: 150;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .dark-container{
   color: rgba(255, 255, 255, 0.9);
-  background-color:rgba(0, 0, 0, 0.9); 
+  background-color:rgba(0, 0, 0, 1); 
   padding: 5%;
   padding-left: 20%;
-  padding-right:20%;
+  padding-right: 15%;
 }
 
 .light-container{
-  background-color: rgba(194, 202, 221, 1.0);
-  color:rgba(0, 0, 0, 0.9); 
+  color: rgba(255, 255, 255, 0.9);
+  background-color:rgba(6, 8, 17, 1); 
   padding: 5%;
   padding-left: 20%;
-  padding-right:20%;
+  padding-right:15%;
   font-weight: 300;
 }
 

@@ -1,0 +1,147 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #130d0a;
+	font-family: "Playfair Display", serif;
+	color: white;
+}
+
+#content {
+	background-color: #130d0a;
+}
+.layer-art {
+	background-position: bottom center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 230vh;
+	position: fixed;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+}
+
+#hero-mobile {
+	display: none;
+	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png")
+		no-repeat center bottom / cover;
+	height: 320px;
+}
+
+.first-section {
+	padding: 50px 0 20px 0;
+}
+.text-header {
+	font-size: 50px;
+	text-align: center;
+}
+h1 {
+	line-height: 120%;
+	margin-bottom: 30px;
+}
+p {
+	color: #ede0d5;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.art-layer-bg {
+    background-color: black;
+}
+.art-layer-1 {
+	background-image: url("../images/swirl-large-1.png");
+	
+}
+.art-layer-2 {
+	background-image: url("../images/swirl-large-2.png");
+}
+
+.art-layer-3 {
+	background-image: url("../images/swirl-large-3.png");
+}
+
+.art-layer-4 {
+	background-image: url("../images/swirl-large-4.png");
+}
+.art-layer-overlay {
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+}
+
+
+@media only screen and (max-width: 768px) {
+	#hero {
+		display: none;
+	}
+	#hero-mobile {
+		display: block;
+	}
+}
+
+.tutorial-link {
+	color: white;
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+/* welcome page (left side) formatting*/
+.welcome-container{
+    color: rgba(255, 255, 255, 0.9);
+    background-image: url(../images/byte-me-2.jpg);
+    /**background-image: linear-gradient(rgb(194, 202, 221), rgb(171, 178, 197), #8090B8);**/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position:relative;
+}
+/* 
+.art-title h1{
+	position: absolute;
+	top: 35vh; 
+	left: 41vw;
+    text-align: center;
+    font-weight: lighter; 
+    letter-spacing: 13px;
+    font-size: 50px;
+	color: rgba(255, 255, 255, 0.9);
+	width: 22vw;
+	word-wrap: break-word;
+} */
+
+.art-title a{
+    text-align: center;
+    font-weight: lighter; 
+    letter-spacing: 13px;
+    font-size: 50px;
+	color: rgba(255, 255, 255, 0.7);
+	width: 26vw;
+	height: 20vh;
+	word-wrap: break-word;
+}
+
+.art-title a:hover{
+	font-size: 50px;
+	font-weight: normal;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.blog-title a{
+	position: absolute;
+	top: 165vh; 
+	left: 39vw;
+    text-align: center;
+    font-weight: lighter; 
+    letter-spacing: 13px;
+    font-size: 50px;
+	color: rgba(255, 255, 255, 0.7);
+	width: 22vw;
+	word-wrap: break-word;
+}
+
+.blog-title a:hover{
+	font-size: 50px;
+	font-weight: normal;
+	color: rgba(255, 255, 255, 0.9);
+}
+  
