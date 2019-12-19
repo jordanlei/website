@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import '../css/standard.css';
 import '../css/parallax.css';
-import '../css/welcome.css';
+import '../css/art_welcome.css';
 import Fade from 'react-reveal';
 
-class Welcome extends Component {
+class ArtWelcome extends Component {
   componentDidMount(){
         window.addEventListener('scroll', function(event) {
             var depth, i, layer, layers, len, movement, topDistance, translate3d;
             topDistance = this.pageYOffset;
-            var elementDistance = topDistance - document.getElementById("welcome-component").offsetTop
+            var elementDistance = topDistance - document.getElementById("art-welcome-component").offsetTop
             layers = document.querySelectorAll("[data-type='parallax']");
             for (i = 0, len = layers.length; i < len; i++) {
               layer = layers[i];
@@ -28,19 +28,19 @@ class Welcome extends Component {
   render() {
     return (
     <div>
-        <section id = "welcome">
-        <div id='welcome-component' style= {{minHeight: "100vh"}}>
-        <div class='layer-bg layer' data-depth='-0.50' data-type='parallax'></div>
-        <div class='layer-1 layer' data-depth='-0.60' data-type='parallax'></div>
-        <div class='layer-2 layer' data-depth='-0.50' data-type='parallax'></div>
-        <div class='layer-3 layer' data-depth='-0.40' data-type='parallax'></div>
-        <div class='layer-4 layer' data-depth='-0.30' data-type='parallax'></div>   
+        <section id = "art-welcome">
+        <div id='art-welcome-component' style= {{minHeight: "100vh"}}>
+        <div class='layer-bg layer' data-depth='-0.90' data-type='parallax'></div>
+        <div class='layer-1 layer' data-depth='-0.90' data-type='parallax'></div>
+        <div class='layer-2 layer' data-depth='-0.85' data-type='parallax'></div>
+        <div class='layer-3 layer' data-depth='-0.80' data-type='parallax'></div>
+        <div class='layer-4 layer' data-depth='-0.75' data-type='parallax'></div>   
         
           <div className= "namecard">
           <Row>
             <Col md={8} className= "welcome-title">
             <Fade bottom duration= {5000}>
-              <h1>JORDAN LEI</h1>
+              <h1>PORTFOLIO</h1>
             </Fade>
             </Col>
           </Row>
@@ -53,4 +53,4 @@ class Welcome extends Component {
   }
 }
 
-export default Welcome;
+export default ArtWelcome;

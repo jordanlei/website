@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, NavLink} from 'reactstrap';
 import '../css/standard.css';
-import '../css/art_parallax.css'
+import '../css/art_component.css'
 import Fade from 'react-reveal';
 
 class ArtComponent extends Component {

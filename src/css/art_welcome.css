@@ -36,23 +36,29 @@
     padding-left: 20%;
 }
 
-#welcome .layer-bg {
-    background-color: black;
-}
-#welcome .layer-1 {
-	background-image: url("../images/byteme-1.png");
-}
-#welcome .layer-2 {
-    background-image: url("../images/byteme-2.png");
-}
-#welcome .layer-3 {
-	background-image: url("../images/byteme-3.png");
-}
-#welcome .layer-4 {
-    background-image: url("../images/byteme-4.png");
+
+#art-welcome .layer{
+    height: 150vh;
+    z-index: -1;
 }
 
-#welcome-mobile {
+#art-welcome .layer-bg {
+    background-color: black;
+}
+#art-welcome .layer-1 {
+	background-image: url("../images/art/art-header-1.png");
+}
+#art-welcome .layer-2 {
+    background-image: url("../images/art/art-header-2.png");
+}
+#art-welcome .layer-3 {
+	background-image: url("../images/art/art-header-3.png");
+}
+#art-welcome .layer-4 {
+    background-image: url("../images/art/art-header-4.png");
+}
+
+#art-welcome-mobile {
 	display: none;
 	background: url("../images/byte-me-2.jpg")
 		no-repeat center bottom / cover;
@@ -60,12 +66,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-	#welcome-component {
+	#art-welcome-component {
 		display: none;
 	}
-	#welcome-mobile {
+	#art-welcome-mobile {
 		display: block;
 	}
 }
-
-
