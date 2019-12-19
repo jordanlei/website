@@ -74,6 +74,10 @@
 	}
 }
 
+.art-header h3{
+    letter-spacing: 15px;
+}
+
 .carousel-caption h4{
     letter-spacing: 12px;
     font-size: 20px;
@@ -86,3 +90,5 @@
 .carousel-caption p{
     font-size: 15px;
 }
+
+

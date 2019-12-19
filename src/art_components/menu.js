@@ -22,16 +22,13 @@ class ArtMenu extends Component {
             <Link class= "navlink" activeClass="active" to="art-featured" href= "" spy={true} smooth={true} duration= {800}> Featured</Link>
           </NavItem>
           <NavItem>
-            <Link class= "navlink" activeClass="active" to="artwork" href= "" spy={true} smooth={true} duration= {800}> Abstract</Link>
+            <Link class= "navlink" activeClass="active" to="art-digital" href= "" spy={true} smooth={true} duration= {800}> Digital</Link>
           </NavItem>
           <NavItem>
-            <Link class= "navlink" activeClass="active" to="blog" href= "" spy={true} smooth={true} duration= {800}> Digital</Link>
+            <Link class= "navlink" activeClass="active" to="art-realism" href= "" spy={true} smooth={true} duration= {800}> Realism</Link>
           </NavItem>
           <NavItem>
-            <Link class= "navlink" activeClass="active" to="contact" href= "" spy={true} smooth={true} duration= {800}> Realism</Link>
-          </NavItem>
-          <NavItem>
-            <Link class= "navlink" activeClass="active" to="contact" href= "" spy={true} smooth={true} duration= {800}> Tech</Link>
+            <Link class= "navlink" activeClass="active" to="art-traditional" href= "" spy={true} smooth={true} duration= {800}> Traditional</Link>
           </NavItem>
           <a href="/dev">Home</a>
         </Nav>

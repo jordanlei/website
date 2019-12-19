@@ -54,11 +54,13 @@ class ArtFeatured extends Component {
     <section id = "art-featured">
     <div className = "dark-container" style={{height:"100vh"}}>            
         <div className="center-row" style={{paddingBottom:"3%"}}>
+        <div className= "art-header">
         <Fade bottom duration={5000}>
         <h3>
           FEATURED 
         </h3>
         </Fade>
+        </div>
         </div>
     <CarouselComponent items={carouselItems}/>
 

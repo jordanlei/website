@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import '../css/standard.css';
 import ArtWelcome from './welcome';
 import ArtMenu from './menu';
-import ArtAbout from './about';
-import ArtIntro from './intro';
-import ArtFeatured from './featured';
+import ArtAbout from './art-about';
+import ArtIntro from './art-intro';
+import ArtFeatured from './art-featured';
 import About from '../components/about';
+import ArtDigital from './art-digital';
 
 class ArtHome extends Component {
   render() {
@@ -18,7 +19,7 @@ class ArtHome extends Component {
         <ArtAbout/>
         <ArtIntro/>
         <ArtFeatured/>
-
+        <ArtDigital/>
         
       </div>
       

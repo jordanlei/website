@@ -34,7 +34,7 @@ class CarouselComponent extends Component {
     console.log(carouselItems)
     
     return (
-    <Carousel>
+    <Carousel interval={1500}>
         {carouselItems}
     </Carousel>
     );
