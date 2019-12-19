@@ -19,7 +19,7 @@ class ArtMenu extends Component {
             <Link class= "navlink" activeClass="active" to="art-intro" href= "" spy={true} smooth={true} duration= {800}> Introduction</Link>
           </NavItem>
           <NavItem>
-            <Link class= "navlink" activeClass="active" to="experience" href= "" spy={true} smooth={true} duration= {800}> Featured</Link>
+            <Link class= "navlink" activeClass="active" to="art-featured" href= "" spy={true} smooth={true} duration= {800}> Featured</Link>
           </NavItem>
           <NavItem>
             <Link class= "navlink" activeClass="active" to="artwork" href= "" spy={true} smooth={true} duration= {800}> Abstract</Link>

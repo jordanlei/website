@@ -4,7 +4,6 @@ import "../css/experience.css";
 import Fade from 'react-reveal';
 
 class Projects extends Component {
-  
   render() {
     return (
       <div className="experience-container">            
