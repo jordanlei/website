@@ -17,23 +17,53 @@ class Experience extends Component {
         </div>
         <div className= "experience-entries">
         <Row>
-          <Col md={4}>
+          <Col md={3}>
             <h3><b>2019</b></h3>
             <p>
-              <b>Finance Intern, Unilever</b><br/>
-              <i>May-August</i><br/>
-              Automated rate validation processes
-              for the monthly rolling forecast as part of 
-              Sales and Operations Planning in the Finance
-              Excellence Team. Created RateDash, a functional
-              dashboard for online deployment of rate validation.
+              <b>Independent Study, KordingLab (Penn)</b><br/>
+              <i>September - Present</i><br/>
+              Using gradient cost functions for semi-supervised 
+              object segmentation and recognition.  
             </p>
             <br/><br/>
           </Col>
           <Col md={2}>
-          <p>Insert Image Here</p>
+          <img src={require('../images/logo-kordinglab.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
           </Col>
-          <Col md={4}>
+          <Col md={2}></Col>
+          <Col md={3}>
+            <h3><b>2019</b></h3>
+            <p>
+              <b>Teaching Assistant, Machine Learning (Penn)</b><br/>
+              <i>May-August</i><br/>
+              TA for CIS 519 at Penn. Taught biweekly recitations 
+              and prepared course material, including slides 
+              and in-class activities.
+            </p>
+            <br/><br/>
+          </Col>
+          <Col md={2}>
+          <img src={require('../images/logo-penn.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={3}>
+            <h3><b>2019</b></h3>
+            <p>
+              <b>Finance Intern, Unilever</b><br/>
+              <i>May-August</i><br/>
+              Developed RateDash, a functional dashboard for 
+              automated rate validation
+              for the monthly rolling forecast as part of 
+              Sales and Operations Planning.
+            </p>
+            <br/><br/>
+          </Col>
+          <Col md={2}>
+          <img src={require('../images/logo-unilever.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          </Col>
+          <Col md={2}></Col>
+          <Col md={3}>
             <h3><b>2018</b></h3>
             <p>
               <b>Finance Intern, Tovala</b><br/>
@@ -46,42 +76,40 @@ class Experience extends Component {
             <br/><br/>
           </Col>
           <Col md={2}>
-          <p>Insert Image Here</p>
+          <img src={require('../images/logo-tovala.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
           </Col>
         </Row>
         <Row>
-          <Col md={4}>
+          <Col md={3}>
             <h3><b>2017</b></h3>
             <p>
-              <b>Research Intern, University of Pennsylvania</b><br/>
+              <b>Research Intern, CNI (Penn)</b><br/>
               <i>May-August</i><br/>
-              Conducted research with Professor Vijay Balasubramanian
-              at the Computational Neuroscience Initiative at Penn.
+              Conducted research at the Computational Neuroscience 
+              Initiative at Penn.
               Used Deep Learning to infer the architecture of the 
-              visual pathway. Analyzed effectiveness of Deep Neural 
-              Networks as a model for visual processing in the brain.
+              visual pathway.
             </p>
             <br/><br/>
           </Col>
           <Col md={2}>
-          <p>Insert Image Here</p>
+          <img src={require('../images/logo-cni.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
           </Col>
-          <Col md={4}>
+          <Col md={2}></Col>
+          <Col md={3}>
             <h3><b>2015</b></h3>
             <p>
               <b>Research Intern, Carnegie Mellon University</b><br/>
               <i>June-August</i><br/>
-              Conducted and performed research on the use of 
-              footstep-induced vibrations on occupant monitoring 
-              and detection. Performed Fourier Transform and Cross 
-              Correlation Analysis using MATLAB. Helped write 2 papers 
+              Using footstep-induced vibrations for occupant monitoring 
+              and detection. Helped write 2 papers 
               (publication pending) and created a mounting model to be 
               patented (pending).
             </p>
             <br/><br/>
           </Col>
           <Col md={2}>
-          <p>Insert Image Here</p>
+          <img src={require('../images/logo-cmu.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
           </Col>
         </Row>
         </div>

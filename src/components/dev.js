@@ -29,9 +29,12 @@ class Dev extends Component {
           <Experience/>
         </section>
         <ArtComponent/>
+        <section id = "contact">
+          <ContactBanner/>
+        </section>
 
 
-        <BlogBanner/>
+        
       </div>
       
     );

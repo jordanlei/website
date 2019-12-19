@@ -29,11 +29,11 @@ class ArtComponent extends Component {
     return (
     <div>
         <div id = "art-component" style= {{minHeight: "230vh"}}>
-          <div class='art-layer-bg layer-art' data-depth='-0.5' data-type='parallax2'></div>
-          <div class='art-layer-1 layer-art' data-depth='-0.6' data-type='parallax2'></div>
-          <div class='art-layer-2 layer-art' data-depth='-0.4' data-type='parallax2'></div>
-          <div class='art-layer-3 layer-art' data-depth='-0.1' data-type='parallax2'></div>
-          <div class='art-layer-4 layer-art' data-depth='0' data-type='parallax2'></div> 
+          <div class='layer-bg layer' data-depth='-0.5' data-type='parallax2'></div>
+          <div class='layer-1 layer' data-depth='-0.6' data-type='parallax2'></div>
+          <div class='layer-2 layer' data-depth='-0.4' data-type='parallax2'></div>
+          <div class='layer-3 layer' data-depth='-0.1' data-type='parallax2'></div>
+          <div class='layer-4 layer' data-depth='0' data-type='parallax2'></div> 
           <section id = "artwork">
           <div style= {{height: "125vh", position: "relative", margin: "0 auto"}}>
             <div className = "art-title" style={{position: "absolute", top: "40vh", left: "37vw"}}>

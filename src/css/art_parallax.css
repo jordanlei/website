@@ -9,11 +9,8 @@ body {
 #content {
 	background-color: #130d0a;
 }
-.layer-art {
-	background-position: bottom center;
-	background-size: auto;
-	background-repeat: no-repeat;
-	width: 100%;
+
+#art-component .layer{
 	height: 230vh;
 	position: fixed;
 	z-index: -1;
@@ -45,36 +42,26 @@ p {
 	line-height: 150%;
 }
 
-.art-layer-bg {
+#art-component .layer-bg {
     background-color: black;
 }
-.art-layer-1 {
+#art-component .layer-1 {
 	background-image: url("../images/swirl-large-1.png");
 	
 }
-.art-layer-2 {
+#art-component .layer-2 {
 	background-image: url("../images/swirl-large-2.png");
 }
 
-.art-layer-3 {
+#art-component .layer-3 {
 	background-image: url("../images/swirl-large-3.png");
 }
 
-.art-layer-4 {
+#art-component .layer-4 {
 	background-image: url("../images/swirl-large-4.png");
 }
-.art-layer-overlay {
+#art-component .layer-overlay {
 	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
-}
-
-
-@media only screen and (max-width: 768px) {
-	#hero {
-		display: none;
-	}
-	#hero-mobile {
-		display: block;
-	}
 }
 
 .tutorial-link {
@@ -95,19 +82,7 @@ p {
     min-height: 100vh;
     position:relative;
 }
-/* 
-.art-title h1{
-	position: absolute;
-	top: 35vh; 
-	left: 41vw;
-    text-align: center;
-    font-weight: lighter; 
-    letter-spacing: 13px;
-    font-size: 50px;
-	color: rgba(255, 255, 255, 0.9);
-	width: 22vw;
-	word-wrap: break-word;
-} */
+
 
 .art-title a{
     text-align: center;

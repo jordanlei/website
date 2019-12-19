@@ -16,6 +16,7 @@
     font-weight: lighter; 
     letter-spacing: 20px;
     font-size: 100px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .welcome-container .btn{
@@ -34,3 +35,34 @@
     margin-bottom: 10%;
     padding-left: 20%;
 }
+
+#welcome .layer-bg {
+    background-color: black;
+}
+#welcome .layer-1 {
+	background-image: url("../images/byteme-1.png");
+}
+#welcome .layer-2 {
+    background-image: url("../images/byteme-2.png");
+}
+#welcome .layer-3 {
+	background-image: url("../images/byteme-3.png");
+}
+#welcome .layer-4 {
+    background-image: url("../images/byteme-4.png");
+}
+#welcome .layer-overlay {
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+}
+
+
+@media only screen and (max-width: 768px) {
+	#welcome-component {
+		display: none;
+	}
+	#hero-mobile {
+		display: block;
+	}
+}
+
+

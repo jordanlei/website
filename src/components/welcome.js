@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import '../css/standard.css';
-import '../css/welcome_parallax.css'
+import '../css/parallax.css';
+import '../css/welcome.css';
 import Fade from 'react-reveal';
 
 class Welcome extends Component {
@@ -9,7 +10,7 @@ class Welcome extends Component {
         window.addEventListener('scroll', function(event) {
             var depth, i, layer, layers, len, movement, topDistance, translate3d;
             topDistance = this.pageYOffset;
-            var elementDistance = topDistance - document.getElementById("hero").offsetTop
+            var elementDistance = topDistance - document.getElementById("welcome-component").offsetTop
             layers = document.querySelectorAll("[data-type='parallax']");
             for (i = 0, len = layers.length; i < len; i++) {
               layer = layers[i];
@@ -28,7 +29,7 @@ class Welcome extends Component {
     return (
     <div>
         <section id = "welcome">
-        <div id='hero'>
+        <div id='welcome-component' style= {{minHeight: "100vh"}}>
         <div class='layer-bg layer' data-depth='-0.50' data-type='parallax'></div>
         <div class='layer-1 layer' data-depth='-0.60' data-type='parallax'></div>
         <div class='layer-2 layer' data-depth='-0.50' data-type='parallax'></div>
@@ -46,8 +47,6 @@ class Welcome extends Component {
           </div>
         </div>
         <div id='hero-mobile'></div>
-        <div id='content'>
-        </div>
         </section>
     </div>
     );
