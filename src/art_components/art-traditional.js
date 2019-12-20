@@ -3,7 +3,7 @@ import Fade from 'react-reveal';
 import "../css/art_welcome.css"
 import ArtGallery from './art-gallery';
 
-class ArtDigital extends Component {
+class ArtTraditional extends Component {
   render() {
     const imageItems = [
         {
@@ -47,7 +47,7 @@ class ArtDigital extends Component {
 
     return (
     <div>
-    <section id = "art-digital">
+    <section id = "art-traditional">
     <div className = "dark-container" style={{minHeight:"100vh"}}>            
         <div className="center-row" style={{paddingBottom:"3%"}}>
             <div className= "art-header">
@@ -67,4 +67,4 @@ class ArtDigital extends Component {
   }
 }
 
-export default ArtDigital;
+export default ArtTraditional;
