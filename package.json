@@ -20,7 +20,8 @@
     "simple-parallax-js": "^5.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
@@ -41,5 +42,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8080"
 }
