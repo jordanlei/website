@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn && yarn run build",
+    "heroku-postbuild": "cd website && yarn && yarn run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",

@@ -4,10 +4,10 @@ const app = express()
 
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
-  app.use(express.static(path.join(__dirname, 'client/build')))
+  app.use(express.static(path.join(__dirname, 'website/build')))
   // Handle React routing, return all requests to React app
   app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, 'client/build', 'index.html'))
+    response.sendFile(path.join(__dirname, 'website/build', 'index.html'))
   })
 }
 const port = process.env.PORT || 8080
