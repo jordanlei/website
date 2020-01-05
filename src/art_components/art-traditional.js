@@ -7,40 +7,34 @@ class ArtTraditional extends Component {
   render() {
     const imageItems = [
         {
-            src: require("../images/art/icarus.jpg"),
-            caption: <div><h4>Icarus</h4><br/><p>Digital, 2019</p></div>,
-            width: 4
+            src: require("../public/static/art/new-york.jpg"),
+            caption: <div><h4>New York</h4><br/><p>Oil on Canvas, 2013</p></div>,
+            width: 8
         },
         {
-            src: require("../images/art/blue.jpg"),
-            caption: <div><h4>Blue</h4><br/><p>Digital, 2019</p></div>,
+            src: require("../public/static/art/chicago.jpg"),
+            caption: <div><h4>Chicago</h4><br/><p>Acrylic on Canvas, 2013</p></div>,
             width: 4
             
         },
         {
-            src: require("../images/art/byte-me.jpg"),
-            caption: <div><h4>Byte Me</h4><br/><p>Digital, 2018</p></div>,
-            width: 4
-        },
-        {
-            src: require("../images/art/weneedtotalk.jpg"),
-            caption: <div><h4>We Need to Talk</h4><br/><p>Digital, 2019</p></div>,
-            width: 6
-        },
-        
-        {
-            src: require("../images/art/astronaut.jpg"),
-            caption: <div><h4>I Just Need Some Space</h4><br/><p>Digital, 2019</p></div>,
+            src: require("../public/static/art/portland2.jpg"),
+            caption: <div><h4>Portland</h4><br/><p>Mixed Media, 2017</p></div>,
             width: 6
         },
         {
-            src: require("../images/art/hotpot.jpg"),
-            caption: <div><h4>Hot Pot, Warm Company</h4><br/><p>Digital, 2018</p></div>,
+            src: require("../public/static/art/sentinel.jpg"),
+            caption: <div><h4>Sentinel</h4><br/><p>Oil on Canvas Board, 2014</p></div>,
             width: 6
         },
         {
-            src: require("../images/art/smallband.jpg"),
-            caption: <div><h4>A Small Band of Misfits</h4><br/><p>Digital, 2018</p></div>,
+            src: require("../public/static/art/the-distance-between-us.jpg"),
+            caption: <div><h4>The Distance Between Us</h4><br/><p>Acrylic on Canvas, 2019</p></div>,
+            width: 6
+        },
+        {
+            src: require("../public/static/art/rose.jpg"),
+            caption: <div><h4>Rose</h4><br/><p>Colored Pencil, 2015</p></div>,
             width: 6
         },
     ]
@@ -53,7 +47,7 @@ class ArtTraditional extends Component {
             <div className= "art-header">
                 <Fade bottom duration={5000}>
                     <h3>
-                    DIGITAL
+                    TRADITIONAL
                     </h3>
                 </Fade>
             </div>
@@ -62,7 +56,7 @@ class ArtTraditional extends Component {
 
     </div>
     </section>
-    </div> 
+    </div>
     );
   }
 }

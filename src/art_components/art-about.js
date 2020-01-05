@@ -9,7 +9,7 @@ class ArtAbout extends Component {
       <section id = "art-about">
       <div style={{paddingBottom: 2+"%", paddingLeft:"20%", paddingRight:"20%", backgroundColor: "none", height: "100vh"}}>            
         <div style={{height: "50vh"}}></div>
-        <div style={{margin: "-3%", padding:"3%", backgroundColor: "rgba(0, 0, 0, 0.7)", zIndex:"1"}}>
+        <div style={{margin: "-5%", padding:"5%", backgroundColor: "rgba(0, 0, 0, 0.7)", zIndex:"1"}}>
         <div style={{color: 'rgba(255, 255, 255, 0.9)'}}>
         <Row>
           <Col md={3}>

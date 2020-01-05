@@ -1,7 +1,7 @@
 /* welcome page (left side) formatting*/
 .welcome-container{
     color: rgba(255, 255, 255, 0.9);
-    background-image: url(../images/byte-me-2.jpg);
+    background-image: url(../public/static/byte-me-2.jpg);
     /**background-image: linear-gradient(rgb(194, 202, 221), rgb(171, 178, 197), #8090B8);**/
     background-attachment: fixed;
     background-position: center;
@@ -15,7 +15,7 @@
     text-align: left;
     font-weight: lighter; 
     letter-spacing: 20px;
-    font-size: 100px;
+    font-size: 80px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -40,32 +40,27 @@
     background-color: black;
 }
 #welcome .layer-1 {
-	background-image: url("../images/byteme-1.png");
+	background-image: url("../public/static/byteme-1.png");
 }
 #welcome .layer-2 {
-    background-image: url("../images/byteme-2.png");
+    background-image: url("../public/static/byteme-2.png");
 }
 #welcome .layer-3 {
-	background-image: url("../images/byteme-3.png");
+	background-image: url("../public/static/byteme-3.png");
 }
 #welcome .layer-4 {
-    background-image: url("../images/byteme-4.png");
+    background-image: url("../public/static/byteme-4.png");
+}
+
+#welcome .layer{
+    background-position: top right;
+    margin-top: -10%;
 }
 
 #welcome-mobile {
 	display: none;
-	background: url("../images/byte-me-2.jpg")
+	background: url("../public/static/byte-me-2.jpg")
 		no-repeat center bottom / cover;
 	height: 320px;
 }
-
-@media only screen and (max-width: 768px) {
-	#welcome-component {
-		display: none;
-	}
-	#welcome-mobile {
-		display: block;
-	}
-}
-
 

@@ -46,19 +46,19 @@ p {
     background-color: black;
 }
 #art-component .layer-1 {
-	background-image: url("../images/swirl-large-1.png");
+	background-image: url("../public/static/swirl-large-1-2.png");
 	
 }
 #art-component .layer-2 {
-	background-image: url("../images/swirl-large-2.png");
+	background-image: url("../public/static/swirl-large-2-2.png");
 }
 
 #art-component .layer-3 {
-	background-image: url("../images/swirl-large-3.png");
+	background-image: url("../public/static/swirl-large-3-2.png");
 }
 
 #art-component .layer-4 {
-	background-image: url("../images/swirl-large-4.png");
+	background-image: url("../public/static/swirl-large-4-2.png");
 }
 #art-component .layer-overlay {
 	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
@@ -70,25 +70,12 @@ p {
 	text-decoration: underline;
 }
 
-/* welcome page (left side) formatting*/
-.welcome-container{
-    color: rgba(255, 255, 255, 0.9);
-    background-image: url(../images/byte-me-2.jpg);
-    /**background-image: linear-gradient(rgb(194, 202, 221), rgb(171, 178, 197), #8090B8);**/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    position:relative;
-}
-
 
 .art-title a{
     text-align: center;
     font-weight: lighter; 
     letter-spacing: 13px;
-    font-size: 50px;
+    font-size: 40px;
 	color: rgba(255, 255, 255, 0.7);
 	width: 26vw;
 	height: 20vh;
@@ -96,7 +83,7 @@ p {
 }
 
 .art-title a:hover{
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: normal;
 	color: rgba(255, 255, 255, 0.9);
 }
@@ -108,15 +95,16 @@ p {
     text-align: center;
     font-weight: lighter; 
     letter-spacing: 13px;
-    font-size: 50px;
+    font-size: 40px;
 	color: rgba(255, 255, 255, 0.7);
 	width: 22vw;
 	word-wrap: break-word;
 }
 
 .blog-title a:hover{
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: normal;
 	color: rgba(255, 255, 255, 0.9);
 }
   
+

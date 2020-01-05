@@ -17,6 +17,10 @@ class Experience extends Component {
         </div>
         <div className= "experience-entries">
         <Row>
+          <Col md={2} className= "mobile-only">
+          <img src={require('../public/static/logo-kordinglab.png')} style={{display: "block", 
+           padding: "5%", margin: "0 auto", height: "100px"}}alt="Logo WV"/>
+          </Col>
           <Col md={3}>
             <h3><b>2019</b></h3>
             <p>
@@ -27,10 +31,15 @@ class Experience extends Component {
             </p>
             <br/><br/>
           </Col>
-          <Col md={2}>
-          <img src={require('../images/logo-kordinglab.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          <Col md={2} className= "web-only">
+          <img src={require('../public/static/logo-kordinglab.png')} style={{display: "block", 
+           padding: "5%", height: "10vw", minHeight: "80px"}}alt="Logo WV"/>
           </Col>
-          <Col md={2}></Col>
+          <Col md={2} className="web-only"></Col>
+          <Col md={2} className= "mobile-only">
+          <img src={require('../public/static/logo-penn.png')} style={{display: "block", 
+          padding: "5%", margin: "0 auto", height: "100px"}}alt="Logo WV"/>
+          </Col>
           <Col md={3}>
             <h3><b>2019</b></h3>
             <p>
@@ -42,11 +51,16 @@ class Experience extends Component {
             </p>
             <br/><br/>
           </Col>
-          <Col md={2}>
-          <img src={require('../images/logo-penn.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          <Col md={2} className= "web-only">
+          <img src={require('../public/static/logo-penn.png')} style={{display: "block", 
+          padding: "5%", height: "10vw", minHeight: "80px"}}alt="Logo WV"/>
           </Col>
         </Row>
         <Row>
+          <Col md={2} className= "mobile-only">
+          <img src={require('../public/static/logo-unilever.png')} style={{display: "block", 
+          padding: "5%", margin: "0 auto", height: "100px"}}alt="Logo WV"/>
+          </Col>
           <Col md={3}>
             <h3><b>2019</b></h3>
             <p>
@@ -59,10 +73,15 @@ class Experience extends Component {
             </p>
             <br/><br/>
           </Col>
-          <Col md={2}>
-          <img src={require('../images/logo-unilever.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          <Col md={2} className= "web-only">
+          <img src={require('../public/static/logo-unilever.png')} style={{display: "block", 
+          padding: "5%", height: "10vw", minHeight: "80px"}}alt="Logo WV"/>
           </Col>
-          <Col md={2}></Col>
+          <Col md={2} className="web-only"></Col>
+          <Col md={2} className= "mobile-only">
+          <img src={require('../public/static/logo-tovala.png')} style={{display: "block", 
+          padding: "5%", margin: "0 auto", height: "100px"}}alt="Logo WV"/>
+          </Col>
           <Col md={3}>
             <h3><b>2018</b></h3>
             <p>
@@ -75,11 +94,16 @@ class Experience extends Component {
             </p>
             <br/><br/>
           </Col>
-          <Col md={2}>
-          <img src={require('../images/logo-tovala.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          <Col md={2} className= "web-only">
+          <img src={require('../public/static/logo-tovala.png')} style={{display: "block", 
+          padding: "5%", height: "10vw", minHeight: "80px"}}alt="Logo WV"/>
           </Col>
         </Row>
         <Row>
+          <Col md={2} className= "mobile-only">
+          <img src={require('../public/static/logo-cni.png')} style={{display: "block", 
+          padding: "5%", margin: "0 auto", height: "100px"}}alt="Logo WV"/>
+          </Col>
           <Col md={3}>
             <h3><b>2017</b></h3>
             <p>
@@ -92,10 +116,15 @@ class Experience extends Component {
             </p>
             <br/><br/>
           </Col>
-          <Col md={2}>
-          <img src={require('../images/logo-cni.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          <Col md={2} className= "web-only">
+          <img src={require('../public/static/logo-cni.png')} style={{display: "block", 
+          padding: "5%", height: "10vw", minHeight: "80px"}}alt="Logo WV"/>
           </Col>
-          <Col md={2}></Col>
+          <Col md={2} className="web-only"></Col>
+          <Col md={2} className= "mobile-only">
+          <img src={require('../public/static/logo-cmu.png')} style={{display: "block", 
+          padding: "5%", margin: "0 auto", height: "100px"}}alt="Logo WV"/>
+          </Col>
           <Col md={3}>
             <h3><b>2015</b></h3>
             <p>
@@ -108,8 +137,9 @@ class Experience extends Component {
             </p>
             <br/><br/>
           </Col>
-          <Col md={2}>
-          <img src={require('../images/logo-cmu.png')} style={{display: "block", padding: "5%", height: "12vw"}}alt="Logo WV"/>
+          <Col md={2} className= "web-only">
+          <img src={require('../public/static/logo-cmu.png')} style={{display: "block", 
+          padding: "5%", height: "10vw", minHeight: "80px"}}alt="Logo WV"/>
           </Col>
         </Row>
         </div>

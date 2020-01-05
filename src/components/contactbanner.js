@@ -5,7 +5,8 @@ import Fade from 'react-reveal';
 class ContactBanner extends Component {
   
   render() {
-    return (          
+    return (      
+      <section id = "contact">    
         <div style={{height: "80vh", paddingLeft: "20%", paddingRight: "18%", color: "rgba(255, 255, 255, 0.7)"}}>
         <div style= {{height: "40vh"}}></div>
         <Row>
@@ -16,13 +17,13 @@ class ContactBanner extends Component {
             </h3>
             <Row style={{height: "150px"}}>
             <NavLink href="https://www.linkedin.com/in/jordan-lei-782890130/" target="_blank">
-            <img src={require('../images/logo-linkedin.png')} style={{display: "block", padding: "5%", height: "100px", width: "100px"}}alt="Logo WV"/>
+            <img src={require('../public/static/logo-linkedin.png')} style={{display: "block", padding: "5%", height: "60px", width: "60px"}}alt="Logo WV"/>
             </NavLink>
             <NavLink href="https://www.facebook.com/jordan.lei.77" target="_blank">
-              <img src={require('../images/logo-fb.png')} style={{display: "block", padding: "5%", height: "100px"}}alt="Logo WV"/>
+              <img src={require('../public/static/logo-fb.png')} style={{display: "block", padding: "5%", height: "60px"}}alt="Logo WV"/>
             </NavLink>
             <NavLink href="https://www.instagram.com/leijordanart/" target="_blank">
-            <img src={require('../images/logo-insta.png')} style={{display: "block", padding: "5%", height: "100px", width: "100px"}}alt="Logo WV"/>
+            <img src={require('../public/static/logo-insta.png')} style={{display: "block", padding: "5%", height: "60px", width: "60px"}}alt="Logo WV"/>
             </NavLink>
             </Row>
             
@@ -40,6 +41,7 @@ class ContactBanner extends Component {
           </Col>
         </Row>
         </div>
+      </section>
     );
   }
 }

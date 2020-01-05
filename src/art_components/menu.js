@@ -7,7 +7,8 @@ class ArtMenu extends Component {
   
   render() {
     return (
-      <div className = "sidenav">
+      <div>
+      <div className = "sidenav web-only">
         <Nav vertical>
           <NavItem>
             <Link class= "navlink" activeClass="active" to="art-home" href= "" spy={true} smooth={true} duration= {800}> Top</Link>
@@ -30,8 +31,19 @@ class ArtMenu extends Component {
           <NavItem>
             <Link class= "navlink" activeClass="active" to="art-traditional" href= "" spy={true} smooth={true} duration= {800}> Traditional</Link>
           </NavItem>
-          <a href="/dev">Home</a>
+          <a href="/">Home</a>
         </Nav>
+      </div>
+      <div className = "sidenav mobile-only" style={{position: "fixed", top:"0", left: "0", width: "100%", backgroundColor: "rgba(0, 0, 0, 0.7)"}}>
+        <Nav>
+          <div style={{paddingLeft: "20px", paddingRight: "20px"}}>
+          <NavItem>
+            <Link class= "navlink" activeClass="active" to="art-home" href= "" spy={true} smooth={true} duration= {800}> Top</Link>
+          </NavItem>
+          </div>
+          <a href="/">Home</a>
+        </Nav>
+      </div>
       </div>
     );
   }

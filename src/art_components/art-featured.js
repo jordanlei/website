@@ -8,12 +8,12 @@ class ArtFeatured extends Component {
   render() {
     const carouselItems = [
         {
-            src: require("../images/art/sentinel.jpg"),
+            src: require("../public/static/art/sentinel.jpg"),
             header: 'Sentinel',
-            caption: <p>Oil on Canvas, 2015<br/>Best of Show, Oregon Federal Junior Duck Stamp Competition</p>
+            caption: <p>Oil on Canvas Board, 2014<br/>Best of Show, Oregon Federal Junior Duck Stamp Competition</p>
         },
         {
-            src: require("../images/art/freefall-bkg.jpg"),
+            src: require("../public/static/art/freefall-bkg.jpg"),
             header: 'Freefall',
             caption: <p>Digital, 2017<br/>
             Falling | 
@@ -21,7 +21,7 @@ class ArtFeatured extends Component {
             The aftertaste</p>
         },
         {
-          src: require("../images/art/blue.jpg"),
+          src: require("../public/static/art/blue.jpg"),
           header: 'Blue',
           caption: <p>
               Digital, 2018<br/>
@@ -32,7 +32,7 @@ class ArtFeatured extends Component {
               To nourish the earth</p>
         }, 
         {
-            src: require("../images/art/icarus.jpg"),
+            src: require("../public/static/art/icarus.jpg"),
             header: 'Icarus',
             caption: <p>
                 Digital, 2018<br/>

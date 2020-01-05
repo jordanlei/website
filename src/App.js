@@ -2,9 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import Landing from './components/landing.js';
 import Dev from './components/dev.js';
-import ArtHome from './art_components/home.js';
-import {HashRouter as Router, Route} from 'react-router-dom';
+import ArtHome from './art_components/art-home.js';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
+import './css/mobile.css';
 
 function App() {
   return (

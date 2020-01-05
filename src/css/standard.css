@@ -1,3 +1,17 @@
+body {
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .sidenav {
   position: fixed;
   z-index: 1;
@@ -9,21 +23,21 @@
 
 .sidenav a{
   text-decoration: none;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: lighter;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: rgba(255, 255, 255, 0.7);
   display: block;
 }
 
 .sidenav a:hover {
   text-decoration: none; 
-  font-size: 30px;
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .sidenav a:active{
-  font-size: 30px;
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -62,21 +76,21 @@
 .landing-container h3{
 	text-transform: none;
 	font-weight: 100;
-  font-size: 40px;
+  font-size: 32px;
   letter-spacing: 1px;
 }
 
 .landing-container h4{
 	text-transform: none;
 	font-weight: 100;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 1px;
 }
 
 .landing-container p{
 	text-transform: none;
 	font-weight: 150;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .dark-container{
@@ -144,6 +158,10 @@
 
 .hello{
   z-index: -1;
+}
+
+.mobile-only{
+  display: none;
 }
 
 

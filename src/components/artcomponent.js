@@ -34,28 +34,54 @@ class ArtComponent extends Component {
           <div class='layer-2 layer' data-depth='-0.4' data-type='parallax2'></div>
           <div class='layer-3 layer' data-depth='-0.1' data-type='parallax2'></div>
           <div class='layer-4 layer' data-depth='0' data-type='parallax2'></div> 
-          <section id = "artwork">
-          <div style= {{height: "125vh", position: "relative", margin: "0 auto"}}>
-            <div className = "art-title" style={{position: "absolute", top: "40vh", left: "37vw"}}>
-              <div>
-                <Fade bottom duration= {5000}>
-                      <NavLink href= "#welcome">VIEW MY PORTFOLIO</NavLink>
-                </Fade>
-              </div>
-            </div> 
-          </div>
-          </section>  
-          <section id= "blog">
-            <div style= {{height: "105vh", position: "relative", margin: "0 auto"}}>
+          <div className= "web-only">
+            <section id = "artwork">
+            <div style= {{height: "125vh", position: "relative", margin: "0 auto"}}>
               <div className = "art-title" style={{position: "absolute", top: "40vh", left: "37vw"}}>
                 <div>
-                <Fade bottom duration= {5000}>
-                      <NavLink href= "#welcome">VIEW MY BLOG</NavLink>
-                </Fade>
+                  <Fade bottom duration= {5000}>
+                        <NavLink href= "/art">VIEW MY PORTFOLIO</NavLink>
+                  </Fade>
                 </div>
               </div> 
-            </div>  
-          </section>       
+            </div>
+            </section>  
+            <section id= "blog">
+              <div style= {{height: "105vh", position: "relative", margin: "0 auto"}}>
+                <div className = "art-title" style={{position: "absolute", top: "40vh", left: "37vw"}}>
+                  <div>
+                  <Fade bottom duration= {5000}>
+                        <NavLink href= "/blog">VIEW MY BLOG</NavLink>
+                  </Fade>
+                  </div>
+                </div> 
+              </div>  
+            </section> 
+          </div>  
+          <div className= "mobile-only">
+            <section id = "artwork">
+            <div style= {{height: "125vh", position: "relative", margin: "0 auto"}}>
+              <div className = "art-title" style={{position: "absolute", top: "50vh", left: "8vw"}}>
+                <div>
+                  <Fade bottom duration= {5000}>
+                        <NavLink href= "/art">VIEW MY PORTFOLIO</NavLink>
+                  </Fade>
+                </div>
+              </div> 
+            </div>
+            </section>  
+            <section id= "blog">
+              <div style= {{height: "105vh", position: "relative", margin: "0 auto"}}>
+                <div className = "art-title" style={{position: "absolute", top: "40vh", left: "8vw"}}>
+                  <div>
+                  <Fade bottom duration= {5000}>
+                        <NavLink href= "/blog">VIEW MY BLOG</NavLink>
+                  </Fade>
+                  </div>
+                </div> 
+              </div>  
+            </section>  
+          </div>  
 
         </div>
         <div id='hero-mobile'></div>

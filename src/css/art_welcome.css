@@ -1,7 +1,7 @@
 /* welcome page (left side) formatting*/
 .welcome-container{
     color: rgba(255, 255, 255, 0.9);
-    background-image: url(../images/byte-me-2.jpg);
+    background-image: url(../public/static/byte-me-2.jpg);
     /**background-image: linear-gradient(rgb(194, 202, 221), rgb(171, 178, 197), #8090B8);**/
     background-attachment: fixed;
     background-position: center;
@@ -15,7 +15,7 @@
     text-align: left;
     font-weight: lighter; 
     letter-spacing: 20px;
-    font-size: 100px;
+    font-size: 80px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -38,6 +38,7 @@
 
 
 #art-welcome .layer{
+    background-position: bottom center;
     height: 150vh;
     z-index: -1;
 }
@@ -46,32 +47,23 @@
     background-color: black;
 }
 #art-welcome .layer-1 {
-	background-image: url("../images/art/art-header-1.png");
+	background-image: url("../public/static/art/art-header-1.png");
 }
 #art-welcome .layer-2 {
-    background-image: url("../images/art/art-header-2.png");
+    background-image: url("../public/static/art/art-header-2.png");
 }
 #art-welcome .layer-3 {
-	background-image: url("../images/art/art-header-3.png");
+	background-image: url("../public/static/art/art-header-3.png");
 }
 #art-welcome .layer-4 {
-    background-image: url("../images/art/art-header-4.png");
+    background-image: url("../public/static/art/art-header-4.png");
 }
 
 #art-welcome-mobile {
 	display: none;
-	background: url("../images/byte-me-2.jpg")
+	background: url("../public/static/byte-me-2.jpg")
 		no-repeat center bottom / cover;
 	height: 320px;
-}
-
-@media only screen and (max-width: 768px) {
-	#art-welcome-component {
-		display: none;
-	}
-	#art-welcome-mobile {
-		display: block;
-	}
 }
 
 .art-header h3{
