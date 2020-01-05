@@ -10,7 +10,7 @@ import './css/mobile.css';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}  onUpdate={() => window.scrollTo(0, 0)}>
       <div>
         <Route path="/" exact component={Dev} />
         <Route path="/art" component = {ArtHome} />

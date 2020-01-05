@@ -10,7 +10,7 @@ const postdata = {
       date: "12.22.19",
       image: require('../../public/static/blog/posts/brotherhood-thumbnail.svg'),
       tags: ["Thoughts"],
-      link: "/p/on-brotherhood", 
+      link: "/#/p/on-brotherhood", 
       class: <Post_brotherhood/>
     },
     "how-to-engage-with-art": {
@@ -20,7 +20,7 @@ const postdata = {
       date: "12.22.19",
       image: require('../../public/static/blog/posts/how-to-engage-with-art-thumbnail.svg'),
       tags: ["Thoughts"],
-      link: "/p/how-to-engage-with-art",
+      link: "/#/p/how-to-engage-with-art",
       class: <Post_how_to_engage_with_art/>
     },
 }

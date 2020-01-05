@@ -12,7 +12,7 @@ class PostMenu extends Component {
           <NavItem>
             <Link class= "navlink" activeClass="active" to="blog-head" href= "" spy={true} smooth={true} duration= {800}> Top</Link>
           </NavItem>
-          <a href="/blog">Back</a>
+          <a href="/#/blog">Back</a>
         </Nav>
       </div>
 
@@ -23,7 +23,7 @@ class PostMenu extends Component {
           <Link class= "navlink" activeClass="active" to="blog-head" href= "" spy={true} smooth={true} duration= {800}> Top</Link>
         </NavItem>
         </div>
-        <a href="/blog">Back</a>
+        <a href="/#/blog">Back</a>
       </Nav>
       </div>
       </div>

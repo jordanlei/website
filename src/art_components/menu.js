@@ -31,7 +31,7 @@ class ArtMenu extends Component {
           <NavItem>
             <Link class= "navlink" activeClass="active" to="art-traditional" href= "" spy={true} smooth={true} duration= {800}> Traditional</Link>
           </NavItem>
-          <a href="/">Home</a>
+          <a href="/#/">Home</a>
         </Nav>
       </div>
       <div className = "sidenav mobile-only" style={{position: "fixed", top:"0", left: "0", width: "100%", backgroundColor: "rgba(0, 0, 0, 0.7)"}}>
@@ -41,7 +41,7 @@ class ArtMenu extends Component {
             <Link class= "navlink" activeClass="active" to="art-home" href= "" spy={true} smooth={true} duration= {800}> Top</Link>
           </NavItem>
           </div>
-          <a href="/">Home</a>
+          <a href="/#/">Home</a>
         </Nav>
       </div>
       </div>
