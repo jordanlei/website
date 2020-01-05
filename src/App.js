@@ -13,7 +13,7 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}  onUpdate={() => window.scrollTo(0, 0)}>
       <div>
-        <Route path="/" exact component={Landing} />
+        <Route path="/" exact component={Dev} />
         <Route path="/blog" component = {BlogHome} />
         <Route path="/art" component = {ArtHome} />
       </div>
