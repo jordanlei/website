@@ -10,7 +10,7 @@ class ArtFeatured extends Component {
         {
             src: require("../images/art/sentinel.jpg"),
             header: 'Sentinel',
-            caption: <p>Oil on Canvas Board, 2014<br/>Best of Show, Oregon Federal Junior Duck Stamp Competition</p>
+            caption: <p>Oil on Canvas, 2015<br/>Best of Show, Oregon Federal Junior Duck Stamp Competition</p>
         },
         {
             src: require("../images/art/freefall-bkg.jpg"),
