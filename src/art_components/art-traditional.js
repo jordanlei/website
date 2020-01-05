@@ -56,7 +56,7 @@ class ArtTraditional extends Component {
 
     </div>
     </section>
-    </div>
+    </div> 
     );
   }
 }
