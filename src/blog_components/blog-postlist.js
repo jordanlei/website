@@ -14,6 +14,7 @@ class BlogPostList extends Component {
     var postlist = this.state.posts.map((i)=>{
       return(
         <Col md={4}>
+          <div className= "blogpostdiv">
           <a href= {i.link}>
             <div style={{paddingLeft: "5%", paddingRight: "5%"}}> 
               <img src= {i.image} style={{width: "100%"}}></img>
@@ -24,6 +25,7 @@ class BlogPostList extends Component {
               </div>
             </div>
           </a>
+          </div>
         </Col>
       )
     });

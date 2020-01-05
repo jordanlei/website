@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Dev from './components/dev.js';
 import ArtHome from './art_components/art-home.js';
 import BlogHome from './blog_components/blog-home.js';
+import Post from './blog_components/posts/post.js';
 import {HashRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import './css/mobile.css';
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" exact component={Dev} />
         <Route path="/art" component = {ArtHome} />
         <Route path="/blog" component = {BlogHome} />
+        <Route path="/p/:id" component={Post} />
       </div>
     </Router>
   );

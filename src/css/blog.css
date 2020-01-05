@@ -74,7 +74,7 @@
 .blog-featured-thumbnail a:hover{
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.5);
-    border-width: -5px;
+    border-width: 3px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -104,26 +104,12 @@
     background-repeat: repeat-y;
 }
 
-
-#blogpostlist a:hover{
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.5);
-    border-width: -5px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1.0);
-}
-
-#blogpostlist a{
-    display:block;
-    text-decoration: none;
-}
-
 #blogpostlist h4{
     text-align: left;
     font-weight: lighter; 
     letter-spacing: 2px;
     font-size: 25px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -133,7 +119,7 @@
     font-weight: lighter; 
     letter-spacing: 2px;
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -143,7 +129,21 @@
     font-weight: lighter; 
     letter-spacing: 2px;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     padding-bottom: 5px;
     padding-top: 5px;
+}
+
+.blogpostdiv a:hover{
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 3px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1.0);
+    font-weight: normal;
+}
+
+.blogpostdiv a{
+    display:block;
+    text-decoration: none;
 }
