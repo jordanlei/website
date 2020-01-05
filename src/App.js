@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import Landing from './components/landing.js';
 import Dev from './components/dev.js';
 import ArtHome from './art_components/home.js';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {HashRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
 function App() {

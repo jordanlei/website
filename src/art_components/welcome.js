@@ -32,7 +32,7 @@ class ArtWelcome extends Component {
         <div id='art-welcome-component' style= {{minHeight: "100vh"}}>
         <div class='layer-bg layer' data-depth='-0.90' data-type='parallax'></div>
         <div class='layer-1 layer' data-depth='-0.90' data-type='parallax' 
-                    style={{backgroundImage: "url(" + require("../byteme-1.png")+ ")"}}></div>
+                    style={{backgroundImage: "url(" + require("../images/byteme-1.png")+ ")"}}></div>
         <div class='layer-2 layer' data-depth='-0.85' data-type='parallax'></div>
         <div class='layer-3 layer' data-depth='-0.80' data-type='parallax'></div>
         <div class='layer-4 layer' data-depth='-0.75' data-type='parallax'></div>   
