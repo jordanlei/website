@@ -7,7 +7,7 @@ class Post extends Component {
   render() {
     const {params} = this.props.match
     var id = params.id;
-    var post = <div>No Such Post</div>
+    var post = <div>Post Not Found</div>
     console.log(postdata)
     console.log(id)
     console.log(Object.keys(postdata))

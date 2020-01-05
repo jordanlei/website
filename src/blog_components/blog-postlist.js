@@ -14,16 +14,18 @@ class BlogPostList extends Component {
     var postlist = this.state.posts.map((i)=>{
       return(
         <Col md={4}>
-          <a href= {i.link}>
-            <div style={{paddingLeft: "5%", paddingRight: "5%"}}> 
-              <img src= {i.image} style={{width: "100%"}}></img>
-              <h4>{i.title}</h4>
-              <div className="web-only">
-                <h5>{i.subtitle}</h5>
-                <p><i>Posted by {i.author} on {i.date}</i></p>
+          <div className = "blogpostdiv">
+            <a href= {i.link}>
+              <div style={{paddingLeft: "5%", paddingRight: "5%"}}> 
+                <img src= {i.image} style={{width: "100%"}}></img>
+                <h4>{i.title}</h4>
+                <div className="web-only">
+                  <h5>{i.subtitle}</h5>
+                  <p><i>Posted by {i.author} on {i.date}</i></p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </Col>
       )
     });
