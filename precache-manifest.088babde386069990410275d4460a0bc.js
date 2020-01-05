@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "036c709943220e357fbc7359b9affd72",
+    "revision": "edc8a22e8e8b337e19a8c9d3f4909d21",
     "url": "/website/index.html"
   },
   {
-    "revision": "8de4786e94bc4a162ceb",
+    "revision": "548b49c01f98babf976f",
     "url": "/website/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "8a14bbaa4dfde98ddd72",
-    "url": "/website/static/css/main.4e88944c.chunk.css"
+    "revision": "f16db6c830be669880f8",
+    "url": "/website/static/css/main.f79e9b29.chunk.css"
   },
   {
-    "revision": "8de4786e94bc4a162ceb",
-    "url": "/website/static/js/2.5a05769a.chunk.js"
+    "revision": "548b49c01f98babf976f",
+    "url": "/website/static/js/2.811b057e.chunk.js"
   },
   {
     "revision": "070a35f007a0d6bcc38c5a4f0360abe1",
-    "url": "/website/static/js/2.5a05769a.chunk.js.LICENSE"
+    "url": "/website/static/js/2.811b057e.chunk.js.LICENSE"
   },
   {
-    "revision": "8a14bbaa4dfde98ddd72",
-    "url": "/website/static/js/main.3a5a911f.chunk.js"
+    "revision": "f16db6c830be669880f8",
+    "url": "/website/static/js/main.e588041a.chunk.js"
   },
   {
     "revision": "c4eb8c5431e375405af8",
@@ -52,8 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/website/static/media/astronaut.8cc9b810.jpg"
   },
   {
+    "revision": "bc9700c9097b7f2bae592807c3715204",
+    "url": "/website/static/media/background-1.bc9700c9.svg"
+  },
+  {
+    "revision": "e6b8946a4ffaa8f784e46e313e7f92b5",
+    "url": "/website/static/media/background-2.e6b8946a.svg"
+  },
+  {
     "revision": "c7d918a7eacb8f85cc7d20717ea4be41",
     "url": "/website/static/media/blue.c7d918a7.jpg"
+  },
+  {
+    "revision": "22f06dd665cf1faaf6c12ef4522568b6",
+    "url": "/website/static/media/brotherhood-thumbnail.22f06dd6.svg"
   },
   {
     "revision": "5e58b359417c2ef7fcf257ca77b09615",
@@ -94,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6a9173bb757a607777504e0284419e0e",
     "url": "/website/static/media/hotpot.6a9173bb.jpg"
+  },
+  {
+    "revision": "e77f801731b330c4bb820599fd6ae50a",
+    "url": "/website/static/media/how-to-engage-with-art-thumbnail.e77f8017.svg"
   },
   {
     "revision": "dd41ce421064a6a2df5e0bcadabb2713",
