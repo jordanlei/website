@@ -40,7 +40,7 @@ class Welcome extends Component {
           <Row>
             <Col md={8} className= "welcome-title">
             <Fade bottom duration= {5000}>
-              <h1>JORDAN LEI (v3)</h1>
+              <h1>JORDAN LEI</h1>
             </Fade>
             </Col>
           </Row>
