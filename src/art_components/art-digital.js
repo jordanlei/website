@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'reactstrap';
 import Fade from 'react-reveal';
 import "../css/art_welcome.css"
 import ArtGallery from './art-gallery';
@@ -63,6 +64,8 @@ class ArtDigital extends Component {
     </div>
     </section>
     </div>
+
+    
     );
   }
 }
