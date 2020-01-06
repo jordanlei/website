@@ -15,7 +15,7 @@ class Post extends Component {
         post = postdata[id].class;
     }
     return (
-      <div>
+      <div style={{position: "relative", overflowX: "hidden"}}>
         {post}
       </div>
     );
