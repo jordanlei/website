@@ -52,9 +52,9 @@ class ArtDigital extends Component {
         <div className="center-row" style={{paddingBottom:"3%"}}>
             <div className= "art-header">
                 <Fade bottom duration={5000}>
-                    <h3>
+                    <h2>
                     DIGITAL
-                    </h3>
+                    </h2>
                 </Fade>
             </div>
         </div>

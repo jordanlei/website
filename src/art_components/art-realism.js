@@ -58,9 +58,9 @@ class ArtRealism extends Component {
         <div className="center-row" style={{paddingBottom:"3%"}}>
             <div className= "art-header">
                 <Fade bottom duration={5000}>
-                    <h3>
+                    <h2>
                     REALISM
-                    </h3>
+                    </h2>
                 </Fade>
             </div>
         </div>

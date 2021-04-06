@@ -46,9 +46,9 @@ class ArtTraditional extends Component {
         <div className="center-row" style={{paddingBottom:"3%"}}>
             <div className= "art-header">
                 <Fade bottom duration={5000}>
-                    <h3>
+                    <h2>
                     TRADITIONAL
-                    </h3>
+                    </h2>
                 </Fade>
             </div>
         </div>

@@ -11,9 +11,9 @@ class Welcome extends Component {
       background: "linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))",
       backgrounddepth: "-0.3",
       layers: [ 
-      {image: require("../images/welcome-blue.png"), ydepth: "-0.99", xdepth: "-0.25", name: "welcomelayer wlayer1"},
-      {image: require("../images/welcome-green.png"), ydepth: "-1.0", xdepth: "-0.3", name: "welcomelayer wlayer2"},
-      {image: require("../images/welcome-red.png"), ydepth: "-1.01", xdepth: "-0.35", name: "welcomelayer wlayer3"},
+      {image: require("../images/welcome-blue.png"), ydepth: "-0.99", xdepth: "-0.35", name: "welcomelayer wlayer1"},
+      {image: require("../images/welcome-green.png"), ydepth: "-1.0", xdepth: "-0.4", name: "welcomelayer wlayer2"},
+      {image: require("../images/welcome-red.png"), ydepth: "-1.01", xdepth: "-0.45", name: "welcomelayer wlayer3"},
       ]
     }
 

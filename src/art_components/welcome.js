@@ -38,7 +38,7 @@ class ArtWelcome extends Component {
         
           <div className= "namecard">
           <Row>
-            <Col md={8} className= "welcome-title">
+            <Col md={8} className= "welcome-title" style={{top: "30vh", left: "30vw"}}>
             <Fade bottom duration= {5000}>
               <h1>PORTFOLIO</h1>
             </Fade>

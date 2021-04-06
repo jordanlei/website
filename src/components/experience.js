@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import "../css/welcome.css"
 import Fade from 'react-reveal';
+import pdf from '../files/resume.pdf'
 
 class Experience extends Component {
   
@@ -152,7 +153,7 @@ class Experience extends Component {
         <Fade><h1>EXPERIENCE</h1></Fade>
         <h4>|
             <span className="stdbutton" style={{marginLeft:"12px"}}>
-              <a href= {process.env.PUBLIC_URL + "resume.pdf"} target="_blank">
+              <a href= {pdf} target="_blank">
               VIEW RESUME/CV
               <img src={require("../images/next.png")} height="40" width="40" style={{marginLeft: "12px", marginTop: "-3px"}}/>
               </a>
