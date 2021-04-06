@@ -7,7 +7,7 @@ class Menu extends Component {
   
   render() {
     return (
-      <div className = "sidenav">
+      <div className = "sidenav menu">
         <Nav vertical>
           <NavItem>
             <Link class= "navlink" activeClass="active" to="welcome" href= "" spy={true} smooth={true} duration= {800}> Welcome</Link>

@@ -1,54 +1,33 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import '../css/standard.css';
-import '../css/parallax.css';
-import '../css/welcome.css';
+import "../css/welcome.css"
 import Fade from 'react-reveal';
+import Parallax from './parallax';
 
 class Welcome extends Component {
-  componentDidMount(){
-        window.addEventListener('scroll', function(event) {
-            var depth, i, layer, layers, len, movement, topDistance, translate3d;
-            topDistance = this.pageYOffset;
-            var elementDistance = topDistance - document.getElementById("welcome-component").offsetTop
-            layers = document.querySelectorAll("[data-type='parallax']");
-            for (i = 0, len = layers.length; i < len; i++) {
-              layer = layers[i];
-              depth = layer.getAttribute('data-depth');
-              movement = -1 * (topDistance + elementDistance * depth) 
-              translate3d = 'translate3d(' + 0 + ',' + movement + 'px, 0)';
-              layer.style['-webkit-transform'] = translate3d;
-              layer.style['-moz-transform'] = translate3d;
-              layer.style['-ms-transform'] = translate3d;
-              layer.style['-o-transform'] = translate3d;
-              layer.style.transform = translate3d;
-            }
-        });   
-  }
   render() {
+    const items = {
+      name : "welcome-banner",
+      background: "linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))",
+      backgrounddepth: "-0.3",
+      layers: [ 
+      {image: require("../images/welcome-blue.png"), ydepth: "-0.99", xdepth: "-0.25", name: "welcomelayer wlayer1"},
+      {image: require("../images/welcome-green.png"), ydepth: "-1.0", xdepth: "-0.3", name: "welcomelayer wlayer2"},
+      {image: require("../images/welcome-red.png"), ydepth: "-1.01", xdepth: "-0.35", name: "welcomelayer wlayer3"},
+      ]
+    }
+
+    
+
     return (
-    <div>
-        <section id = "welcome">
-        <div id='welcome-component' style= {{minHeight: "100vh"}}>
-        <div class='layer-bg layer' data-depth='-0.50' data-type='parallax'></div>
-        <div class='layer-1 layer' data-depth='-0.60' data-type='parallax'></div>
-        <div class='layer-2 layer' data-depth='-0.50' data-type='parallax'></div>
-        <div class='layer-3 layer' data-depth='-0.40' data-type='parallax'></div>
-        <div class='layer-4 layer' data-depth='-0.30' data-type='parallax'></div>   
-        
-          <div className= "namecard">
-          <Row>
-            <Col md={8} className= "welcome-title">
-            <Fade bottom duration= {5000}>
-              <h1>JORDAN LEI</h1>
-            </Fade>
-            </Col>
-          </Row>
-          </div>
+      <Parallax items={items}>
+      <div style={{height: "100vh"}}>            
+        <div className="welcome-title welcome-namecard">
+            <h1>JORDAN LEI</h1>
+            <h3>Neuroscience | Machine Learning | Art</h3>
         </div>
-        <div id='welcome-mobile'></div>
-        </section>
-    </div>
+      </div>
+      </Parallax>
     );
   }
 }

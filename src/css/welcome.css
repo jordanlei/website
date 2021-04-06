@@ -12,9 +12,10 @@
 }
 
 .welcome-title h1{
+    font-family: 'Questrial', sans-serif;
     text-align: left;
-    font-weight: lighter; 
-    letter-spacing: 20px;
+    font-weight: 500;
+    letter-spacing: 17px;
     font-size: 80px;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -26,14 +27,14 @@
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.namecard{
+.welcome-namecard{
+    color: rgba(255, 255, 255, 0.7);
     position:absolute;
     top:40vh;
-    left:0px;
+    left:50vw;
     width: 100%;
     float: left;
     margin-bottom: 10%;
-    padding-left: 20%;
 }
 
 #welcome .layer-bg {
@@ -55,6 +56,22 @@
 #welcome .layer{
     background-position: top right;
     margin-top: -10%;
+}
+
+.welcomelayer{
+    opacity: 60%;
+    mix-blend-mode: lighten;
+}
+
+.wlayer1{
+    opacity: 63%;
+    margin-left: -64px;
+}
+.wlayer2{
+    margin-left: -62px;
+}
+.wlayer3{
+    margin-left: -60px;
 }
 
 #welcome-mobile {

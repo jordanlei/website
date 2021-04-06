@@ -23,6 +23,13 @@ body {
 	position: fixed;
 }
 
+#art-banner .layer{
+	z-index: -1;
+	margin-top: -200px;
+}
+
+
+
 
 
 
