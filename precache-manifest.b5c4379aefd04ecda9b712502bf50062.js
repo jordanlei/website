@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3b7816faf5cbd55de86cbd37461caf2",
+    "revision": "3be53b8648feee1af68735026256108b",
     "url": "/index.html"
   },
   {
-    "revision": "46d4db4d1da77e54fbb4",
+    "revision": "30995fcbb0e64185454b",
     "url": "/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "d21f1dc0fe8c40003b89",
-    "url": "/static/css/main.ada72ffa.chunk.css"
+    "revision": "dabcd2f623a7617e447e",
+    "url": "/static/css/main.61807793.chunk.css"
   },
   {
-    "revision": "46d4db4d1da77e54fbb4",
-    "url": "/static/js/2.303d8af4.chunk.js"
+    "revision": "30995fcbb0e64185454b",
+    "url": "/static/js/2.447047d0.chunk.js"
   },
   {
     "revision": "070a35f007a0d6bcc38c5a4f0360abe1",
-    "url": "/static/js/2.303d8af4.chunk.js.LICENSE"
+    "url": "/static/js/2.447047d0.chunk.js.LICENSE"
   },
   {
-    "revision": "d21f1dc0fe8c40003b89",
-    "url": "/static/js/main.682306f6.chunk.js"
+    "revision": "dabcd2f623a7617e447e",
+    "url": "/static/js/main.17b3edae.chunk.js"
   },
   {
     "revision": "a796a236ee8470d38315",
     "url": "/static/js/runtime-main.783779e9.js"
+  },
+  {
+    "revision": "e6ac64ea0d403c429968315c2b7b8a26",
+    "url": "/static/media/522-logo.e6ac64ea.png"
   },
   {
     "revision": "c240e1d1b4328efb37de59f435a9fd96",
@@ -52,24 +56,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/astronaut.8cc9b810.jpg"
   },
   {
-    "revision": "bc9700c9097b7f2bae592807c3715204",
-    "url": "/static/media/background-1.bc9700c9.svg"
+    "revision": "6839391c74d4c32a6a90b75d0eb69ea2",
+    "url": "/static/media/blog-image-1.6839391c.jpeg"
   },
   {
-    "revision": "e6b8946a4ffaa8f784e46e313e7f92b5",
-    "url": "/static/media/background-2.e6b8946a.svg"
+    "revision": "82b7b339af880f3c90b31c5a5c4461f8",
+    "url": "/static/media/blog-image-2.82b7b339.jpeg"
+  },
+  {
+    "revision": "5404e6b9e314367b5de65a4d18451e49",
+    "url": "/static/media/blog-image-3.5404e6b9.jpeg"
   },
   {
     "revision": "c7d918a7eacb8f85cc7d20717ea4be41",
     "url": "/static/media/blue.c7d918a7.jpg"
   },
   {
-    "revision": "165c96ea89053da7aa21b0137ec37540",
-    "url": "/static/media/brotherhood-1.165c96ea.svg"
+    "revision": "bb5c271198904d5987baff40abc7e8c3",
+    "url": "/static/media/brotherhood-1.bb5c2711.svg"
   },
   {
-    "revision": "22f06dd665cf1faaf6c12ef4522568b6",
-    "url": "/static/media/brotherhood-thumbnail.22f06dd6.svg"
+    "revision": "fcb61e2a19e698e811022d841a227581",
+    "url": "/static/media/brotherhood-thumbnail.fcb61e2a.svg"
   },
   {
     "revision": "5e58b359417c2ef7fcf257ca77b09615",
@@ -120,16 +128,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/hotpot.6a9173bb.jpg"
   },
   {
-    "revision": "e6431cb82ef1361682972748565e0227",
-    "url": "/static/media/how-to-engage-with-art-1.e6431cb8.svg"
+    "revision": "296945019b53cde6a049069771799b46",
+    "url": "/static/media/how-to-engage-with-art-1.29694501.svg"
   },
   {
-    "revision": "a5926daea2826694ea394d66ab470c42",
-    "url": "/static/media/how-to-engage-with-art-2.a5926dae.svg"
+    "revision": "cb2a58e533611d5785db423a8365988c",
+    "url": "/static/media/how-to-engage-with-art-2.cb2a58e5.svg"
   },
   {
-    "revision": "e77f801731b330c4bb820599fd6ae50a",
-    "url": "/static/media/how-to-engage-with-art-thumbnail.e77f8017.svg"
+    "revision": "c2bac3df2d0e805c0df6a795875e6f83",
+    "url": "/static/media/how-to-engage-with-art-thumbnail.c2bac3df.svg"
   },
   {
     "revision": "dd41ce421064a6a2df5e0bcadabb2713",
@@ -140,20 +148,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/landscape-digital.619acad0.jpg"
   },
   {
-    "revision": "43e5f984be586593a7b72a459d422779",
-    "url": "/static/media/logo-cmu.43e5f984.png"
-  },
-  {
-    "revision": "0a9cbce49c126daaf40b37ca376b75a8",
-    "url": "/static/media/logo-cni.0a9cbce4.png"
-  },
-  {
     "revision": "30fa0886f8b6840a53f5deb91f9722f5",
     "url": "/static/media/logo-insta.30fa0886.png"
   },
   {
     "revision": "8e2a276f78d70c762aa29a4e2913b4f3",
     "url": "/static/media/logo-kordinglab.8e2a276f.png"
+  },
+  {
+    "revision": "8ca99e5bf1992e5ceeadf60847816a58",
+    "url": "/static/media/logo-medium.8ca99e5b.png"
   },
   {
     "revision": "753d805558bf49729be82234b55bd94c",
@@ -164,6 +168,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo-tovala.e1858e91.png"
   },
   {
+    "revision": "e896f78d0fbf543cfee994d20fea2887",
+    "url": "/static/media/logo-twitter.e896f78d.png"
+  },
+  {
     "revision": "e9d2e0ed88bf708db0d5c94590337e2d",
     "url": "/static/media/logo-unilever.e9d2e0ed.png"
   },
@@ -172,8 +180,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo-wv.dcafed4e.png"
   },
   {
-    "revision": "ee7cd8ed2dcec943251eb2763684fc6f",
-    "url": "/static/media/logo.ee7cd8ed.svg"
+    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
+    "url": "/static/media/logo.5d5d9eef.svg"
   },
   {
     "revision": "3752a9a8dc75666b0b253c769da08269",
@@ -200,6 +208,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/portland2.f25ec221.jpg"
   },
   {
+    "revision": "7073ff53639e34211ed40ee7bf59d6fb",
+    "url": "/static/media/resume.7073ff53.pdf"
+  },
+  {
     "revision": "f0c3caf8f80142022400a7a5e186affb",
     "url": "/static/media/rose.f0c3caf8.jpg"
   },
@@ -220,22 +232,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sparse_dots.2afa7ec0.svg"
   },
   {
-    "revision": "6dea057f4501c33bbe9521942cd176cd",
-    "url": "/static/media/swirl-large-1-2.6dea057f.png"
-  },
-  {
-    "revision": "8b42d2c990ccee77a2c9c2202ef69038",
-    "url": "/static/media/swirl-large-2-2.8b42d2c9.png"
-  },
-  {
-    "revision": "f5f835233ebc7983cb19047c287fc9c7",
-    "url": "/static/media/swirl-large-3-2.f5f83523.png"
-  },
-  {
-    "revision": "ff656f83506d7e0a20ccfb917bf5690f",
-    "url": "/static/media/swirl-large-4-2.ff656f83.png"
-  },
-  {
     "revision": "1c7ec5149a2a4db6cf36e0ff3cbb743c",
     "url": "/static/media/the-distance-between-us.1c7ec514.jpg"
   },
@@ -246,6 +242,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1742282e72a4428044287b6411247c04",
     "url": "/static/media/waterlilies-monet.1742282e.jpg"
+  },
+  {
+    "revision": "b3f501e8e0f69a1edd623fcb17f88bfd",
+    "url": "/static/media/welcome-blue.b3f501e8.png"
+  },
+  {
+    "revision": "bc51fbe0b821c072d8757c8e9189c63e",
+    "url": "/static/media/welcome-green.bc51fbe0.png"
+  },
+  {
+    "revision": "3fa7777c8e3045c3ae76dbaffba01123",
+    "url": "/static/media/welcome-red.3fa7777c.png"
   },
   {
     "revision": "9011819b8a2fac6fcb79a973db7cadd9",
