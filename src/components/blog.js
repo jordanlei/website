@@ -35,7 +35,7 @@ class Blog extends Component {
         <a href={i.link} target="_blank">
         <Row style={{minHeight: "30vh"}}>
           <Col md={4}>
-            <Card style={{backgroundImage: "url("+i.image+")", 
+            <Card className="blog-card-img" style={{backgroundImage: "url("+i.image+")", 
             backgroundSize: "cover", 
             backgroundPosition: "center", 
             height: "100%",
@@ -56,10 +56,10 @@ class Blog extends Component {
       <div className="dark-container" style={{paddingBottom: 2+"%"}}>            
         <Fade><h1>THOUGHTS</h1></Fade>
         {cards}
-        <h4>|
-            <span className="stdbutton" style={{marginLeft:"12px"}}>
+        <h4>
+            <span className="stdbutton">
               <a href="https://jordanlei.medium.com/" target="_blank">
-              VIEW BLOG
+              |&emsp;VIEW BLOG
               <img src={require("../images/next.png")} height="40" width="40" style={{marginLeft: "12px", marginTop: "-3px"}}/>
               </a>
             </span>

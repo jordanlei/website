@@ -133,7 +133,7 @@ class Experience extends Component {
       } 
       else if (i.type == "logo"){
         return <Col md={2}>
-                      <img src={i.image} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo"/>
+                      <img className="logo-icon" src={i.image} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo"/>
               </Col>
       }
       else{
@@ -151,10 +151,10 @@ class Experience extends Component {
     return (
       <div className="dark-container" style={{paddingBottom: 10+"%"}}>            
         <Fade><h1>EXPERIENCE</h1></Fade>
-        <h4>|
-            <span className="stdbutton" style={{marginLeft:"12px"}}>
+        <h4 style={{zIndex: "1", position:"relative"}}>
+            <span className="stdbutton">
               <a href= {pdf} target="_blank">
-              VIEW RESUME/CV
+              |&emsp;VIEW RESUME/CV
               <img src={require("../images/next.png")} height="40" width="40" style={{marginLeft: "12px", marginTop: "-3px"}}/>
               </a>
             </span>

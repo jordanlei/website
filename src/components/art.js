@@ -30,16 +30,17 @@ class Art extends Component {
           
         </div>
 
-        <div style={{paddingLeft: "30%", 
+        <div className="artheader"
+                    style={{paddingLeft: "30%", 
                     paddingTop: "15vh",
                     height: "40vh",
                      marginTop: "30vh",  
                     backgroundImage: "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1))"}}>
           <Fade><h1>ART</h1></Fade>
-          <h4>|
-              <span className="stdbutton" style={{marginLeft:"12px"}}>
+          <h4>
+              <span className="stdbutton">
                 <a href= {process.env.PUBLIC_URL + "/#/art"} target="_blank">
-                VIEW PORTFOLIO
+                |&emsp;VIEW PORTFOLIO
                 <img src={require("../images/next.png")} height="40" width="40" style={{marginLeft: "12px", marginTop: "-3px"}}/>
                 </a>
               </span>

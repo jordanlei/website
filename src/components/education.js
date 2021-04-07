@@ -11,7 +11,7 @@ class Education extends Component {
         <Fade><h1>EDUCATION</h1></Fade>
         <Row>
         <Col md={2}>
-              <img src={require('../public/static/logo-penn.png')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo Penn"/>
+              <img className="logo-icon" src={require('../public/static/logo-penn.png')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo Penn"/>
         </Col>
         <Col md={9}>
             <p>
@@ -23,7 +23,7 @@ class Education extends Component {
             </p>
         </Col>
         <Col md={2}>
-              <img src={require('../public/static/logo-penn.png')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo Penn"/>
+              <img className="logo-icon" src={require('../public/static/logo-penn.png')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo Penn"/>
         </Col>
         <Col md={9}>
             <p>
@@ -37,7 +37,7 @@ class Education extends Component {
             </p>
         </Col>
         <Col md={2} className>
-              <img src={require('../public/static/logo-wv.png')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo WV"/>
+              <img className="logo-icon" src={require('../public/static/logo-wv.png')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo WV"/>
         </Col>
         <Col md={9}>
             <p>

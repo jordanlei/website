@@ -1,8 +1,27 @@
 @media only screen and (max-width: 768px) {
     /* */
     .welcome-title h1{
-      font-size: 40px;
+      font-size: 30px;
       letter-spacing: 10px;
+    }
+
+    .wlayer1{
+        background-position: center !important;
+    }
+
+    .wlayer2{
+        background-position: center !important;
+    }
+    .wlayer3{
+        background-position: center !important;
+    }
+    
+    .landing-container h1{
+        font-size: 30px; 
+    }
+
+    .landing-container h2{
+        font-size: 22px; 
     }
 
     .landing-container h3{
@@ -17,12 +36,39 @@
         font-size: 15px; 
     }
 
+    .dark-container{
+        padding-left: 10%; 
+        padding-right: 10%;
+        padding-top: 30%;
+    }
+
     .sidenav{
       display: none;
     }
 
-    .namecard{
-        padding-left: 5%;
+    .welcome-namecard{
+        left: 10%;
+        word-wrap: break-word;
+        padding-right: 10%;
+    }
+
+    .artheader{
+        padding-left: 10% !important;
+    }
+
+    .blog-card-img{
+        min-height: 30vh;
+    }
+
+    .logo-icon{
+        margin-left: 2vw;
+        height: 150px !important;
+        width: auto !important;
+    }
+
+    .contant-icon-img{
+        width: 40px !important;
+        height: 40px !important;
     }
 
     #welcome .layer{
@@ -50,10 +96,6 @@
 
     #art-component a.navlink{
         width: 80vw;
-    }
-
-    #contact{
-        padding-bottom: 20vh;
     }
 
 

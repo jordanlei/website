@@ -59,12 +59,9 @@
 }
 
 .welcomelayer{
-    opacity: 65%;
+    opacity: 0.65;
+    display: block;
     mix-blend-mode: screen;
-}
-
-.wlayer0{
-    opacity: 30%;
 }
 
 .wlayer1{

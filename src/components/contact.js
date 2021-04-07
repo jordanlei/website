@@ -15,11 +15,11 @@ class Contact extends Component {
     ]
   
     var cards = items.map((i)=>{
-      return <span className="contact-icon">
-        <a href={i.link} target="_blank">
-          <img src = {i.logo} width="60" height="60" style={{marginRight: "3vw"}}/>
+      return <Col className="contact-icon">
+        <a md={3} href={i.link} target="_blank">
+          <img className="contant-icon-img" src = {i.logo} style={{marginRight: "3vw", width: "60px", height:"60px"}}/>
         </a>
-      </span>
+      </Col>
     })
 
     return (
@@ -29,7 +29,9 @@ class Contact extends Component {
         <b>If you thought that was fun, let's get in touch!</b> <br/>
         Email me at jordanlei dot work at gmail dot com
         </p>
+        <Row>
         {cards}
+        </Row>
       </div>
     );
   }

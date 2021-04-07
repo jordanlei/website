@@ -7,7 +7,6 @@ import Post from './blog_components/posts/post.js';
 import {HashRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import './css/mobile.css';
-import './css/fonts.css';
 
 
 function App() {
