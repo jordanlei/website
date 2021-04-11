@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.c4a47828.chunk.css",
-    "main.js": "/static/js/main.fb06ac46.chunk.js",
-    "main.js.map": "/static/js/main.fb06ac46.chunk.js.map",
+    "main.js": "/static/js/main.d18df739.chunk.js",
+    "main.js.map": "/static/js/main.d18df739.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.783779e9.js",
     "runtime-main.js.map": "/static/js/runtime-main.783779e9.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.b1b1eb0a.chunk.js": "/static/js/2.b1b1eb0a.chunk.js",
-    "static/js/2.b1b1eb0a.chunk.js.map": "/static/js/2.b1b1eb0a.chunk.js.map",
+    "static/js/2.43281b09.chunk.js": "/static/js/2.43281b09.chunk.js",
+    "static/js/2.43281b09.chunk.js.map": "/static/js/2.43281b09.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9ef07fca148f857b06481399a90a15bf.js": "/precache-manifest.9ef07fca148f857b06481399a90a15bf.js",
+    "precache-manifest.1c954019fd8bfde48ab9679c4d649673.js": "/precache-manifest.1c954019fd8bfde48ab9679c4d649673.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/static/css/2.b0bb7f2c.chunk.css.map",
     "static/css/main.c4a47828.chunk.css.map": "/static/css/main.c4a47828.chunk.css.map",
-    "static/js/2.b1b1eb0a.chunk.js.LICENSE": "/static/js/2.b1b1eb0a.chunk.js.LICENSE",
+    "static/js/2.43281b09.chunk.js.LICENSE": "/static/js/2.43281b09.chunk.js.LICENSE",
     "static/media/522-logo.png": "/static/media/522-logo.e6ac64ea.png",
     "static/media/aladdin.jpg": "/static/media/aladdin.c240e1d1.jpg",
     "static/media/art-header-1.png": "/static/media/art-header-1.c4d72036.png",
@@ -44,7 +44,8 @@
     "static/media/logo-insta.png": "/static/media/logo-insta.30fa0886.png",
     "static/media/logo-kordinglab.png": "/static/media/logo-kordinglab.8e2a276f.png",
     "static/media/logo-medium.png": "/static/media/logo-medium.8ca99e5b.png",
-    "static/media/logo-penn.png": "/static/media/logo-penn.753d8055.png",
+    "static/media/logo-nyu.jpeg": "/static/media/logo-nyu.c97d065f.jpeg",
+    "static/media/logo-penn.png": "/static/media/logo-penn.f6e49a78.png",
     "static/media/logo-tovala.png": "/static/media/logo-tovala.e1858e91.png",
     "static/media/logo-twitter.png": "/static/media/logo-twitter.e896f78d.png",
     "static/media/logo-unilever.png": "/static/media/logo-unilever.e9d2e0ed.png",
@@ -74,8 +75,8 @@
   "entrypoints": [
     "static/js/runtime-main.783779e9.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.b1b1eb0a.chunk.js",
+    "static/js/2.43281b09.chunk.js",
     "static/css/main.c4a47828.chunk.css",
-    "static/js/main.fb06ac46.chunk.js"
+    "static/js/main.d18df739.chunk.js"
   ]
 }
