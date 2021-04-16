@@ -11,6 +11,17 @@ class Education extends Component {
         <Fade><h1>EDUCATION</h1></Fade>
         <Row>
         <Col md={2}>
+              <img className="logo-icon" src={require('../images/logo-nyu.jpeg')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo Penn"/>
+        </Col>
+        <Col md={9}>
+            <p>
+            <b>New York University</b> <br/>
+            <b>PhD Program in Neuroscience</b> <br/>
+            Joining in Fall 2021 <br/>
+            <br/>
+            </p>
+        </Col>
+        <Col md={2}>
               <img className="logo-icon" src={require('../public/static/logo-penn.png')} style={{display: "block", padding: "5%", width: "100px"}}alt="Logo Penn"/>
         </Col>
         <Col md={9}>
