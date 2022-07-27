@@ -8,9 +8,9 @@ class ArtFeatured extends Component {
   render() {
     const carouselItems = [
         {
-            src: require("../public/static/art/sentinel.jpg"),
-            header: 'Sentinel',
-            caption: <p>Oil on Canvas Board, 2014<br/>Best of Show, Oregon Federal Junior Duck Stamp Competition</p>
+            src: require("../public/static/art/cerebellum.JPG"),
+            header: 'Balance',
+            caption: <p>Oil on Canvas Board, 2022<br/>Inspired by Purkinje Cells in the Cerebellum</p>
         },
         {
             src: require("../public/static/art/freefall-bkg.jpg"),

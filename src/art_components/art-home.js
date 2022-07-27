@@ -9,6 +9,7 @@ import About from '../components/about';
 import ArtDigital from './art-digital';
 import ArtRealism from './art-realism';
 import ArtTraditional from './art-traditional';
+import ArtNeuro from './art-neuro';
 
 class ArtHome extends Component {
   render() {
@@ -21,6 +22,7 @@ class ArtHome extends Component {
         <ArtAbout/>
         <ArtIntro/>
         <ArtFeatured/>
+        <ArtNeuro/>
         <ArtDigital/>
         <ArtRealism/>
         <ArtTraditional/>
