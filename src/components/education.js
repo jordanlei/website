@@ -17,7 +17,8 @@ class Education extends Component {
             <p>
             <b>New York University</b> <br/>
             <b>PhD Program in Neuroscience</b> <br/>
-            Joining in Fall 2021 <br/>
+            GPA: 3.85<br/>
+            Rotation Advisors: Wei Ji Ma, Eero Simoncelli, Robert Froemke <br/>
             <br/>
             </p>
         </Col>
@@ -28,8 +29,10 @@ class Education extends Component {
             <p>
             <b>University of Pennsylvania</b> <br/>
             <b>Master's Program in Computer Science</b> <br/>
-            GPA: 4.0,  Class of 2021 <br/>
+            GPA: 4.0, Summa Cum Laude, Class of 2021<br/>
             <b>MSE: Computer Science</b>,  School of Engineering and Applied Sciences<br/>
+            Thesis: “Object-Based Attention Through Internal Gating”<br/>
+            Advisor: Konrad Kording <br/>
             <br/>
             </p>
         </Col>

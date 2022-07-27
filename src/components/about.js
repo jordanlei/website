@@ -10,7 +10,7 @@ class About extends Component {
       <div className="dark-container" style={{paddingBottom: 2+"%"}}>            
         <Fade><h1>ABOUT</h1></Fade>
         <p>
-        <b>Hey there! I'm Jordan Lei.</b> I'm a <b>master's student</b> at the <b>University of Pennsylvania. </b> 
+        <b>Hey there! I'm Jordan Lei.</b> I'm a <b>PhD Student in Neuroscience</b> at <b>New York University.<br/></b> 
         I consider myself an inquisitive person - I love figuring 
         out what makes things tick, particularly when it comes to understanding human
         intelligence and the brain.
