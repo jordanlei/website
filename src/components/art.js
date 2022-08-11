@@ -7,16 +7,41 @@ import {Parallax, ParallaxProvider, ParallaxBanner, ParallaxBannerLayer} from "r
 
 
 class Art extends Component {
+  constructor (props) {
+    super(props);
+
+    this.state = {height: 1, width: 2};
+    this.onResize = this.onResize.bind(this)
+  }
+
+  componentDidMount = () => {
+    if(typeof window !== undefined){
+      this.setState({width: window.innerWidth,height: window.innerHeight});
+      window.addEventListener('resize', this.onResize);
+    }
+  };
+
+  componentWillUnmount = () => {
+    if(typeof window !== undefined){
+      window.removeEventListener('resize', this.onResize);
+    }
+  }
+
+  onResize = () => {
+    if(typeof window !== undefined){ 
+      this.setState({width: window.innerWidth,height: window.innerHeight});
+     }
+  };
+
+
   render(){
   var center = 0
-  var width = typeof window !== 'undefined' ? window.innerWidth : 2
-  var height = typeof window !== 'undefined' ? window.innerHeight : 1
-
-  console.log()
+  console.log(this.state.width)
+  console.log(this.state.height)
   return (
     <section id = "art">    
     <div className = "dark" style={{overflow: "hidden", height: "100vh", backgroundColor: "black"}}>  
-        <ParallaxBanner style={{aspectRatio: width + '/' + height, position: "relative"}}>
+        <ParallaxBanner style={{aspectRatio: this.state.width + '/' + this.state.height, position: "relative"}}>
           <ParallaxBannerLayer image={"../art/art-header-1.png"} translateY={[center + "px", center + "px"]}/>
           <ParallaxBannerLayer image={"../art/art-header-2.png"} translateY={[center + 50 + "px", center - 50 + "px"]}/>
           <ParallaxBannerLayer image={"../art/art-header-3.png"} translateY={[center + 100  + "px", center - 100  + "px"]}/>
