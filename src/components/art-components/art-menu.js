@@ -42,7 +42,7 @@ class ArtMenu extends Component {
       <div className = "mobile-only topnav">
           <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav>
-                  <StaticImage src="../images/menu-button.png" style={{height: "30px", width:"30px"}} alt=""/>   
+                  <StaticImage src="../../images/menu-button.png" style={{height: "30px", width:"30px"}} alt=""/>   
                 </DropdownToggle>
                 <DropdownMenu right>
                   {menuitems}

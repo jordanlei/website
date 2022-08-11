@@ -301,7 +301,7 @@ class Gallery extends Component {
                 <div>
                     <Fade bottom duration={5000}>
                         <h1 className = "art-header">
-                        PORTFOLIO v2
+                        PORTFOLIO
                         </h1>
                     </Fade>
 
