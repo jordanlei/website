@@ -9,21 +9,14 @@ import {Parallax, ParallaxProvider, ParallaxBanner, ParallaxBannerLayer} from "r
 class Art extends Component {
   render(){
   var center = 0
+  var width = typeof window !== 'undefined' ? window.innerWidth : 2
+  var height = typeof window !== 'undefined' ? window.innerHeight : 1
 
-  if (typeof window === `undefined`) {
-    var aspectRatio = "2 / 1"
-  }
-  else {
-    var height = window.innerHeight;
-    var width = window.innerWidth;
-    var aspectRatio = width + '/' + height
-  }
-  
   console.log()
   return (
     <section id = "art">    
     <div className = "dark" style={{overflow: "hidden", height: "100vh", backgroundColor: "black"}}>  
-        <ParallaxBanner style={{aspectRatio: aspectRatio, position: "relative"}}>
+        <ParallaxBanner style={{aspectRatio: width + '/' + height, position: "relative"}}>
           <ParallaxBannerLayer image={"../art/art-header-1.png"} translateY={[center + "px", center + "px"]}/>
           <ParallaxBannerLayer image={"../art/art-header-2.png"} translateY={[center + 50 + "px", center - 50 + "px"]}/>
           <ParallaxBannerLayer image={"../art/art-header-3.png"} translateY={[center + 100  + "px", center - 100  + "px"]}/>
