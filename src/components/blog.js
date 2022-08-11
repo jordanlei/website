@@ -41,8 +41,10 @@ class Blog extends Component {
             border: "8px"}}/>
           </Col>
           <Col md={8} style={{padding: "5%"}}>
+            <div className="blog-card-text">
             <h4>{i.title}</h4>
             <p><i>{i.subtitle}</i></p>
+            </div>
           </Col>
         </Row>
         </a>

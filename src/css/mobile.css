@@ -29,13 +29,34 @@
         color: rgba(0, 0, 0, 0.5);
     }
 
+    /* Front Page Header */
+    .namecard{
+        color: rgba(255, 255, 255, 0.7) !important;
+        position:absolute;
+        top:40vh;
+        left:0;
+        width: 100%;
+        float: left;
+        margin-bottom: 10%;
+        padding: 10%;
+    }
+
     .namecard h1{
-        font-size: 40px;
+        font-size: 50px
+    }
+
+    .namecard h2{
+        font-size: 20px
     }
 
     .title{
         background-position: center;
     }
+
+    .art-title{
+        padding-left: 20%;
+    }
+    
 
     .section{
         padding-left: 20%;
@@ -68,7 +89,28 @@
         pointer-events: auto !important;
     }
 
-    .section p{
-        font-size: 18px;
+    .blog-card-img{
+        min-height: 30vh;
+    }
+
+    .blog-card-text{
+        padding: 15%;
+    }
+
+    .art-header{
+        font-size: 34px;
+        letter-spacing: 3px !important;
+        word-wrap: break-word;
+    }
+
+    #art-portfolio .btn{
+        letter-spacing: 3px !important;
+        font-size: 20px;
+    }
+
+    .logo-icon{
+        margin-left: 2vw;
+        height: 150px !important;
+        width: auto !important;
     }
 }

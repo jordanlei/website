@@ -228,6 +228,11 @@ transition:  opacity 0.2s ease;
 display: block;
 }
 
+/* Art */
+.art-title{
+    padding-left: 25%;
+}
+
 /* Art Gallery */
 .gallery-section{
     padding-left: 5%;
