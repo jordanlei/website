@@ -1,0 +1,42 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "website",
+  "author": "Jordan Lei",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "@react-spring/parallax": "^9.4.5",
+    "bootstrap": "^5.1.3",
+    "gatsby": "^4.15.2",
+    "gatsby-plugin-excerpts": "^1.1.0",
+    "gatsby-plugin-image": "^2.15.1",
+    "gatsby-plugin-mdx": "^3.20.0",
+    "gatsby-plugin-sharp": "^4.15.1",
+    "gatsby-remark-custom-blocks": "^4.15.0",
+    "gatsby-source-filesystem": "^4.15.0",
+    "gatsby-transformer-remark": "^3.2.0",
+    "gatsby-transformer-sharp": "^4.15.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^6.3.0",
+    "react-scroll-parallax": "^3.2.0",
+    "react-spring": "^9.4.5",
+    "reactstrap": "^9.1.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
