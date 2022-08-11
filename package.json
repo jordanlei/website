@@ -1,8 +1,8 @@
 {
-  "name": "guis-site",
+  "name": "website",
   "version": "1.0.0",
   "private": true,
-  "description": "guis-site",
+  "description": "website",
   "author": "Jordan Lei",
   "keywords": [
     "gatsby"
