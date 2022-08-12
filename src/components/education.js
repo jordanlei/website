@@ -56,7 +56,6 @@ class Education extends Component {
       <Col md={9}>
           <p>
           <b>Westview High School</b> <br/>
-          <b>Jerome Fisher Program in Management and Technology</b> <br/>
           GPA: 4.7,  Class of 2016 <br/>
           Valedictorian, Class Rank 1st of 603<br/>
           National Merit Scholar Finalist, Presidential Scholar Semifinalist
