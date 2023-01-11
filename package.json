@@ -25,7 +25,7 @@
     "gatsby-plugin-sharp": "^4.15.1",
     "gatsby-remark-custom-blocks": "^4.15.0",
     "gatsby-source-filesystem": "^4.15.0",
-    "gatsby-transformer-remark": "^3.2.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.15.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
