@@ -6,6 +6,7 @@ import Date from '../components/date';
 import Welcome from '../components/welcome';
 import About from '../components/about';
 import Projects from '../components/projects';
+import Education from '../components/education';
 
 import utilStyles from '../styles/utils.module.css';
 
@@ -28,6 +29,7 @@ export default function Home({allPostsData}) {
       <Welcome/>
       <About/>
       <Projects/>
+      <Education/>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} banner`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

@@ -15,8 +15,8 @@ export default function Menu(){
         </Link>
       </span>
       <span className={styles.menuitem}>
-        <Link href="#">
-          Experience
+        <Link href="#education">
+          Education
         </Link>
       </span>
       <span className={styles.menuitem}>
