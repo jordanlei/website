@@ -1,0 +1,17 @@
+.header{
+    position:absolute;
+    height: 10vh;
+    top: 50vh;
+    right: 10vw;
+    left: 10vw;
+    bottom: 20vh;
+    float: left;
+}
+
+.headerTitle{
+    font-size: 100px;
+}
+
+.headerSubtitle{
+    font-size: 30px;
+}

@@ -1,9 +1,13 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
+import Layout, { siteTitle } from '../components/layout';
 import Date from '../components/date';
+import Welcome from '../components/welcome';
+import About from '../components/about';
+import Projects from '../components/projects';
+
+import utilStyles from '../styles/utils.module.css';
 
 
 export async function getStaticProps() {
@@ -21,14 +25,10 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hello, I'm [NAME] and I like sushi</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <Welcome/>
+      <About/>
+      <Projects/>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} banner`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (

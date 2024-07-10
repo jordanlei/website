@@ -1,0 +1,29 @@
+.menu{
+  padding: 2vw 15vw 1vw 3vw;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.menuitem{
+  font-size: 20px;
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.menuitem:hover{
+  margin-top: -100px;
+}
+
+.menuitem a{
+  color: var(--color);
+}
+
+.menuitem a:hover{
+  font-size: 24px;
+  text-decoration: none;
+}
