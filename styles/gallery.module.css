@@ -1,0 +1,38 @@
+.gallery{
+    max-width: 100vw;
+    overflow-wrap:normal;
+}
+
+.image{
+    display: inline;
+    height: auto;
+}
+
+.image img{
+    display: inline;
+    position:relative;
+    height: auto;
+    z-index: -1
+}
+
+.info{
+    color: white;
+}
+
+.hover{
+    position: absolute;
+    padding: 0;
+    color: white; 
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    opacity:0;
+    color: white;
+    transition: .5s ease;
+}
+
+.image:hover .hover{
+    opacity: 1;
+}

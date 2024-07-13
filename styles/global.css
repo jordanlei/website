@@ -89,7 +89,7 @@ p{
 
 .screen{
   mix-blend-mode: difference;
-  opacity: 0.6;
+  opacity: 0.65;
   display: block;
 }
 
@@ -99,4 +99,8 @@ p{
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   padding: 30px;
+}
+
+.defaultImage{
+  height: auto;
 }

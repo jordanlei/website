@@ -25,7 +25,7 @@ export default function Menu(){
         </Link>
       </span>
       <span className={styles.menuitem}>
-        <Link href="#">
+        <Link href="#contact">
           Contact
         </Link>
       </span>

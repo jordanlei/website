@@ -18,7 +18,7 @@ export default function Projects(){
                     </p>
                 </div>
                 <div className="frostedCard" style={{marginBottom: "20px"}}>
-                    <h2>How Do People Strategize in Chess?</h2>
+                    <h2>How Do People Think Ahead in Chess?</h2>
                     <p>
                         For hundreds of years, chess has been associated with intelligence, strategy, and complex reasoning. Recent advances in artificial intelligence and the popularity of online chess make it an exciting time to study chess from a cognitive science perspective. In this project, we are building a cognitive model of how people think ahead in chess.
                     </p>
