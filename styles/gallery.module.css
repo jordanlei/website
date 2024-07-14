@@ -22,14 +22,12 @@
 .hover{
     position: absolute;
     padding: 0;
-    color: white; 
     align-items: center;
     border: none;
     font-size: 20px;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5); 
     opacity:0;
-    color: white;
+    color: white; 
     transition: .5s ease;
 }
 

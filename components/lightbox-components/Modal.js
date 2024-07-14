@@ -36,7 +36,7 @@ export default class extends Component {
     return (
       <div className={className}>
         <button className={style.hover} onClick={this.toggleModal} style={{width: width, height: height}}>
-          {alt}
+          <div className={style.pageCaption}>{alt}</div>
         </button>
         <img
           id={uid()}
@@ -56,7 +56,7 @@ export default class extends Component {
             id={uid()}
             medium={medium}
             large={large}
-            alt={alt}
+            alt=<div className={style.lightboxCaption}>{alt}</div>
             onClose={this.toggleModal}
             hideDownload={true}
             hideZoom={hideZoom}

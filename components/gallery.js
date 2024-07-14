@@ -3,6 +3,7 @@ import style from "../styles/gallery.module.css";
 
 export default function Gallery({ images }) {
   var objects = [];
+  var padding = 20;
 
   images.map((row) => {
     var denom = row.reduce((a, b) => a + b.width / b.height, 0);
@@ -12,7 +13,7 @@ export default function Gallery({ images }) {
       if (!i.large_file) {
         i.large_file = i.file;
       }
-      var width = (i.width / i.height / denom) * 100
+      var width = (i.width / i.height / denom) * (100 - padding)
       rowobjects.push(
             <Img className={style.image}
             small={i.file}
@@ -23,7 +24,7 @@ export default function Gallery({ images }) {
                 <h4>{i.subcaption}</h4>
               </span>
             }
-            width={"" + width + "%"}
+            width={"" + width + "vw"}
             height={"" + width/i.width * i.height + "vw"}
             />   
       );
@@ -62,7 +63,9 @@ export default function Gallery({ images }) {
     });
   });
 
-  return <div className={style.gallery}>
+  console.log(padding)
+
+  return <div className={style.gallery} style={{paddingLeft: "" + padding/2 + "vw", paddingRight: "" + padding/2 + "vw"}}>
     {objects}
   </div>;
 }

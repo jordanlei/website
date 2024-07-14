@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../../components/layout';
 import Gallery from '../../components/gallery';
+import Link from 'next/link';
+import menustyles from '../../styles/menu.module.css';
 
 export default function Art(){
     var images =
@@ -48,7 +49,25 @@ export default function Art(){
             subcaption: "Digital, 2023",
             width: 1920,
             height: 1280,
-            tag: "traditional",
+            tag: "digital",
+          },
+          {
+            file: "/images/art/peacocks.jpeg",
+            caption: "Peacocks",
+            subcaption: "Digital, 2024",
+            width: 1772,
+            height: 1772,
+            tag: "digital",
+          },
+        ],
+        [
+          {
+            file: "/images/art/axolotlfisherman.jpeg",
+            caption: "Axolotl Fisherman",
+            subcaption: "Digital, 2023",
+            width: 1008,
+            height: 779,
+            tag: "digital",
           },
           {
             file: "/images/art/birdsofny.jpeg",
@@ -56,7 +75,7 @@ export default function Art(){
             subcaption: "Digital, 2023",
             width: 2016,
             height: 1558,
-            tag: "traditional",
+            tag: "digital",
           },
         ],
         [
@@ -160,9 +179,22 @@ export default function Art(){
     return(
         <>
             <Head>
-                <title>Art Portfolio</title>
+                <title>Jordan Lei | Art</title>
             </Head>
-            <Gallery images = {images}/>
+            <div className={menustyles.menu} style={{backgroundColor: "rgba(255, 255, 255, 0.5)"}}>  
+              {/* style={{backgroundColor: "rgba(255, 255, 255, 0.5)"}}> */}
+            <span className={menustyles.menuitem}>
+              <Link href="/">
+                Home
+              </Link>
+            </span>
+            <span className={menustyles.menuitem}>
+              <Link href="#">
+                Top
+              </Link>
+            </span>
+          </div>
+          <Gallery images = {images}/>
         </>
     );
 }
