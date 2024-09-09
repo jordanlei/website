@@ -5,8 +5,9 @@ import Layout, { siteTitle } from '../components/layout';
 import Date from '../components/date';
 import Welcome from '../components/welcome';
 import About from '../components/about';
-import Projects from '../components/projects';
+import Research from '../components/research';
 import Education from '../components/education';
+import Experience from '../components/experience';
 import Contact from '../components/contact';
 
 import utilStyles from '../styles/utils.module.css';
@@ -29,23 +30,10 @@ export default function Home({allPostsData}) {
       </Head>
       <Welcome/>
       <About/>
-      <Projects/>
+      <Research/>
+      <Experience/>
       <Education/>
       <Contact/>
-      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} banner`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section> */}
     </Layout>
   );
 }

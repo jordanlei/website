@@ -20,6 +20,7 @@ body {
 
 :root {
   --color: rgb(50, 50, 50);
+  --subtitle: rgb(150, 150, 150);
   --background-color:  rgba(231, 239, 243, 0.0);
 }
 
@@ -39,7 +40,7 @@ a:hover {
 
 img {
   max-width: 100%;
-  display: block;
+  display: inline !important;
 }
 
 h1{
@@ -56,6 +57,8 @@ h3{
 
 h4{
   font-size: 22px;
+  color: var(--subtitle);
+  font-weight: 400;
 }
 
 p{
@@ -75,6 +78,23 @@ p{
 	height: 120vh;
 	position: fixed;
   z-index: -1;
+}
+
+.button{
+  border-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border-width: 2.5px;
+  border-style: solid;
+  padding: 10px;
+  color: var(--color);
+}
+
+.button:hover{
+  transition: background-color 0.6s, color 0.9s;
+  background-color: rgba(0, 200, 200, 0.2);
+  color: rgba(0, 100, 100, 0.8);
+  text-decoration: none;
 }
 
 .wlayer1{
@@ -103,4 +123,69 @@ p{
 
 .defaultImage{
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .layer {
+    background-position: top center;
+    margin-top: 0vh;
+    height: 100vh;
+    width: 200vw;
+  }
+
+  .screen{
+    opacity: 0.4;
+  }
+
+  .wlayer1{
+    margin-left: -81vw;
+  }
+  .wlayer2{
+    margin-left: -80vw;
+  }
+  .wlayer3{
+    margin-left: -79vw;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+  
+  h2{
+    font-size: 25px;
+  }
+  
+  h3{
+    font-size: 20px;
+  }
+  
+  h4{
+    font-size: 16px;
+  }
+  
+  p{
+    font-size: 14px;
+  }
+
+  body{
+    font-size: 14px;
+  }
+
+  .banner{
+    padding: 100px 5% 3% 5%;
+    min-height: 30vh;
+  }
+
+  #education .frostedCard{
+    text-align: center;
+  }
+
+  #experience .frostedCard{
+    text-align: center;
+  }
+
+  #experience ul{
+    text-align : left;
+  }
 }

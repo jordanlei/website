@@ -13,7 +13,7 @@ export default function Gallery({ images }) {
       if (!i.large_file) {
         i.large_file = i.file;
       }
-      var width = (i.width / i.height / denom) * (100 - padding)
+      var width = (i.width / i.height / denom) * (98 - padding)
       rowobjects.push(
             <Img className={style.image}
             small={i.file}
@@ -62,8 +62,6 @@ export default function Gallery({ images }) {
       );
     });
   });
-
-  console.log(padding)
 
   return <div className={style.gallery} style={{paddingLeft: "" + padding/2 + "vw", paddingRight: "" + padding/2 + "vw"}}>
     {objects}

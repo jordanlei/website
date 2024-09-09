@@ -1,9 +1,9 @@
-export default function Projects(){
+export default function Research(){
     return(
-        <section id = "projects">
+        <section id = "research">
             <div className="banner">
                 <h1>
-                    Projects
+                    Research
                 </h1>
                 <div className="frostedCard" style={{marginBottom: "20px"}}>
                     <h2>Can Monkeys Play Board Games?</h2>

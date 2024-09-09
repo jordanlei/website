@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Gallery from '../../components/gallery';
 import Link from 'next/link';
-import menustyles from '../../styles/menu.module.css';
+import style from '../../styles/art.module.css';
 
 export default function Art(){
     var images =
@@ -9,7 +9,7 @@ export default function Art(){
         [
           {
             file: "/images/art/cascais.jpeg",
-            caption: "Cascais",
+            caption: "Cascais, Portugal",
             subcaption: "Acrylic, 2024",
             width: 2078,
             height: 1512,
@@ -165,36 +165,52 @@ export default function Art(){
             height: 1100,
             tag: "realism",
           },
-          {
-            file: "/images/art/noahcentineo.jpg",
-            caption: "Noah Centineo",
-            subcaption: "Digital, 2019",
-            width: 1754,
-            height: 2280,
-            tag: "realism",
-          },
+          // {
+          //   file: "/images/art/noahcentineo.jpg",
+          //   caption: "Noah Centineo",
+          //   subcaption: "Digital, 2019",
+          //   width: 1754,
+          //   height: 2280,
+          //   tag: "realism",
+          // },
         ],
     ]
+
+    var mobileimages = []
+    images.forEach((e) => {
+      e.forEach((f) => {
+        mobileimages.push([f])
+      })
+    });
 
     return(
         <>
             <Head>
                 <title>Jordan Lei | Art</title>
             </Head>
-            <div className={menustyles.menu} style={{backgroundColor: "rgba(255, 255, 255, 0.5)"}}>  
+            <div className={style.menu} style={{backgroundColor: "rgba(255, 255, 255, 1)", left: "5vw"}}>  
               {/* style={{backgroundColor: "rgba(255, 255, 255, 0.5)"}}> */}
-            <span className={menustyles.menuitem}>
+            <div style={{marginLeft: "3vw", textAlign:"left"}}>
+              <span className= {style.titletext}>Porfolio</span>
+              <span className={style.menuitem}>
               <Link href="/">
                 Home
               </Link>
-            </span>
-            <span className={menustyles.menuitem}>
+              </span>
+              <span className={style.menuitem}>
               <Link href="#">
                 Top
               </Link>
-            </span>
+              </span>
+            </div>
+            
           </div>
-          <Gallery images = {images}/>
+          <div className = {style.mobilegallery}>
+            <Gallery images = {mobileimages}/>
+          </div>
+          <div className = {style.desktopgallery}>
+            <Gallery images = {images}/>
+          </div>
         </>
     );
 }
