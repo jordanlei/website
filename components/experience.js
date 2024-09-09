@@ -105,7 +105,13 @@ export default function Experience() {
           href="/files/Resume_JordanLei.pdf"
           target="_blank"
         >
-          View My Resume
+          View Resume
+          <Image
+            className="externallinkimage"
+            src="/images/external-link.svg"
+            width={15}
+            height={15}
+          />
         </Link>
         <Row>
           {items.map((e) => (

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function About(){
     return (
@@ -26,7 +27,13 @@ export default function About(){
               href="/files/Resume_JordanLei.pdf"
               target="_blank"
             >
-              View My Resume
+              View Resume
+              <Image
+                className="externallinkimage"
+                src="/images/external-link.svg"
+                width={15}
+                height={15}
+              />
             </Link>
           </div>
         </div>
