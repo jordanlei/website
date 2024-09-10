@@ -8,9 +8,9 @@ export default function About(){
           <h1>About</h1>
           <div className="frostedCard">
             <p>
-              Hi, I'm Jordan! I'm a PhD Candidate in Wei Ji Ma Lab at New York
-              University, where{" "}
-              <b>I study planning and decision making in the brain.</b>
+              Hi, I'm Jordan! I'm a PhD Candidate in the Wei Ji Ma Lab at New York
+              University, where
+              <b> I study planning and decision making in the brain.</b>
               <br />
               Here are some questions I'm thinking about: how do people respond
               to uncertainty when planning? Do people think differently than
@@ -19,8 +19,9 @@ export default function About(){
               <br />
               I'm passionate about the intersection of <b>
                 neuroscience
-              </b> and <b>machine learning</b>. Aside from research, you'll find
-              me drawing, playing guitar, or snuggling up with a good book.
+              </b> and <b>deep learning</b>. Outside work, you'll catch me
+              sketching in the city (probably at the Met), running in Manhattan, 
+              or snuggling up with a good book.
             </p>
             <Link
               className="button"

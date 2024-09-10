@@ -33,6 +33,19 @@ export default function Research(){
               eye movement, and neural electrophysiological data to understand
               the neural mechanisms of planning.
             </p>
+            <Link
+              className="button"
+              href="/files/NeuralPoster.pdf"
+              target="_blank"
+            >
+              View Poster
+              <Image
+                className="externallinkimage"
+                src="/images/external-link.svg"
+                width={15}
+                height={15}
+              />
+            </Link>
           </div>
           <div className="frostedCard" style={{ marginBottom: "20px" }}>
             <h2>How Does Uncertainty Affect Planning Effort?</h2>
@@ -44,6 +57,33 @@ export default function Research(){
               increased uncertainty - intuitively, if the future is very
               uncertain, why bother planning deeply?
             </p>
+            <Link
+              className="button"
+              href="/files/TreasureHuntPaper.pdf"
+              target="_blank"
+              style={{marginRight: "20px"}}
+            >
+              View Paper
+              <Image
+                className="externallinkimage"
+                src="/images/external-link.svg"
+                width={15}
+                height={15}
+              />
+            </Link>
+            <Link
+              className="button"
+              href="/files/TreasureHuntPoster.pdf"
+              target="_blank"
+            >
+              View Poster
+              <Image
+                className="externallinkimage"
+                src="/images/external-link.svg"
+                width={15}
+                height={15}
+              />
+            </Link>
           </div>
           <div className="frostedCard" style={{ marginBottom: "20px" }}>
             <h2>How Do People Think Ahead in Chess?</h2>

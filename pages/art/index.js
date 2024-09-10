@@ -3,6 +3,7 @@ import Gallery from '../../components/gallery';
 import Link from 'next/link';
 import style from '../../styles/art.module.css';
 
+
 export default function Art(){
     var images =
     [
