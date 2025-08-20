@@ -63,14 +63,15 @@ export default function Education() {
       <div className="banner">
         <h1>Education</h1>
         <Row>
-          {items.map((e) => (
+          {items.map((item, index) => (
             <Row
+              key={index}
               className="frostedCard"
               style={{ marginLeft: "5px", zIndex: "-1" }}
             >
               <Col md={3}>
                 <Image
-                  src={e.image}
+                  src={item.image}
                   width={100}
                   height={100}
                   style={{
@@ -82,7 +83,7 @@ export default function Education() {
                   alt=""
                 />
               </Col>
-              <Col md={9}>{e.caption}</Col>
+              <Col md={9}>{item.caption}</Col>
             </Row>
           ))}
         </Row>

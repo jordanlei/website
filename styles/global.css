@@ -1,3 +1,4 @@
+/* Reset and base styles */
 html,
 body {
   padding: 0;
@@ -21,7 +22,10 @@ body {
 :root {
   --color: rgb(50, 50, 50);
   --subtitle: rgb(150, 150, 150);
-  --background-color:  rgba(231, 239, 243, 0.0);
+  --background-color: rgba(231, 239, 243, 0.0);
+  --primary-blue: #0070f3;
+  --hover-bg: rgba(0, 200, 200, 0.2);
+  --hover-color: rgba(0, 100, 100, 0.8);
 }
 
 * {
@@ -29,8 +33,20 @@ body {
   color: var(--color);
 }
 
+/* Typography */
+h1 { font-size: 50px; }
+h2 { font-size: 35px; }
+h3 { font-size: 25px; }
+h4 { 
+  font-size: 22px; 
+  color: var(--subtitle); 
+  font-weight: 400; 
+}
+p { font-size: 19px; }
+
+/* Links */
 a {
-  color: #0070f3;
+  color: var(--primary-blue);
   text-decoration: none;
 }
 
@@ -38,88 +54,66 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Images */
 img {
   max-width: 100%;
   display: inline !important;
 }
 
-h1{
-  font-size: 50px;
-}
-
-h2{
-  font-size: 35px;
-}
-
-h3{
-  font-size: 25px;
-}
-
-h4{
-  font-size: 22px;
-  color: var(--subtitle);
-  font-weight: 400;
-}
-
-p{
-  font-size: 19px;
-}
-
-.banner{
+/* Layout components */
+.banner {
   padding: 100px 20% 3% 20%;
   min-height: 30vh;
 }
 
+/* Parallax layers */
 .layer {
-	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 120vh;
-	position: fixed;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120vh;
+  position: fixed;
   z-index: -1;
 }
 
-.button{
-  border-color: rgba(0, 0, 0, 0);
+/* Buttons */
+.button {
+  border: 2.5px solid transparent;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  border-width: 2.5px;
-  border-style: solid;
   padding: 5px;
   color: var(--color);
+  transition: background-color 0.6s, color 0.9s;
 }
 
-.button:hover{
-  transition: background-color 0.6s, color 0.9s;
-  background-color: rgba(0, 200, 200, 0.2);
-  color: rgba(0, 100, 100, 0.8);
+.button:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-color);
   text-decoration: none;
 }
 
-.externallinkimage{
+/* External link icons */
+.externallinkimage {
   margin-left: 6px;
   margin-top: -6px;
   opacity: 40%;
 }
 
-.wlayer1{
-    margin-left: 80px;
-}
-.wlayer2{
-    margin-left: 75px;
-}
-.wlayer3{
-    margin-left: 70px;
-}
+/* Parallax layer positioning */
+.wlayer1 { margin-left: 80px; }
+.wlayer2 { margin-left: 75px; }
+.wlayer3 { margin-left: 70px; }
 
-.screen{
+/* Screen blend effects */
+.screen {
   mix-blend-mode: difference;
   opacity: 0.65;
   display: block;
 }
 
-.frostedCard{
+/* Glass morphism cards */
+.frostedCard {
   border-radius: 25px;
   z-index: 1;
   backdrop-filter: blur(30px);
@@ -127,12 +121,27 @@ p{
   padding: 30px;
 }
 
-.defaultImage{
+.defaultImage {
   height: auto;
 }
 
+/* Mobile responsive styles */
 @media only screen and (max-width: 768px) {
+  /* Typography adjustments */
+  h1 { font-size: 30px; }
+  h2 { font-size: 25px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 16px; }
+  p { font-size: 14px; }
+  body { font-size: 14px; }
 
+  /* Layout adjustments */
+  .banner {
+    padding: 100px 5% 3% 5%;
+    min-height: 30vh;
+  }
+
+  /* Parallax adjustments */
   .layer {
     background-position: top center;
     margin-top: 0vh;
@@ -140,64 +149,25 @@ p{
     width: 200vw;
   }
 
-  .screen{
-    opacity: 0.4;
-  }
+  .screen { opacity: 0.4; }
 
-  .wlayer1{
-    margin-left: -81vw;
-  }
-  .wlayer2{
-    margin-left: -80vw;
-  }
-  .wlayer3{
-    margin-left: -79vw;
-  }
+  .wlayer1 { margin-left: -81vw; }
+  .wlayer2 { margin-left: -80vw; }
+  .wlayer3 { margin-left: -79vw; }
 
-  h1{
-    font-size: 30px;
-  }
-  
-  h2{
-    font-size: 25px;
-  }
-  
-  h3{
-    font-size: 20px;
-  }
-  
-  h4{
-    font-size: 16px;
-  }
-  
-  p{
-    font-size: 14px;
-  }
-
-  body{
-    font-size: 14px;
-  }
-
-  .externallinkimage{
+  /* Component adjustments */
+  .externallinkimage {
     width: 12px;
     height: 12px;
     margin-top: -5px;
   }
 
-  .banner{
-    padding: 100px 5% 3% 5%;
-    min-height: 30vh;
-  }
-
-  #education .frostedCard{
+  #education .frostedCard,
+  #experience .frostedCard {
     text-align: center;
   }
 
-  #experience .frostedCard{
-    text-align: center;
-  }
-
-  #experience ul{
-    text-align : left;
+  #experience ul {
+    text-align: left;
   }
 }

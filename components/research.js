@@ -59,7 +59,7 @@ export default function Research(){
             </p>
             <Link
               className="button"
-              href="https://osf.io/preprints/psyarxiv/bh56p_v1?view_only="
+              href="https://files.osf.io/v1/resources/bh56p_v1/providers/osfstorage/6813cdf8a74db1488d3cbf6a?action=download&direct&version=1"
               target="_blank"
               style={{marginRight: "20px"}}
             >

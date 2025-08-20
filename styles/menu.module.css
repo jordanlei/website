@@ -1,4 +1,5 @@
-.menu{
+/* Main navigation menu */
+.menu {
   padding: 2vw 15vw 1vw 3vw;
   position: fixed;
   width: 100%;
@@ -8,7 +9,7 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
-.menuitem{
+.menuitem {
   font-size: 20px;
   width: 150px;
   text-decoration: none;
@@ -16,21 +17,21 @@
   text-align: center;
 }
 
-.menuitem:hover{
+.menuitem:hover {
   margin-top: -100px;
 }
 
-.menuitem a{
+.menuitem a {
   color: var(--color);
 }
 
-.menuitem a:hover{
+.menuitem a:hover {
   font-size: 24px;
   text-decoration: none;
 }
 
-
-.dropdown{
+/* Mobile dropdown menu */
+.dropdown {
   position: fixed;
   width: 35vw;
   left: 60vw;
@@ -38,57 +39,48 @@
   display: none;
 }
 
-.dropdowntoggle{
+.dropdowntoggle {
   transition: background-color 0.4s;
   border-radius: 10px;
-  border-width: 0px;
+  border: none;
   font-size: 16px;
-  padding: 10px 20px 10px 20px;
-  margin-top: 20px;
-  margin-left: 15vw;
+  padding: 10px 20px;
+  margin: 20px 0 0 15vw;
   background-color: rgba(240, 240, 240, 0.8);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   width: 20vw;
-  text-align: center; 
+  text-align: center;
 }
 
-.dropdowndiv{
+.dropdowndiv {
   transition: opacity 0.5s;
   opacity: 1;
   border-radius: 10%;
-  border-width: 0px;
+  border: none;
   width: 35vw;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   background-color: rgba(250, 250, 250, 0.8);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
 
-.dropdownitem a{
-  font-size: 16px; 
+.dropdownitem a {
+  font-size: 16px;
   color: var(--color);
 }
 
-.dropdownselected{
-  transition: background-color 0.4s;
+.dropdownselected {
   background-color: rgba(200, 200, 200, 0.9) !important;
 }
 
-
-
-
-
-
+/* Mobile responsive */
 @media only screen and (max-width: 768px) {
-  .menu{
+  .menu {
     display: none;
   }
 
-  .dropdown{
+  .dropdown {
     display: block;
   }
-
-
-
 }
