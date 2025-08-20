@@ -59,11 +59,11 @@ export default function Research(){
             </p>
             <Link
               className="button"
-              href="/files/TreasureHuntPaper.pdf"
+              href="https://osf.io/preprints/psyarxiv/bh56p_v1?view_only="
               target="_blank"
               style={{marginRight: "20px"}}
             >
-              View Paper
+              View Preprint
               <Image
                 className="externallinkimage"
                 src="/images/external-link.svg"

@@ -27,6 +27,15 @@ export default function Experience() {
         </>
       ),
     },
+    {
+      image: "/images/experience/point72.png",
+      caption: (
+        <>
+          <h3>Quantitative Research Intern - Point72 Asset Management</h3>
+          <h4>2025 • New York, NY</h4>
+        </>
+      ),
+    },
 
     {
       image: "/images/experience/logo-penn.png",
@@ -80,7 +89,7 @@ export default function Experience() {
       image: "/images/experience/logo-tovala.png",
       caption: (
         <>
-          <h3>Finance & Data Science Intern, Tovala</h3>
+          <h3>Finance & Data Science Intern - Tovala</h3>
           <h4>May 2018 - Aug 2018 • Chicago, IL </h4>
             <ul>
               <li>
