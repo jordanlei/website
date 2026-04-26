@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import Welcome from '../components/welcome';
+import Welcome, { items } from '../components/welcome';
 import About from '../components/about';
 import Research from '../components/research';
 import Education from '../components/education';
 import Experience from '../components/experience';
 import Contact from '../components/contact';
+import Parallax from '../components/parallax';
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <Parallax items={items} />
       <Welcome/>
       <About/>
       <Research/>

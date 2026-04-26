@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import {Row, Col} from 'reactstrap';
 
 export default function Contact(){
     const items = [
@@ -11,11 +10,11 @@ export default function Contact(){
     ];
       
     const cards = items.map((item, index) => (
-        <Col key={index} className="contact-icon">
+        <div key={index} className="contact-icon col-md-3">
             <a href={item.link} target="_blank" rel="noopener noreferrer">
                 {item.logo}
             </a>
-        </Col>
+        </div>
     ));
 
     return(
@@ -26,9 +25,9 @@ export default function Contact(){
                     <p>
                         Let's get in touch! Email me at jordanlei dot work at gmail dot com. <br/><br/>
                     </p>
-                    <Row>
+                    <div className="flex-row">
                         {cards}
-                    </Row>
+                    </div>
                 </div>
             </div>
         </section>

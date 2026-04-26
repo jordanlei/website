@@ -6,8 +6,8 @@ const items = [
     image: "/images/experience/logo-nyu.jpeg",
     caption: (
       <>
-        <h3>PhD Candidate (Researcher) - Ma Lab, New York University</h3>
         <h4>Aug 2021 - Present • New York, NY</h4>
+        <h3>PhD Candidate (Researcher) - Ma Lab, New York University</h3>
         <ul>
           <li>
             My research focus is understanding the neural and cognitive
@@ -29,8 +29,8 @@ const items = [
     image: "/images/experience/point72.png",
     caption: (
       <>
-        <h3>Quantitative Research Intern - Point72 Asset Management</h3>
         <h4>2025 • New York, NY</h4>
+        <h3>Quantitative Research Intern - Point72 Asset Management</h3>
       </>
     ),
   },
@@ -38,8 +38,8 @@ const items = [
     image: "/images/experience/logo-penn.png",
     caption: (
       <>
-        <h3>Researcher - Kording Lab &amp; Gold Lab, University of Pennsylvania</h3>
         <h4>May 2020 - May 2021 • Philadelpha, PA</h4>
+        <h3>Researcher - Kording Lab &amp; Gold Lab, University of Pennsylvania</h3>
         <ul>
           <li>
             Created a deep learning model of visual attention. Incorporated
@@ -63,8 +63,8 @@ const items = [
     image: "/images/experience/logo-unilever.png",
     caption: (
       <>
-        <h3>Finance Intern - Sales &amp; Operations Planning, Unilever</h3>
         <h4> May 2019 - Aug 2019 • Englewood Cliffs, NJ</h4>
+        <h3>Finance Intern - Sales &amp; Operations Planning, Unilever</h3>
         <ul>
           <li>
             Worked with Sales and Operations Planning to speed up the cash flow
@@ -81,8 +81,8 @@ const items = [
     image: "/images/experience/logo-tovala.png",
     caption: (
       <>
-        <h3>Finance &amp; Data Science Intern - Tovala</h3>
         <h4>May 2018 - Aug 2018 • Chicago, IL</h4>
+        <h3>Finance &amp; Data Science Intern - Tovala</h3>
         <ul>
           <li>
             Tovala is a startup in the smart devices and meal-delivery space.

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function Parallax({ items, children }) {
   const { name, background, backgrounddepth, layers } = items;
@@ -31,13 +32,13 @@ export default function Parallax({ items, children }) {
   }, [name]);
 
   return (
-    <div className="hero">
-      <div id={name} style={{ minHeight: "100vh" }}>
+    <div className="hero" style={{ position: "absolute", width: "100%", pointerEvents: "none" }}>
+      <div id={name} style={{ position: "absolute", width: "100%", top: 0 }}>
         <div
           className="layer layer-bg"
           ydepth={backgrounddepth}
           data-type={`parallax-${name}`}
-          style={{ backgroundImage: background, zIndex: "-1" }}
+          style={{ background: background, zIndex: "-1" }}
         />
         {layers.map((layer, index) => (
           <div
@@ -46,8 +47,16 @@ export default function Parallax({ items, children }) {
             xdepth={layer.xdepth}
             ydepth={layer.ydepth}
             data-type={`parallax-${name}`}
-            style={{ backgroundImage: `url(${layer.image})` }}
-          />
+            style={{ zIndex: "-1" }}
+          >
+            <Image
+              src={layer.image}
+              alt=""
+              fill
+              style={{ objectFit: "cover", pointerEvents: "none" }}
+              priority={index < 2}
+            />
+          </div>
         ))}
         {children}
       </div>

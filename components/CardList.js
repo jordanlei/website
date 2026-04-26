@@ -1,4 +1,3 @@
-import { Row, Col } from "reactstrap";
 import Image from "next/image";
 
 const cardImageStyle = {
@@ -14,25 +13,25 @@ const cardImageStyle = {
  */
 export default function CardList({ items }) {
   return (
-    <Row>
+    <div className="flex-row" style={{ gap: "20px" }}>
       {items.map((item, index) => (
-        <Row
+        <div
           key={index}
-          className="frostedCard"
-          style={{ marginLeft: "5px", zIndex: "-1" }}
+          className="flex-row frostedCard"
+          style={{ width: "100%", marginBottom: "15px", alignItems: "flex-start" }}
         >
-          <Col md={3}>
+          <div style={{ flex: "0 0 130px", marginTop: "5px" }}>
             <Image
               src={item.image}
-              width={100}
-              height={100}
+              width={120}
+              height={120}
               style={cardImageStyle}
               alt={item.alt ?? ""}
             />
-          </Col>
-          <Col md={9}>{item.caption}</Col>
-        </Row>
+          </div>
+          <div style={{ flex: "1", paddingLeft: "20px" }}>{item.caption}</div>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 }
