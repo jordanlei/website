@@ -189,10 +189,9 @@ export default function Art(){
             <Head>
                 <title>Jordan Lei | Art</title>
             </Head>
-            <div className={style.menu} style={{backgroundColor: "rgba(255, 255, 255, 1)", left: "5vw"}}>  
-              {/* style={{backgroundColor: "rgba(255, 255, 255, 0.5)"}}> */}
+            <div className={style.menu} style={{backgroundColor: "rgba(255, 255, 255, 1)", left: "5vw"}}>
             <div style={{marginLeft: "3vw", textAlign:"left"}}>
-              <span className= {style.titletext}>Porfolio</span>
+              <span className={style.titletext}>Portfolio</span>
               <span className={style.menuitem}>
               <Link href="/">
                 Home
