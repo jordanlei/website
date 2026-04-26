@@ -5,8 +5,8 @@ const items = [
     image: "/images/experience/logo-nyu.jpeg",
     caption: (
       <>
-        <h3>New York University</h3>
         <h4>PhD Candidate in Neuroscience</h4>
+        <h3>New York University</h3>
         <p>
           In Progress <br />
           <b>Thesis</b> | Neural and Cognitive Mechanisms of Planning
@@ -22,8 +22,8 @@ const items = [
     image: "/images/experience/logo-penn.png",
     caption: (
       <>
-        <h3>University of Pennsylvania</h3>
         <h4>MSE in Computer Science</h4>
+        <h3>University of Pennsylvania</h3>
         <p>
           Class of 2021, Summa Cum Laude <br />
           <b>Thesis</b> | Object-based Attention Through Internal Gating
@@ -39,11 +39,11 @@ const items = [
     image: "/images/experience/logo-penn.png",
     caption: (
       <>
-        <h3>University of Pennsylvania</h3>
         <h4>
           BS in Economics, Operations, Info, &amp; Decisions <br />
           BS in Engineering, Computer Science
         </h4>
+        <h3>University of Pennsylvania</h3>
         <p>
           Class of 2020, Summa Cum Laude <br />
           Jerome Fisher Program of Management &amp; Technology <br />

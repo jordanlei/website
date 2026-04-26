@@ -8,12 +8,15 @@ import Experience from '../components/experience';
 import Contact from '../components/contact';
 import Parallax from '../components/parallax';
 
-
-export default function Home() {
+export default function DarkMode() {
   return (
-    <Layout home>
+    <Layout home className="dark">
       <Head>
-        <title>{siteTitle}</title>
+        <title>{siteTitle} | Dark Mode</title>
+        <meta name="theme-color" content="#0a0a0a" />
+        <style>{`
+          html { background-color: #0c0c0c !important; }
+        `}</style>
       </Head>
       <Parallax items={items} />
       <Welcome/>

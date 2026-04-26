@@ -1,34 +1,43 @@
 /* Welcome section header */
 .header {
   position: absolute;
-  height: 10vh;
-  top: 50vh;
-  right: 10vw;
+  top: 60%;
   left: 10vw;
-  bottom: 20vh;
-  float: left;
+  transform: translateY(-50%);
+  text-align: left;
+  width: auto;
+  max-width: 80%;
+  pointer-events: none;
 }
 
 .headerTitle {
-  font-size: 100px;
+  font-family: 'Playfair Display', serif;
+  font-size: 120px;
+  margin: 0;
+  letter-spacing: -2px;
+  font-weight: 700;
 }
 
 .headerSubtitle {
-  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: -5px;
+  color: var(--subtitle);
 }
 
 /* Mobile responsive */
 @media only screen and (max-width: 768px) {
   .header {
-    top: 70vh;
-    left: 10vw;
+    top: 65%;
+    left: 8vw;
   }
 
   .headerTitle {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .headerSubtitle {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
