@@ -2,28 +2,31 @@ import Link from "next/link";
 import styles from "../styles/menu.module.css";
 import DropdownMenu from "./dropdownmenu";
 
-export default function Menu() {
-  const menuitems = [
-    <Link href="#about">About</Link>,
-    <Link href="#research">Research</Link>,
-    <Link href="#experience">Experience</Link>,
-    <Link href="#education">Education</Link>,
-    <Link href="/art">Art</Link>,
-    <Link href="#contact">Contact</Link>,
-  ];
+const NAV = [
+  { href: "#about", label: "About" },
+  { href: "#research", label: "Research" },
+  { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
+  { href: "/art", label: "Art" },
+  { href: "#contact", label: "Contact" },
+];
 
+export default function Menu() {
   return (
     <div>
       <div className={styles.menu}>
-        {menuitems.map((item, index) => (
-          <span key={index} className={styles.menuitem}>{item}</span>
+        {NAV.map(({ href, label }) => (
+          <span key={href} className={styles.menuitem}>
+            <Link href={href}>{label}</Link>
+          </span>
         ))}
       </div>
-
       <div className={styles.dropdown}>
         <DropdownMenu>
-          {menuitems.map((item, index) => (
-            <div key={index} className={styles.dropdownitem}>{item}</div>
+          {NAV.map(({ href, label }) => (
+            <div key={href} className={styles.dropdownitem}>
+              <Link href={href}>{label}</Link>
+            </div>
           ))}
         </DropdownMenu>
       </div>

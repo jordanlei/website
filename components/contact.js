@@ -1,35 +1,46 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/image";
 
-export default function Contact(){
-    const items = [
-        {logo: <Image src="/images/experience/linkedin.png" width={80} height={80} className="defaultImage"/>, link: "https://www.linkedin.com/in/jordan-lei-782890130/"},
-        {logo: <Image src="/images/experience/instagram.png" width={80} height={80}  className="defaultImage"/>, link: "https://www.instagram.com/leijordanart/"},
-        {logo: <Image src="/images/experience/twitter.png" width={80} height={80}  className="defaultImage"/>, link: "https://twitter.com/NeuroLei"},
-        {logo: <Image src="/images/experience/medium.png" width={80} height={80} className="defaultImage"/>, link: "https://jordanlei.medium.com/"},
-    ];
-      
-    const cards = items.map((item, index) => (
-        <div key={index} className="contact-icon col-md-3">
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-                {item.logo}
-            </a>
+const LINKS = [
+  {
+    src: "/images/experience/linkedin.png",
+    href: "https://www.linkedin.com/in/jordan-lei-782890130/",
+  },
+  {
+    src: "/images/experience/instagram.png",
+    href: "https://www.instagram.com/leijordanart/",
+  },
+  { src: "/images/experience/twitter.png", href: "https://twitter.com/NeuroLei" },
+  { src: "/images/experience/medium.png", href: "https://jordanlei.medium.com/" },
+];
+
+export default function Contact() {
+  return (
+    <section id="contact">
+      <div className="banner">
+        <h1>Contact</h1>
+        <div className="frostedCard">
+          <p>
+            Let&apos;s get in touch! Email me at jordanlei dot work at gmail dot com.
+            <br />
+            <br />
+          </p>
+          <div className="flex-row">
+            {LINKS.map(({ src, href }) => (
+              <div key={href} className="contact-icon col-md-3">
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={src}
+                    width={80}
+                    height={80}
+                    className="defaultImage"
+                    alt=""
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
-    ));
-
-    return(
-        <section id="contact">
-            <div className="banner">
-                <h1>Contact</h1>
-                <div className="frostedCard">
-                    <p>
-                        Let's get in touch! Email me at jordanlei dot work at gmail dot com. <br/><br/>
-                    </p>
-                    <div className="flex-row">
-                        {cards}
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+      </div>
+    </section>
+  );
 }

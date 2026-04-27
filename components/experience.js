@@ -4,6 +4,7 @@ import ExternalLink from "./ExternalLink";
 const items = [
   {
     image: "/images/experience/logo-nyu.jpeg",
+    alt: "New York University",
     caption: (
       <>
         <h4>Aug 2021 - Present • New York, NY</h4>
@@ -27,6 +28,7 @@ const items = [
   },
   {
     image: "/images/experience/point72.png",
+    alt: "Point72",
     caption: (
       <>
         <h4>2025 • New York, NY</h4>
@@ -36,9 +38,10 @@ const items = [
   },
   {
     image: "/images/experience/logo-penn.png",
+    alt: "University of Pennsylvania",
     caption: (
       <>
-        <h4>May 2020 - May 2021 • Philadelpha, PA</h4>
+        <h4>May 2020 - May 2021 • Philadelphia, PA</h4>
         <h3>Researcher - Kording Lab &amp; Gold Lab, University of Pennsylvania</h3>
         <ul>
           <li>
@@ -61,6 +64,7 @@ const items = [
   },
   {
     image: "/images/experience/logo-unilever.png",
+    alt: "Unilever",
     caption: (
       <>
         <h4> May 2019 - Aug 2019 • Englewood Cliffs, NJ</h4>
@@ -79,6 +83,7 @@ const items = [
   },
   {
     image: "/images/experience/logo-tovala.png",
+    alt: "Tovala",
     caption: (
       <>
         <h4>May 2018 - Aug 2018 • Chicago, IL</h4>

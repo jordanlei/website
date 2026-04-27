@@ -1,13 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-/**
- * A styled external-link button with the site's standard arrow icon.
- * Props:
- *   href    – destination URL
- *   label   – button text
- *   style   – optional additional inline styles on the Link
- */
+/** External site link styled as a button, with the small arrow icon. */
 export default function ExternalLink({ href, label, style }) {
   return (
     <Link

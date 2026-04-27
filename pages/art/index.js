@@ -1,12 +1,9 @@
-import Head from 'next/head';
-import Gallery from '../../components/gallery';
-import Link from 'next/link';
-import style from '../../styles/art.module.css';
+import Head from "next/head";
+import Link from "next/link";
+import Gallery from "../../components/gallery";
+import style from "../../styles/art.module.css";
 
-
-export default function Art(){
-    var images =
-    [
+const IMAGES = [
         [
           {
             file: "/images/art/cascais.jpeg",
@@ -166,51 +163,37 @@ export default function Art(){
             height: 1100,
             tag: "realism",
           },
-          // {
-          //   file: "/images/art/noahcentineo.jpg",
-          //   caption: "Noah Centineo",
-          //   subcaption: "Digital, 2019",
-          //   width: 1754,
-          //   height: 2280,
-          //   tag: "realism",
-          // },
         ],
-    ]
+    ];
 
-    var mobileimages = []
-    images.forEach((e) => {
-      e.forEach((f) => {
-        mobileimages.push([f])
-      })
-    });
+const MOBILE_IMAGES = IMAGES.flatMap((row) => row.map((item) => [item]));
 
-    return(
-        <>
-            <Head>
-                <title>Jordan Lei | Art</title>
-            </Head>
-            <div className={style.menu} style={{backgroundColor: "rgba(255, 255, 255, 1)", left: "5vw"}}>
-            <div style={{marginLeft: "3vw", textAlign:"left"}}>
-              <span className={style.titletext}>Portfolio</span>
-              <span className={style.menuitem}>
-              <Link href="/">
-                Home
-              </Link>
-              </span>
-              <span className={style.menuitem}>
-              <Link href="#">
-                Top
-              </Link>
-              </span>
-            </div>
-            
-          </div>
-          <div className = {style.mobilegallery}>
-            <Gallery images = {mobileimages}/>
-          </div>
-          <div className = {style.desktopgallery}>
-            <Gallery images = {images}/>
-          </div>
-        </>
-    );
+export default function Art() {
+  return (
+    <>
+      <Head>
+        <title>Jordan Lei | Art</title>
+      </Head>
+      <div
+        className={style.menu}
+        style={{ backgroundColor: "rgba(255, 255, 255, 1)", left: "5vw" }}
+      >
+        <div style={{ marginLeft: "3vw", textAlign: "left" }}>
+          <span className={style.titletext}>Portfolio</span>
+          <span className={style.menuitem}>
+            <Link href="/">Home</Link>
+          </span>
+          <span className={style.menuitem}>
+            <Link href="#">Top</Link>
+          </span>
+        </div>
+      </div>
+      <div className={style.mobilegallery}>
+        <Gallery images={MOBILE_IMAGES} />
+      </div>
+      <div className={style.desktopgallery}>
+        <Gallery images={IMAGES} />
+      </div>
+    </>
+  );
 }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Lightbox from "./Lightbox";
-export { default as Lightbox } from "./Lightbox";
 import style from "../../styles/gallery.module.css";
 
 const uid = function () {

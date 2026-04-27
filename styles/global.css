@@ -1,7 +1,7 @@
 :root {
   --color: rgb(50, 50, 50);
   --subtitle: rgb(150, 150, 150);
-  --background-color: #ffffff; /* This will be used for the layer-bg in light mode */
+  --background-color: #ffffff;
   --card-bg: rgba(255, 255, 255, 0.6);
   --card-border: rgba(255, 255, 255, 0.3);
   --primary-blue: #0070f3;
@@ -10,21 +10,8 @@
   --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
 }
 
-.dark {
-  --color: rgb(245, 245, 245);
-  --subtitle: rgb(170, 170, 170);
-  --background-color: #0c0c0c; /* This will be used for the layer-bg in dark mode */
-  --card-bg: rgba(30, 30, 30, 0.8);
-  --card-border: rgba(255, 255, 255, 0.15);
-  --primary-blue: #3291ff;
-  --hover-bg: rgba(0, 255, 255, 0.15);
-  --hover-color: #fff;
-  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-}
-
 html {
   background-color: var(--background-color);
-  transition: background-color 0.3s ease;
 }
 
 body {
@@ -103,7 +90,7 @@ section {
   color: var(--color);
   transition: background-color 0.6s, color 0.9s;
   display: inline-block;
-  margin-bottom: 30px; /* More padding under resume button */
+  margin-bottom: 30px;
 }
 
 .button:hover {
@@ -131,19 +118,6 @@ section {
   display: block;
 }
 
-.dark .screen {
-  mix-blend-mode: screen;
-  opacity: 1;
-}
-
-.dark .contact-icon img {
-  filter: invert(1) brightness(1.5);
-}
-
-.dark .layer-bg {
-  background: #000 !important;
-}
-
 /* Glass morphism cards */
 .frostedCard {
   background-color: var(--card-bg);
@@ -152,7 +126,7 @@ section {
   z-index: 1;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  padding: 25px 35px; /* Reduced vertical padding */
+  padding: 25px 35px;
   box-shadow: var(--card-shadow);
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -162,7 +136,7 @@ section {
   font-size: 28px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 4px; /* Further reduced padding below title */
+  margin-bottom: 4px;
 }
 
 .frostedCard h4 {

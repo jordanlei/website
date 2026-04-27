@@ -11,9 +11,6 @@
     "react-dom": "18.2.0"
   },
   "engines": {
-    "node": "20"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.10"
+    "node": ">=20"
   }
 }
