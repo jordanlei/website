@@ -3,6 +3,7 @@ import CardList from "./CardList";
 const items = [
   {
     image: "/images/experience/logo-nyu.jpeg",
+    alt: "New York University",
     caption: (
       <>
         <h4>New York University</h4>
@@ -20,6 +21,7 @@ const items = [
   },
   {
     image: "/images/experience/logo-penn.png",
+    alt: "University of Pennsylvania",
     caption: (
       <>
         <h4>University of Pennsylvania</h4>
@@ -37,6 +39,7 @@ const items = [
   },
   {
     image: "/images/experience/logo-penn.png",
+    alt: "University of Pennsylvania",
     caption: (
       <>
         <h4>University of Pennsylvania</h4>

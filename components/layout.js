@@ -5,9 +5,9 @@ import Menu from './menu';
 
 export const siteTitle = 'Jordan Lei';
 
-export default function Layout({ children, home, className }) {
+export default function Layout({ children, home }) {
   return (
-    <div className={className || ''}>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="og:title" content={siteTitle} />

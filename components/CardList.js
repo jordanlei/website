@@ -7,10 +7,7 @@ const cardImageStyle = {
   paddingBottom: "10px",
 };
 
-/**
- * Shared card list used by Education and Experience sections.
- * Each item: { image: string, alt: string, caption: ReactNode }
- */
+/** Education / experience rows: { image, alt?, caption } */
 export default function CardList({ items }) {
   return (
     <div className="flex-row" style={{ gap: "20px" }}>

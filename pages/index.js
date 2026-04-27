@@ -8,7 +8,6 @@ import Experience from '../components/experience';
 import Contact from '../components/contact';
 import Parallax from '../components/parallax';
 
-
 export default function Home() {
   return (
     <Layout home>
@@ -16,12 +15,12 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <Parallax items={items} />
-      <Welcome/>
-      <About/>
-      <Research/>
-      <Experience/>
-      <Education/>
-      <Contact/>
+      <Welcome />
+      <About />
+      <Research />
+      <Experience />
+      <Education />
+      <Contact />
     </Layout>
   );
 }

@@ -1,130 +1,56 @@
-# Jordan Lei - Personal Website
+# jordanlei.com
 
-A modern, responsive personal website built with Next.js showcasing my research, experience, and artwork. See demo at [jordanlei.com](https://jordanlei.com)
+Personal site (Next.js): home page with parallax hero, research and CV sections, and a separate art portfolio. Live site: [jordanlei.com](https://jordanlei.com).
 
-## 🚀 Features
+## Tech stack
 
-- **Personal Portfolio**: Professional presentation of research, experience, and education
-- **Research Showcase**: Detailed descriptions of neuroscience and machine learning projects
-- **Art Gallery**: Portfolio of traditional and digital artwork
-- **Responsive Design**: Mobile-first design with smooth parallax effects
-- **Modern Tech Stack**: Built with Next.js, React, and Tailwind CSS
+| Area | Choice |
+|------|--------|
+| Framework | [Next.js](https://nextjs.org/) (pages router) |
+| UI | React 18 |
+| Styling | Global CSS (`styles/global.css`) + CSS modules per feature |
+| Images | `next/image` for optimized images; static files under `public/` |
+| Fonts | [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) (loaded in `pages/_app.js`) for headings; system UI font stack for body text |
 
-## 🛠️ Tech Stack
+This repo does not use Tailwind, Bootstrap, or a component library—the layout is hand-written CSS and small local components.
 
-- **Frontend**: Next.js 14, React 18
-- **Styling**: Tailwind CSS, CSS Modules
-- **UI Components**: Reactstrap, Bootstrap 5
-- **Deployment**: Vercel-ready configuration
-
-## 📁 Project Structure
+## Project layout
 
 ```
 website/
-├── components/          # React components
-│   ├── layout.js       # Main layout wrapper
-│   ├── menu.js         # Navigation menu
-│   ├── welcome.js      # Hero section with parallax
-│   ├── about.js        # About section
-│   ├── research.js     # Research projects
-│   ├── experience.js   # Work experience
-│   ├── education.js    # Education history
-│   ├── contact.js      # Contact information
-│   ├── parallax.js     # Parallax effect component
-│   ├── gallery.js      # Image gallery component
-│   └── lightbox-components/  # Image lightbox
-├── pages/              # Next.js pages
-│   ├── index.js        # Home page
-│   └── art/            # Art portfolio page
-├── public/             # Static assets
-│   └── images/         # Images and logos
-└── styles/             # CSS modules and global styles
+├── pages/
+│   ├── _app.js          # App shell, global font link, `global.css` import
+│   ├── index.js         # Home (parallax, sections)
+│   └── art/index.js     # Art gallery data + layout
+├── components/          # Section components, parallax, gallery, lightbox
+├── styles/              # `global.css` + `*.module.css`
+├── public/
+│   ├── images/          # Logos, hero layers, art, contact icons
+│   └── files/           # PDFs (resume, posters)
+└── firebase.json        # Optional Firebase hosting config (if you use `firebase deploy`)
 ```
 
-## 🚀 Getting Started
+## Commands
 
-### Prerequisites
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install dependencies |
+| `npm run dev` | Development server (http://localhost:3000) |
+| `npm run build` | Production build |
+| `npm start` | Serve the production build locally |
 
-- Node.js 20 or higher
-- npm or yarn
+Use **Node 20+** (see `package.json` `engines`).
 
-### Installation
+## Adding content
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd website
-```
+- **New home section** — add a component under `components/`, import it in `pages/index.js`, and add a `Link` in `components/menu.js` (same `href` as the section’s `id`).
+- **Art** — add image files under `public/images/art/`, then add an entry to the `IMAGES` array in `pages/art/index.js` (`file`, `caption`, `subcaption`, `width`, `height`).
 
-2. Install dependencies:
-```bash
-npm install
-```
+## Deployment
 
-3. Run the development server:
-```bash
-npm run dev
-```
+- **Vercel** (or similar): connect the repo, build command `npm run build`, output `.next` / default Next.js settings.
+- **Firebase** — `firebase.json` is present for Firebase Web Frameworks hosting; use only if you deploy with the Firebase CLI.
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## License
 
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
-## 🎨 Customization
-
-### Adding New Sections
-
-1. Create a new component in the `components/` directory
-2. Import and add it to `pages/index.js`
-3. Add corresponding navigation link in `components/menu.js`
-
-### Styling
-
-- Global styles: `styles/global.css`
-- Component-specific styles: `styles/[component].module.css`
-- Tailwind CSS classes for utility styling
-
-### Images
-
-- Place images in `public/images/`
-- Use Next.js `Image` component for optimization
-- Support for various formats: JPG, PNG, SVG
-
-## 📱 Responsive Design
-
-The website is built with a mobile-first approach:
-- Responsive navigation with dropdown menu for mobile
-- Optimized image loading and display
-- Touch-friendly interactions
-
-## 🚀 Deployment
-
-The project is configured for easy deployment on Vercel:
-- Automatic builds on git push
-- Optimized for Next.js
-- Static asset optimization
-
-## 📄 License
-
-This project is private and proprietary.
-
-## 👤 About Jordan Lei
-
-Jordan Lei is a PhD Candidate in Neuroscience at New York University, studying planning and decision making in the brain. His research focuses on the intersection of neuroscience and deep learning, with expertise in reinforcement learning and cognitive modeling.
-
-**Research Areas:**
-- Neural mechanisms of planning
-- Decision making under uncertainty
-- Cognitive modeling in chess
-- Visual attention and deep learning
-
-**Contact:** jordanlei.work at gmail.com
-
----
-
-Built with ❤️ using Next.js and modern web technologies.
+Private / proprietary. All rights reserved.
