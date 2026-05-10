@@ -1,42 +1,33 @@
-/* Main navigation menu */
-.menu {
-  padding: 2vw 15vw 1vw 3vw;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
+<script setup>
+import { ref } from 'vue'
 
-.menuitem {
-  font-size: 20px;
-  width: 150px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-}
+const isOpen = ref(false)
+</script>
 
-.menuitem:hover {
-  margin-top: -100px;
-}
+<template>
+  <div class="dropdown">
+    <button
+      class="dropdowntoggle"
+      :class="{ dropdownselected: isOpen }"
+      @click="isOpen = !isOpen"
+    >
+      Menu
+    </button>
+    <div
+      class="dropdowndiv"
+      :style="{ opacity: isOpen ? 1 : 0, pointerEvents: isOpen ? 'auto' : 'none' }"
+    >
+      <slot />
+    </div>
+  </div>
+</template>
 
-.menuitem a {
-  color: var(--color);
-}
-
-.menuitem a:hover {
-  font-size: 24px;
-  text-decoration: none;
-}
-
-/* Mobile dropdown menu */
+<style scoped>
 .dropdown {
   position: fixed;
   width: 35vw;
   left: 60vw;
   z-index: 1000;
-  display: none;
 }
 
 .dropdowntoggle {
@@ -55,7 +46,6 @@
 
 .dropdowndiv {
   transition: opacity 0.5s;
-  opacity: 1;
   border-radius: 10%;
   border: none;
   width: 35vw;
@@ -65,22 +55,13 @@
   -webkit-backdrop-filter: blur(2px);
 }
 
-.dropdownitem a {
-  font-size: 16px;
-  color: var(--color);
-}
-
 .dropdownselected {
   background-color: rgba(200, 200, 200, 0.9) !important;
 }
 
-/* Mobile responsive */
 @media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-
   .dropdown {
     display: block;
   }
 }
+</style>
