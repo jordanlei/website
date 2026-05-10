@@ -8,31 +8,31 @@ import Education from '../sections/Education.vue';
 import Contact from '../sections/Contact.vue';
 import Parallax from '../components/Parallax.vue';
 
-// The welcome component has the items data needed for parallax
 import { ref } from 'vue';
 
 const welcomeRef = ref(null);
+
 const parallaxItems = {
   name: "welcome-banner",
   background: "var(--background-color)",
   backgrounddepth: "-0.3",
   layers: [
     {
-      image: "/images/profile-3.png",
+      image: "/images/profile/profile_cyan.png",
       ydepth: "-1.0",
-      xdepth: "-0.75",
+      xdepth: "-0.4",
       name: "screen wlayer1",
     },
     {
-      image: "/images/profile-2.png",
+      image: "/images/profile/profile_magenta.png",
       ydepth: "-1.0",
-      xdepth: "0.35",
+      xdepth: "0.2",
       name: "screen wlayer2",
     },
     {
-      image: "/images/profile-1.png",
+      image: "/images/profile/profile_yellow.png",
       ydepth: "-1.0",
-      xdepth: "0.85",
+      xdepth: "0.4",
       name: "screen wlayer3",
     },
   ],
