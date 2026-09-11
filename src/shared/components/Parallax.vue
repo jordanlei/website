@@ -63,7 +63,7 @@ onUnmounted(() => {
         :data-x-depth="layer.xDepth"
         :data-y-depth="layer.yDepth"
         :data-type="`parallax-${items.name}`"
-        style="zIndex: -1"
+        style="z-index: 1"
       >
         <img
           :src="layer.image"

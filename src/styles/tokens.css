@@ -1,11 +1,24 @@
 :root {
   --color: rgb(25, 45, 50);
   --subtitle: rgb(85, 115, 120);
-  --background-color: #fff;
-  --card-bg: rgba(255, 255, 255, 0.6);
-  --card-border: rgba(255, 255, 255, 0.3);
-  --primary-blue: #0070f3;
-  --hover-bg: rgba(0, 200, 200, 0.2);
-  --hover-color: rgba(0, 100, 100, 0.8);
-  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+  --background-color: #f7f5ef;
+  --paper-deep: #eeeae0;
+  --card-bg: rgba(255, 255, 255, .44);
+  --card-border: rgba(25, 45, 50, .13);
+  --primary-blue: #285e69;
+  --hover-bg: rgba(69, 194, 190, .18);
+  --hover-color: #12444e;
+  --card-shadow: 0 12px 32px rgba(31, 47, 49, .06);
+  --section-wash: rgba(247, 245, 239, .44);
+  --section-blur: 4px;
+  --card-wash: rgba(255, 255, 255, .28);
+  --card-blur: 7px;
+  --card-shadow-subtle: 0 5px 16px rgba(31, 47, 49, .04);
+  --card-gap: .9rem;
+  --signal-cyan: #4fbcb9;
+  --signal-magenta: #bd547b;
+  --signal-yellow: #d6a729;
+  --rule: rgba(25, 45, 50, .2);
+  --muted: #687b7c;
+  --mono-font: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }

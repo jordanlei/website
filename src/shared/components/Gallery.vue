@@ -40,14 +40,16 @@ const getRowItems = (row) => {
         class="image-container"
         :style="{ width: item.computedWidth, height: item.computedHeight }"
       >
-        <img
-          :src="item.file"
-          :alt="item.caption"
-          class="gallery-image"
-        >
-        <div class="image-overlay">
+        <div class="image-frame">
+          <img
+            :src="item.file"
+            :alt="item.caption"
+            class="gallery-image"
+          >
+        </div>
+        <div class="image-caption">
           <h3>{{ item.caption }}</h3>
-          <h4>{{ item.subcaption }}</h4>
+          <p>{{ item.subcaption }}</p>
         </div>
       </div>
     </div>
@@ -62,13 +64,17 @@ const getRowItems = (row) => {
 
 .gallery-row {
   display: flex;
+  gap: 1.1rem;
   width: 100%;
+  margin-bottom: 3.5rem;
 }
 
 .image-container {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
+
+.image-frame { height: calc(100% - 3.8rem); overflow: hidden; background: var(--paper-deep); }
 
 .gallery-image {
   width: 100%;
@@ -77,29 +83,6 @@ const getRowItems = (row) => {
   display: block;
 }
 
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-}
-
-.image-overlay h3, .image-overlay h4 {
-  color: white;
-}
-
-.image-container:hover .image-overlay {
-  opacity: 1;
-}
+.image-caption { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; padding-top: .7rem; border-top: 1px solid var(--rule); }.image-caption h3, .image-caption p { margin: 0; font-family: var(--mono-font); font-size: .94rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }.image-caption p { color: var(--muted); white-space: nowrap; }.image-container:hover .gallery-image { transform: scale(1.035); }
+@media (max-width: 768px) { .gallery-row { margin-bottom: 2.25rem; }.image-caption { display: block; }.image-caption p { margin-top: .25rem; }.image-frame { height: calc(100% - 4.5rem); } }
 </style>
