@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import EducationSection from './components/EducationSection.vue'
 import ExperienceSection from './components/ExperienceSection.vue'
+import ArtPreviewSection from './components/ArtPreviewSection.vue'
 import ResearchSection from './components/ResearchSection.vue'
 import WelcomeSection from './components/WelcomeSection.vue'
 </script>
@@ -18,6 +19,7 @@ import WelcomeSection from './components/WelcomeSection.vue'
     <ResearchSection />
     <ExperienceSection />
     <EducationSection />
+    <ArtPreviewSection />
     <ContactSection />
   </Layout>
 </template>

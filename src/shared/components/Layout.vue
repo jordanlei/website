@@ -31,11 +31,17 @@ defineProps({
 }
 
 .backToHome {
-  margin: 3rem 0 0;
-  padding: 0 15vw;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
 }
 
 .backToHome a {
+  font-family: var(--mono-font);
+  font-size: .88rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   color: var(--primary-blue);
   text-decoration: none;
 }
