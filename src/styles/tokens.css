@@ -1,0 +1,11 @@
+:root {
+  --color: rgb(25, 45, 50);
+  --subtitle: rgb(85, 115, 120);
+  --background-color: #fff;
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --card-border: rgba(255, 255, 255, 0.3);
+  --primary-blue: #0070f3;
+  --hover-bg: rgba(0, 200, 200, 0.2);
+  --hover-color: rgba(0, 100, 100, 0.8);
+  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+}
