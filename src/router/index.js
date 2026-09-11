@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import Art from '../views/Art.vue'
+import HomePage from '../features/home/HomePage.vue'
+import ArtPage from '../features/art/ArtPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -8,15 +8,15 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: HomePage,
     },
     {
       path: '/art',
       name: 'art',
-      component: Art
+      component: ArtPage,
     }
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to) {
     if (to.hash) {
       return {
         el: to.hash,
