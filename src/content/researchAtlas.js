@@ -7,7 +7,7 @@ export const researchAtlas = {
     {
       number: '01',
       slug: 'uncertainty',
-      theme: 'Uncertainty',
+      theme: 'Stochasticity',
       subtitle: 'Triangle of Treasures',
       question: 'Planning under environmental stochasticity',
       backdrop: '/images/research/treasure-task.png',
@@ -31,7 +31,7 @@ export const researchAtlas = {
     {
       number: '02',
       slug: 'opponents',
-      theme: 'Other Agents',
+      theme: 'Neural',
       subtitle: 'Four-in-a-Row',
       question: 'Planning against a strategic opponent',
       backdrop: '/images/research/fourinarow-task.png',
