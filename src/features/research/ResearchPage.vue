@@ -57,7 +57,13 @@ import { researchAtlas } from '../../content/researchAtlas'
               target="_blank"
               rel="noopener noreferrer"
             >
-              Open {{ resource.label }}
+              {{ resource.label }}
+              <img
+                src="/images/external-link.svg"
+                width="13"
+                height="13"
+                alt=""
+              >
             </a>
           </div>
         </div>
@@ -134,6 +140,10 @@ import { researchAtlas } from '../../content/researchAtlas'
         <h2>Read the work and follow the thread.</h2>
         <div class="takeaways">
           <p>
+            <span>Attention</span>
+            <a href="https://www.nature.com/articles/s41467-026-72146-9">Article</a>
+          </p>
+          <p>
             <span>Stochasticity</span>
             <a href="https://files.osf.io/v1/resources/bh56p_v1/providers/osfstorage/6813cdf8a74db1488d3cbf6a?action=download&direct&version=1">Preprint</a>
             <a href="/files/TreasureHuntPoster.pdf">Poster</a>
@@ -162,13 +172,14 @@ import { researchAtlas } from '../../content/researchAtlas'
 .chapter-index { position: sticky; top: 68px; z-index: 5; display: flex; gap: .6rem; width: min(1040px, calc(100% - clamp(4rem, 10vw, 8rem))); margin: 0 auto 4rem; padding: .65rem; overflow-x: auto; background: rgba(247, 245, 239, .76); box-shadow: 0 6px 18px rgba(31, 47, 49, .06); backdrop-filter: blur(12px); }
 .chapter-index a { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.5rem; padding: 0 .85rem; color: var(--color); background: rgba(255, 253, 248, .38); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
 .chapter-index span { color: var(--signal-magenta); }
-.chapter { width: min(1040px, 100%); margin: 0 auto 6rem; padding: 0 clamp(2rem, 5vw, 4rem); scroll-margin-top: 9.5rem; }
+.chapter { width: min(1040px, 100%); margin: 0 auto 6rem; padding: 0 clamp(2rem, 5vw, 4rem); scroll-margin-top: 13rem; }
 .chapter-heading { display: grid; gap: .9rem; align-items: end; padding-top: 1rem; border-top: 2px solid var(--color); }
 .chapter-kicker { grid-column: 1 / -1; margin-bottom: -.45rem; }
 .chapter-heading h2 { max-width: 48rem; margin: 0; font-size: clamp(2.5rem, 5vw, 4.8rem); line-height: .92; letter-spacing: -.055em; }
 .chapter-resources { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem .75rem; margin-top: .05rem; }
 .resource-label { color: var(--muted); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
-.chapter-resources a, .takeaways a { padding-bottom: .12rem; border-bottom: 1px solid currentColor; color: var(--color); font-family: var(--mono-font); font-size: .9rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; text-decoration: none; }
+.chapter-resources a, .takeaways a { display: inline-flex; align-items: center; gap: .3rem; padding-bottom: .12rem; border-bottom: 1px solid currentColor; color: var(--color); font-family: var(--mono-font); font-size: .9rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; text-decoration: none; }
+.chapter-resources a img, .takeaways a img { width: .82rem; height: .82rem; }
 .chapter-resources a:hover, .takeaways a:hover { color: var(--signal-magenta); text-decoration: none; }
 .chapter-body { display: grid; grid-template-columns: minmax(300px, .72fr) minmax(0, 1.28fr); gap: clamp(1.75rem, 4vw, 3.25rem); align-items: center; margin-top: 1.6rem; }
 .chapter-copy { max-width: 31rem; }
@@ -195,7 +206,7 @@ import { researchAtlas } from '../../content/researchAtlas'
 .chapter-footer > .chapter-summary { margin: 0; color: var(--subtitle); font-size: 1.03rem; line-height: 1.5; }
 .research-close { width: min(1040px, 100%); margin: 0 auto; padding: 2rem clamp(2rem, 5vw, 4rem) 7rem; }
 .research-close h2 { max-width: 54rem; margin: 0; font-size: clamp(2.6rem, 6vw, 5.5rem); line-height: .9; letter-spacing: -.06em; }
-.takeaways { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+.takeaways { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 2rem; }
 .takeaways p { display: flex; flex-direction: column; align-items: flex-start; gap: .45rem; margin: 0; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: 1.08rem; }
 .takeaways span { display: block; margin-bottom: .1rem; color: var(--signal-magenta); font-family: var(--mono-font); font-size: .85rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
 
@@ -214,7 +225,7 @@ import { researchAtlas } from '../../content/researchAtlas'
   .research-frame { font-size: 1.08rem; }
   .chapter-index { position: static; width: calc(100% - 2.5rem); margin: 0 auto 2.75rem; padding: .5rem; }
   .chapter-index a { min-height: 2.25rem; font-size: .75rem; }
-  .chapter { margin-bottom: 4.5rem; padding: 0 1.25rem; scroll-margin-top: 1.5rem; }
+  .chapter { margin-bottom: 4.5rem; padding: 0 1.25rem; scroll-margin-top: 2.5rem; }
   .chapter-heading h2 { font-size: clamp(2.2rem, 10vw, 3.35rem); }
   .chapter-figure { padding: .7rem; }
   .chapter-backdrop { min-height: 15rem; max-height: 20rem; }
