@@ -1,11 +1,34 @@
 export const researchAtlas = {
   eyebrow: 'An Odyssey through the Mind',
-  title: 'Mechanisms of Adaptive Planning',
-  lede: 'How do people, animals, and machines decide when thinking ahead is worth the effort?',
-  frame: 'Three projects, one question: planning is powerful, but it is also costly. My work asks how agents adapt that effort when the world is uncertain, strategic, or computationally demanding.',
+  title: 'Mechanisms of Attention and Planning',
+  lede: 'How do brains and machines select what matters, then decide how far ahead to think?',
+  frame: 'Four projects, one thread: cognition is selective. My work asks how agents allocate attention, adapt planning effort, represent strategic futures, and decide when further computation is worth it.',
   chapters: [
     {
       number: '01',
+      slug: 'attention',
+      theme: 'Attention',
+      subtitle: 'Bidirectional Recurrent Gating',
+      question: 'Mechanisms of attention and binding',
+      backdrop: '/images/research/attention-architecture.png',
+      artifact: '/images/research/attention-tasks.png',
+      artifactAlt: 'Bidirectional recurrent gating model architecture and attention-task outputs',
+      motif: 'Architecture and task behavior',
+      prompt: 'Can one recurrent mechanism explain how visual systems select, bind, and route information?',
+      summary: 'This project asks whether attention and binding can emerge from a biologically inspired neural network with bidirectional recurrent gating between feature and attention pathways.',
+      takeaways: [
+        { label: 'Architecture', text: 'Feature maps and attention maps interact through multiplicative recurrent gates.' },
+        { label: 'Tasks', text: 'The model learns object recognition, grouping, orienting, tracking, pop-out, inhibition of return, and top-down search.' },
+        { label: 'Behavior', text: 'The same mechanism reproduces signatures from psychophysics and neural modulation.' },
+      ],
+      finding: 'Bidirectional recurrent gating provides a unified computational account of attention, binding, and task-dependent visual selection.',
+      interpretation: 'The model is useful less as an engineering trick than as a bridge between neural architecture, behavioral attention phenomena, and learned visual computation.',
+      resources: [
+        { href: 'https://www.nature.com/articles/s41467-026-72146-9', label: 'Article' },
+      ],
+    },
+    {
+      number: '02',
       slug: 'uncertainty',
       theme: 'Stochasticity',
       subtitle: 'Triangle of Treasures',
@@ -29,7 +52,7 @@ export const researchAtlas = {
       ],
     },
     {
-      number: '02',
+      number: '03',
       slug: 'opponents',
       theme: 'Neural',
       subtitle: 'Four-in-a-Row',
@@ -54,7 +77,7 @@ export const researchAtlas = {
       ],
     },
     {
-      number: '03',
+      number: '04',
       slug: 'metacontrol',
       theme: 'Metacontrol',
       subtitle: 'Metaplanning in Chess',
