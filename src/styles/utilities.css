@@ -2,10 +2,6 @@
 .layer { position: fixed; top: calc(-10vh - 100px); width: 140%; height: 170vh; z-index: -1; pointer-events: none; }
 .layer-one { margin-left: 40px; } .layer-two { margin-left: 50px; } .layer-three { margin-left: 60px; }
 .screen { display: block; mix-blend-mode: multiply; opacity: 1; }
-.frostedCard { z-index: 1; padding: 25px 35px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 4px; box-shadow: var(--card-shadow); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
-.frostedCard h3 { margin-top: 0; font-size: 28px; }.frostedCard h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; }
 .button { display: inline-flex; align-items: center; gap: .25rem; margin-bottom: 0; padding: .6rem 0; color: var(--color); background: transparent; border-bottom: 1px solid var(--color); border-radius: 0; font-family: var(--mono-font); font-size: 1rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; transition: color .2s, border-color .2s; }.button:hover { color: var(--signal-magenta); border-color: var(--signal-magenta); background: transparent; text-decoration: none; }
 .externallinkimage { margin-top: -6px; margin-left: 6px; opacity: .4; }.defaultImage { height: auto; }
-.flex-row { display: flex; flex-wrap: wrap; align-items: center; }.col-md-3 { flex: 0 0 100%; max-width: 100%; }
-@media (min-width: 768px) { .col-md-3 { flex: 0 0 25%; max-width: 25%; } }
 @media (max-width: 768px) { .banner { padding: 4.5rem 1.25rem 5.7rem; } .hero { position: fixed !important; inset: 0; height: 100svh; overflow: hidden; } .hero > div { height: 100svh; } .layer { top: auto; bottom: 0; width: 210vw; height: 106svh; } .layer img { object-position: 44% bottom !important; } .screen { opacity: .42; } .layer-one { margin-left: -96vw; } .layer-two { margin-left: -95vw; } .layer-three { margin-left: -94vw; } .button { min-height: 44px; align-items: center; padding: .75rem 0; } .externallinkimage { width: 12px; height: 12px; margin-top: -5px; } }
