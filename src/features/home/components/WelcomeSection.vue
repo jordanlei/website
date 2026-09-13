@@ -123,6 +123,23 @@
   }
 }
 
+@media only screen and (max-width: 768px) and (max-height: 720px) {
+  .header {
+    bottom: 7.4rem;
+  }
+
+  .mobileHeroNote {
+    margin-top: .55rem;
+    font-size: .88rem;
+  }
+
+  /* The compact fixed index already communicates navigation on short screens;
+     leaving out the cue preserves a clean, fully readable hero. */
+  .scroll-cue {
+    display: none;
+  }
+}
+
 @media (min-width: 769px) {
   .mobileHeroNote, .mobileHeroIndex {
     display: none;
