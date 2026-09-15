@@ -233,7 +233,7 @@ header h3 {
 }
 
 .game-frame {
-  height: 30rem;
+  height: 24rem;
 }
 
 .condition-tabs {
@@ -337,7 +337,7 @@ figcaption {
 
 @media (max-width: 520px) {
   .game-frame {
-    height: 21rem;
+    height: 18rem;
   }
 
   .task-head {
