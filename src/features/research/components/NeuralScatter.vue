@@ -272,11 +272,20 @@ const LABEL_LEAD = 0.35
 </template>
 
 <style scoped>
-.r2s-wrap { display: flex; flex-direction: column; align-items: center; }
-/* size by HEIGHT only (square, aspect-locked). No max-width clamp: the scatter
-   is a fixed size and simply centers in its column — the fixed height is small
-   enough that its square width fits even a 1/3-width column. */
-.r2s-plot { display: block; width: 100%; height: auto; overflow: visible; }
+.r2s-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-inline: clamp(.75rem, 5vw, 2rem);
+}
+
+.r2s-plot {
+  display: block;
+  width: min(100%, 28rem);
+  height: auto;
+  overflow: visible;
+}
 
 .r2s-spine { stroke: var(--color); stroke-width: 1.5; }
 .r2s-grid  { stroke: var(--rule); stroke-width: 1; }
@@ -340,4 +349,14 @@ const LABEL_LEAD = 0.35
 }
 .r2s-legend-item { display: inline-flex; align-items: center; gap: 0.45em; }
 .r2s-dot { width: 0.75em; height: 0.75em; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 520px) {
+  .r2s-wrap {
+    padding-inline: .2rem;
+  }
+
+  .r2s-plot {
+    width: 100%;
+  }
+}
 </style>
