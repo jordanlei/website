@@ -155,6 +155,10 @@ import NeuralEncodingFigure from './components/NeuralEncodingFigure.vue'
           </p>
           <p>
             <span>All Research</span>
+            <a
+              href="/files/JordanLei_Thesis.pdf"
+              download="JordanLei_Thesis.pdf"
+            >Thesis</a>
             <a href="https://scholar.google.com/citations?user=GRnnNBYAAAAJ&hl=en">Google Scholar</a>
           </p>
         </div>

@@ -1,0 +1,39 @@
+[debug] [2026-09-15T02:38:34.325Z] ----------------------------------------------------------------------
+[debug] [2026-09-15T02:38:34.327Z] Command:       /opt/homebrew/Cellar/node/26.5.1/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2026-09-15T02:38:34.327Z] CLI Version:   15.30.0
+[debug] [2026-09-15T02:38:34.327Z] Platform:      darwin
+[debug] [2026-09-15T02:38:34.327Z] Node Version:  v26.5.1
+[debug] [2026-09-15T02:38:34.327Z] Detected Agent: unknown
+[debug] [2026-09-15T02:38:34.327Z] Time:          Mon Sep 14 2026 22:38:34 GMT-0400 (Eastern Daylight Time)
+[debug] [2026-09-15T02:38:34.327Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-15T02:38:34.811Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-15T02:38:34.811Z] > authorizing via signed-in user (thunderflash.lei@gmail.com)
+[debug] [2026-09-15T02:38:34.811Z] [iam] checking project jordan-lei for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-09-15T02:38:34.819Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:34.819Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:34.819Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/jordan-lei:testIamPermissions [none]
+[debug] [2026-09-15T02:38:34.819Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/jordan-lei:testIamPermissions  x-goog-user-project=jordan-lei
+[debug] [2026-09-15T02:38:34.819Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jordan-lei:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-09-15T02:38:35.304Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/jordan-lei:testIamPermissions 200
+[debug] [2026-09-15T02:38:35.305Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jordan-lei:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-09-15T02:38:35.305Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:35.305Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:35.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jordan-lei [none]
+[debug] [2026-09-15T02:38:35.745Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jordan-lei 200
+[debug] [2026-09-15T02:38:35.745Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jordan-lei {"projectId":"jordan-lei","projectNumber":"203756598045","displayName":"Jordan Lei Website","name":"projects/jordan-lei","resources":{"hostingSite":"jordan-lei"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_c498e6fb-e7d8-43ee-b271-b143c8135bbc"}
+[debug] [2026-09-15T02:38:36.242Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:36.242Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:36.242Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/jordan-lei/sites pageToken=&pageSize=10
+[debug] [2026-09-15T02:38:37.178Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/jordan-lei/sites 200
+[debug] [2026-09-15T02:38:37.178Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/jordan-lei/sites {"sites":[{"name":"projects/jordan-lei/sites/jordan-lei","defaultUrl":"https://jordan-lei.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-09-15T02:38:37.179Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:37.179Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:37.179Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/jordan-lei/sites 
+[debug] [2026-09-15T02:38:37.893Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/jordan-lei/sites 200
+[debug] [2026-09-15T02:38:37.893Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/jordan-lei/sites {"sites":[{"name":"projects/jordan-lei/sites/jordan-lei","defaultUrl":"https://jordan-lei.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-09-15T02:38:37.893Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:37.893Z] Checked if tokens are valid: true, expires at: 1789442979852
+[debug] [2026-09-15T02:38:37.894Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jordan-lei/webApps/-/config [none]
+[debug] [2026-09-15T02:38:38.512Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jordan-lei/webApps/-/config 200
+[debug] [2026-09-15T02:38:38.512Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jordan-lei/webApps/-/config {"projectId":"jordan-lei","storageBucket":"jordan-lei.firebasestorage.app","apiKey":"AIzaSyDMqXwt13q6Vws5e__aDxE3pmxU-BP8-mE","authDomain":"jordan-lei.firebaseapp.com","messagingSenderId":"203756598045","projectNumber":"203756598045","version":"2"}

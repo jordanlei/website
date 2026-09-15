@@ -22,20 +22,22 @@ import { featuredArt } from '../../../content/art'
       <div class="about-layout">
         <div class="about-copy">
           <p>
-            Hi, I'm Jordan! I'm a PhD Candidate in the Wei Ji Ma Lab at New
-            York University, where
-            <b> I study planning and decision making in the brain.</b>
-            I will be starting as a postdoctoral researcher at the
-            <b>Zuckerman Institute at Columbia University</b> in Fall 2026.
+            Hi, I'm Jordan! Starting October 2026, I will be a postdoctoral
+            researcher in the <b>Stachenfeld and Wolpert Labs</b> at the
+            <b>Zuckerman Institute at Columbia University</b>. I study how the 
+            <b> how the brain makes sense of a complex world</b>, with a special focus on 
+            <b> attention, planning, and action</b>.
             <br><br>
+            I'm passionate about <b>bridging the gap between biological and artificial intelligence.</b>
             Here are some questions I'm thinking about: how do people respond to
             uncertainty when planning? Do people think differently than machines
-            when playing chess? How does the brain think about the future?
+            when playing chess, and why? How might an agent learn what actions are available in a given situation?
+            Answers to these questions will help us better understand ourselves and build more human-like intelligent systems.
             <br><br>
-            I'm passionate about the intersection of <b>neuroscience</b> and
-            <b>deep learning</b>. Outside work, you'll catch me sketching in the
-            city (probably at the Met), running in Manhattan, or snuggling up
-            with a good book.
+            Outside work, you'll catch me sketching in the
+            city (probably at the Met), running on the West Side Highway, 
+            making music with my keyboard or guitar,
+            or snuggling up with a good book.
           </p>
         </div>
         <figure class="about-plate">
