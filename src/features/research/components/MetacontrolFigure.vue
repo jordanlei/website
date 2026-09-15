@@ -18,7 +18,7 @@ function x(value) { return 180 + (value / 0.055) * 278 }
     <svg
       viewBox="0 0 500 250"
       role="img"
-      aria-label="Paired regret difference at lambda 0.005 for three stopping baselines"
+      aria-label="Paired regret difference at lambda 0.005, baseline minus ours"
     >
       <line
         class="axis"
@@ -84,7 +84,7 @@ function x(value) { return 180 + (value / 0.055) * 278 }
         class="axis-label"
         x="319"
         y="246"
-      >Paired Δ regret (baseline − metacontroller)</text>
+      >Paired Δ regret (baseline − ours)</text>
     </svg>
     <figcaption>Mean paired regret difference with SEM.</figcaption>
   </figure>

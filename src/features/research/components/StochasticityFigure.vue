@@ -39,9 +39,12 @@ const activeIndex = ref(0)
 const active = computed(() => conditions[activeIndex.value])
 const yDomain = [-2.5, 1]
 const yTicks = [-2, -1, 0, 1]
+const plot = { left: 112, right: 388, top: 42, bottom: 252 }
+const plotWidth = plot.right - plot.left
+const plotHeight = plot.bottom - plot.top
 const linePath = computed(() => active.value.mean.map((value, index) => `${index ? 'L' : 'M'}${x(index)} ${y(value)}`).join(' '))
-const x = (index) => 54 + (index / (active.value.mean.length - 1)) * 392
-const y = (value) => 28 + ((yDomain[1] - value) / (yDomain[1] - yDomain[0])) * 178
+const x = (index) => plot.left + (index / (active.value.mean.length - 1)) * plotWidth
+const y = (value) => plot.top + ((yDomain[1] - value) / (yDomain[1] - yDomain[0])) * plotHeight
 </script>
 
 <template>
@@ -90,36 +93,36 @@ const y = (value) => 28 + ((yDomain[1] - value) / (yDomain[1] - yDomain[0])) * 1
         {{ active.description }}
       </p>
       <svg
-        viewBox="0 0 500 280"
+        viewBox="0 0 500 330"
         role="img"
         :aria-label="`${active.name}: fitted log beta by stochasticity level`"
       >
         <g class="grid"><line
           v-for="tick in yTicks"
           :key="tick"
-          x1="54"
-          x2="446"
+          :x1="plot.left"
+          :x2="plot.right"
           :y1="y(tick)"
           :y2="y(tick)"
         /></g>
         <line
           class="axis"
-          x1="54"
-          x2="446"
-          y1="206"
-          y2="206"
+          :x1="plot.left"
+          :x2="plot.right"
+          :y1="plot.bottom"
+          :y2="plot.bottom"
         /><line
           class="axis"
-          x1="54"
-          x2="54"
-          y1="28"
-          y2="206"
+          :x1="plot.left"
+          :x2="plot.left"
+          :y1="plot.top"
+          :y2="plot.bottom"
         />
         <text
           v-for="tick in yTicks"
           :key="`tick-${tick}`"
           class="tick"
-          x="46"
+          :x="plot.left - 10"
           :y="y(tick) + 3"
         >{{ tick }}</text>
         <g
@@ -142,20 +145,20 @@ const y = (value) => 28 + ((yDomain[1] - value) / (yDomain[1] - yDomain[0])) * 1
         />
         <text
           class="x-tick x-tick--start"
-          x="54"
-          y="220"
+          :x="plot.left"
+          :y="plot.bottom + 18"
         >0</text><text
           class="x-tick x-tick--end"
-          x="446"
-          y="220"
+          :x="plot.right"
+          :y="plot.bottom + 18"
         >{{ active.x.at(-1) }}</text>
         <text
           class="axis-label"
           x="250"
-          y="258"
+          y="308"
         >Stochasticity (%)</text><text
           class="axis-label"
-          transform="translate(15 117) rotate(-90)"
+          transform="translate(55 147) rotate(-90)"
         >Log β</text>
       </svg>
       <figcaption>Policy-compression fit: group means with SEM.</figcaption>
@@ -279,7 +282,7 @@ svg {
 }
 
 .error {
-  stroke: var(--color);
+  stroke: var(--signal-magenta);
   stroke-width: 1.6;
   stroke-linecap: round;
 }

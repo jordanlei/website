@@ -190,14 +190,14 @@ import NeuralEncodingFigure from './components/NeuralEncodingFigure.vue'
 .chapter { width: min(1040px, 100%); margin: 0 auto 6rem; padding: 0 clamp(2rem, 5vw, 4rem); scroll-margin-top: 13rem; }
 .chapter-heading { display: grid; gap: .9rem; align-items: end; padding-top: 1rem; border-top: 2px solid var(--color); }
 .chapter-kicker { grid-column: 1 / -1; margin-bottom: -.45rem; }
-.chapter-heading h2 { max-width: 48rem; margin: 0; font-size: clamp(2.5rem, 5vw, 4.8rem); line-height: .92; letter-spacing: 0; }
+.chapter-heading h2 { max-width: 100%; margin: 0; font-size: clamp(2.5rem, 5vw, 4.8rem); line-height: .92; letter-spacing: 0; }
 .chapter-resources { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem .75rem; margin-top: .05rem; }
 .resource-label { color: var(--muted); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: 0; text-transform: uppercase; }
 .chapter-resources a, .takeaways a { display: inline-flex; align-items: center; gap: .3rem; padding-bottom: .12rem; border-bottom: 1px solid currentColor; color: var(--color); font-family: var(--mono-font); font-size: .9rem; font-weight: 800; letter-spacing: 0; text-transform: uppercase; text-decoration: none; }
 .chapter-resources a img, .takeaways a img { width: .82rem; height: .82rem; }
 .chapter-resources a:hover, .takeaways a:hover { color: var(--signal-magenta); text-decoration: none; }
-.chapter-body { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); gap: clamp(1.75rem, 4vw, 3.25rem); align-items: start; margin-top: 1.6rem; }
-.chapter-copy { max-width: 27rem; }
+.chapter-body { display: grid; grid-template-columns: minmax(300px, .88fr) minmax(0, 1.12fr); gap: clamp(1.75rem, 4vw, 3.25rem); align-items: start; margin-top: 1.6rem; }
+.chapter-copy { max-width: 30rem; }
 .chapter-copy .detail-label { margin-bottom: .4rem; }
 .chapter-prompt { margin: 0; font-family: 'Playfair Display', serif; font-size: clamp(1.65rem, 3vw, 2.2rem); line-height: 1.18; }
 .chapter-summary { max-width: 34rem; margin: 1rem 0 0; font-size: 1.1rem; line-height: 1.58; }
