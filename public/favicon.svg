@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JL">
+  <circle cx="32" cy="32" r="29" fill="#f7f5ef" stroke="#192d32" stroke-width="3"/>
+  <text
+    x="32"
+    y="35"
+    fill="#192d32"
+    font-family="SFMono-Regular, Consolas, 'Liberation Mono', monospace"
+    font-size="22"
+    font-weight="700"
+    letter-spacing="-1.6"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >JL</text>
+</svg>
