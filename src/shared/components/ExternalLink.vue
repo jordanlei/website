@@ -8,6 +8,14 @@ defineProps({
     type: String,
     required: true,
   },
+  download: {
+    type: [Boolean, String],
+    default: false,
+  },
+  showIcon: {
+    type: Boolean,
+    default: true,
+  },
 })
 </script>
 
@@ -15,11 +23,13 @@ defineProps({
   <a
     class="button"
     :href="href"
-    target="_blank"
-    rel="noopener noreferrer"
+    :download="download || null"
+    :target="download ? null : '_blank'"
+    :rel="download ? null : 'noopener noreferrer'"
   >
     {{ label }}
     <img
+      v-if="showIcon"
       class="externallinkimage"
       src="/images/external-link.svg"
       width="15"
