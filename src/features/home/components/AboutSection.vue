@@ -23,7 +23,7 @@ import { featuredArt } from '../../../content/art'
         <div class="about-copy">
           <p>
             Hi, I'm Jordan! I'm a postdoctoral researcher in the
-            <b>Stachenfeld and Wolpert Labs</b> at the
+            <b>Wolpert and Stachenfeld Labs</b> at the
             <b>Zuckerman Institute at Columbia University</b>. I study
             <b> how the brain makes sense of a complex world</b>, with a special focus on 
             <b> attention, planning, and action</b>.
