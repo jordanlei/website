@@ -13,4 +13,11 @@ img { max-width: 100%; display: inline !important; }
 section { position: relative; overflow: hidden; background-color: transparent; }
 #welcome { min-height: 100svh; z-index: 0; }
 #about, #research, #experience, #education, #art-preview, #contact { z-index: 2; background: var(--section-wash); backdrop-filter: blur(var(--section-blur)); }
+@media (max-width: 768px) {
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--app-bar-h) + env(safe-area-inset-top) + 12px); }
+  html.sheet-open { overflow: hidden; }
+  body { padding-bottom: calc(var(--tab-bar-h) + env(safe-area-inset-bottom)); -webkit-tap-highlight-color: transparent; }
+  a, button { touch-action: manipulation; }
+  a:hover { text-decoration: none; }
+}
 @media (max-width: 768px) { h1 { font-size: 34px; } h2 { font-size: 28px; } h3 { font-size: 23px; } h4 { font-size: 18px; } p, body { font-size: 16px; } }

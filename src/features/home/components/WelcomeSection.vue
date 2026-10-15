@@ -4,9 +4,6 @@
       class="header"
       data-reveal
     >
-      <p class="mobileHeroIndex">
-        01 / Home
-      </p>
       <h1 class="headerTitle">
         Jordan Lei
       </h1>
@@ -74,7 +71,7 @@
   }
   .header {
     top: auto;
-    bottom: 5.9rem;
+    bottom: calc(var(--tab-bar-h) + env(safe-area-inset-bottom) + 2rem);
     left: 1.15rem;
     z-index: 1;
     width: min(18.5rem, calc(100vw - 2.3rem));
@@ -103,45 +100,21 @@
     font-size: .92rem;
     line-height: 1.45;
   }
-  .mobileHeroIndex {
-    display: block;
-    margin: 0 0 .65rem .15rem;
-    color: var(--muted);
-    font-family: var(--mono-font);
-    font-size: .78rem;
-    font-weight: 700;
-    letter-spacing: .06em;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-  .scroll-cue {
-    bottom: 5rem;
-    width: 2.55rem;
-    height: 2.55rem;
-    font-size: 1.25rem;
-    background: rgba(247,245,239,.58);
-  }
-}
-
-@media only screen and (max-width: 768px) and (max-height: 720px) {
-  .header {
-    bottom: 7.4rem;
-  }
-
-  .mobileHeroNote {
-    margin-top: .55rem;
-    font-size: .88rem;
-  }
-
-  /* The compact fixed index already communicates navigation on short screens;
-     leaving out the cue preserves a clean, fully readable hero. */
+  /* The tab bar handles navigation on phones, so the scroll cue steps aside. */
   .scroll-cue {
     display: none;
   }
 }
 
+@media only screen and (max-width: 768px) and (max-height: 720px) {
+  .mobileHeroNote {
+    margin-top: .55rem;
+    font-size: .88rem;
+  }
+}
+
 @media (min-width: 769px) {
-  .mobileHeroNote, .mobileHeroIndex {
+  .mobileHeroNote {
     display: none;
   }
 }

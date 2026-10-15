@@ -36,6 +36,10 @@ defineProps({
   padding: 1rem 2rem 4rem;
 }
 
+@media (max-width: 768px) {
+  .backToHome { display: none; }
+}
+
 .backToHome a {
   font-family: var(--mono-font);
   font-size: .88rem;

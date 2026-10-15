@@ -4,6 +4,30 @@ import { researchAtlas } from '../../content/researchAtlas'
 import MetacontrolFigure from './components/MetacontrolFigure.vue'
 import StochasticityFigure from './components/StochasticityFigure.vue'
 import NeuralEncodingFigure from './components/NeuralEncodingFigure.vue'
+import { onMounted, onUnmounted, ref } from 'vue'
+
+const currentChapter = ref(researchAtlas.chapters[0].slug)
+const chapterIndex = ref(null)
+let observer
+
+onMounted(() => {
+  observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue
+      currentChapter.value = entry.target.id
+      // Keep the active chip in view as the reader scrolls through chapters.
+      const nav = chapterIndex.value
+      const chip = nav?.querySelector(`[href="#${entry.target.id}"]`)
+      if (chip) nav.scrollTo({ left: chip.offsetLeft - (nav.clientWidth - chip.offsetWidth) / 2, behavior: 'smooth' })
+    }
+  }, { rootMargin: '-30% 0px -65% 0px' })
+  for (const { slug } of researchAtlas.chapters) {
+    const el = document.getElementById(slug)
+    if (el) observer.observe(el)
+  }
+})
+
+onUnmounted(() => observer?.disconnect())
 </script>
 
 <template>
@@ -23,6 +47,7 @@ import NeuralEncodingFigure from './components/NeuralEncodingFigure.vue'
       </header>
 
       <nav
+        ref="chapterIndex"
         class="chapter-index"
         aria-label="Research chapters"
       >
@@ -30,6 +55,7 @@ import NeuralEncodingFigure from './components/NeuralEncodingFigure.vue'
           v-for="chapter in researchAtlas.chapters"
           :key="chapter.slug"
           :href="`#${chapter.slug}`"
+          :class="{ 'is-current': currentChapter === chapter.slug }"
         >
           <span>{{ chapter.number }}</span>
           {{ chapter.theme }}
@@ -235,12 +261,18 @@ import NeuralEncodingFigure from './components/NeuralEncodingFigure.vue'
 }
 
 @media (max-width: 800px) {
-  .research-hero { padding: 3.6rem 1.25rem 2.5rem; }
+  .research-hero { padding: calc(var(--app-bar-h) + env(safe-area-inset-top) + 1.5rem) 1.25rem 2rem; }
   .research-hero h1 { font-size: clamp(2.65rem, 12.5vw, 4rem); }
   .research-frame { font-size: 1.08rem; }
-  .chapter-index { position: static; width: calc(100% - 2.5rem); margin: 0 auto 2.75rem; padding: .5rem; }
-  .chapter-index a { min-height: 2.25rem; font-size: .75rem; }
-  .chapter { margin-bottom: 4.5rem; padding: 0 1.25rem; scroll-margin-top: 2.5rem; }
+  .research-world { padding-top: 0; }
+  /* A sticky, swipeable segmented control docked under the app bar. */
+  .chapter-index { top: calc(var(--app-bar-h) + env(safe-area-inset-top)); width: 100%; margin: 0 0 2.25rem; padding: .5rem 1.25rem; gap: .4rem; scrollbar-width: none; scroll-snap-type: x proximity; box-shadow: none; border-bottom: .5px solid color-mix(in srgb, var(--color), transparent 86%); background: color-mix(in srgb, var(--background-color), transparent 14%); backdrop-filter: saturate(1.4) blur(18px); -webkit-backdrop-filter: saturate(1.4) blur(18px); }
+  .chapter-index::-webkit-scrollbar { display: none; }
+  .chapter-index a { min-height: 2.25rem; padding: 0 .9rem; border-radius: 999px; font-size: .74rem; scroll-snap-align: start; box-shadow: inset 0 0 0 .5px var(--card-border); }
+  .chapter-index a.is-current { color: var(--background-color); background: var(--color); }
+  .chapter-index a.is-current span { color: var(--signal-yellow); }
+  .chapter { margin-bottom: 4.5rem; padding: 0 1.25rem; scroll-margin-top: calc(var(--app-bar-h) + env(safe-area-inset-top) + 4rem); }
+  .chapter-figure { border-radius: var(--m-radius); }
   .chapter-heading h2 { font-size: clamp(2.2rem, 10vw, 3.35rem); }
   .research-world {
     --research-panel-note: 1.04rem;
@@ -258,6 +290,6 @@ import NeuralEncodingFigure from './components/NeuralEncodingFigure.vue'
   .chapter-conclusion p:last-child { font-size: 1.15rem; }
   .chapter-resources a, .takeaways a { font-size: .84rem; }
   .takeaways { grid-template-columns: 1fr; }
-  .research-close { padding: 1rem 1.25rem 7rem; }
+  .research-close { padding: 1rem 1.25rem 3rem; }
 }
 </style>
