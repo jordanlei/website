@@ -22,9 +22,9 @@ import { featuredArt } from '../../../content/art'
       <div class="about-layout">
         <div class="about-copy">
           <p>
-            Hi, I'm Jordan! Starting October 2026, I will be a postdoctoral
-            researcher in the <b>Stachenfeld and Wolpert Labs</b> at the
-            <b>Zuckerman Institute at Columbia University</b>. I study how the 
+            Hi, I'm Jordan! I'm a postdoctoral researcher in the
+            <b>Stachenfeld and Wolpert Labs</b> at the
+            <b>Zuckerman Institute at Columbia University</b>. I study
             <b> how the brain makes sense of a complex world</b>, with a special focus on 
             <b> attention, planning, and action</b>.
             <br><br>
