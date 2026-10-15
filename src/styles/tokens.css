@@ -20,5 +20,8 @@
   --signal-yellow: #d6a729;
   --rule: rgba(25, 45, 50, .2);
   --muted: #687b7c;
+  --app-bar-h: 52px;
+  --tab-bar-h: 58px;
+  --m-radius: 14px;
   --mono-font: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }

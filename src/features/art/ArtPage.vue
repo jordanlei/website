@@ -13,7 +13,10 @@ import Layout from '../../shared/components/Layout.vue'
         <div><span>Selected work</span><span>2022 to 2024</span><span>Oil / acrylic / digital / pen</span></div>
       </header>
       <div class="mobilegallery">
-        <Gallery :images="mobileArtRows" />
+        <Gallery
+          :images="mobileArtRows"
+          :padding="8"
+        />
       </div>
       <div class="desktopgallery">
         <Gallery :images="artRows" />
@@ -30,7 +33,7 @@ import Layout from '../../shared/components/Layout.vue'
 }
 
 @media only screen and (max-width: 768px) {
-  .art-intro { grid-template-columns: 1fr; padding: 4rem 1.25rem 2.5rem; }.art-intro > div { grid-column: 1; flex-wrap: wrap; }
+  .art-view { padding-top: calc(var(--app-bar-h) + env(safe-area-inset-top)); }.art-intro { grid-template-columns: 1fr; padding: 1.75rem 1.25rem 2rem; }.art-intro h1 { font-size: clamp(3.4rem, 17vw, 4.6rem); }.art-intro > div { grid-column: 1; flex-wrap: wrap; }
   .mobilegallery {
     display: block;
   }

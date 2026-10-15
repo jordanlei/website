@@ -26,7 +26,7 @@ const router = createRouter({
     if (to.hash) {
       return {
         el: to.hash,
-        top: 150,
+        top: window.matchMedia('(max-width: 768px)').matches ? 72 : 150,
         behavior: 'smooth',
       }
     }
