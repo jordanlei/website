@@ -13,4 +13,5 @@ defineProps({
 <style scoped>
 .section-heading { margin-bottom: 2rem; border-top: 2px solid var(--color); padding-top: .85rem; }
 h2 { margin: 0; font-size: clamp(2.5rem, 4.5vw, 4.6rem); line-height: .95; letter-spacing: -.05em; }
+@media (max-width: 768px) { .section-heading { margin-bottom: 1.25rem; } h2 { font-size: 2.15rem; letter-spacing: -.03em; } }
 </style>

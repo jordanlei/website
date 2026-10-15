@@ -195,5 +195,5 @@ onUnmounted(() => document.documentElement.classList.remove('sheet-open'))
 .viewer-enter-active, .viewer-leave-active { transition: opacity .25s ease; }
 .viewer-enter-from, .viewer-leave-to { opacity: 0; }
 
-@media (max-width: 768px) { .gallery-row { margin-bottom: 2.25rem; }.image-caption { display: block; }.image-caption p { margin-top: .25rem; }.image-frame { height: calc(100% - 4.5rem); border-radius: var(--m-radius); }.image-container:hover .gallery-image { transform: none; }.image-frame:active .gallery-image { transform: scale(.98); } }
+@media (max-width: 768px) { .gallery-row { margin-bottom: 2.25rem; }.image-caption { display: block; }.image-caption h3, .image-caption p { font-size: .76rem; }.image-caption p { margin-top: .25rem; }.image-frame { height: calc(100% - 4.5rem); border-radius: var(--m-radius); }.image-container:hover .gallery-image { transform: none; }.image-frame:active .gallery-image { transform: scale(.98); } }
 </style>

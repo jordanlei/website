@@ -33,7 +33,7 @@ import Layout from '../../shared/components/Layout.vue'
 }
 
 @media only screen and (max-width: 768px) {
-  .art-view { padding-top: calc(var(--app-bar-h) + env(safe-area-inset-top)); }.art-intro { grid-template-columns: 1fr; padding: 1.75rem 1.25rem 2rem; }.art-intro h1 { font-size: clamp(3.4rem, 17vw, 4.6rem); }.art-intro > div { grid-column: 1; flex-wrap: wrap; }
+  .art-view { padding-top: calc(var(--app-bar-h) + env(safe-area-inset-top)); }.art-intro { grid-template-columns: 1fr; padding: 1.75rem 1.25rem 2rem; }.art-intro h1 { font-size: clamp(2.8rem, 14vw, 3.6rem); }.art-intro p, .art-intro > div { font-size: .76rem; }.art-intro > div { gap: .35rem .75rem; }.art-intro > div span:not(:first-child)::before { margin-right: .75rem; }.art-intro > div { grid-column: 1; flex-wrap: wrap; }
   .mobilegallery {
     display: block;
   }
