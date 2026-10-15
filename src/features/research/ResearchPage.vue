@@ -262,8 +262,10 @@ onUnmounted(() => observer?.disconnect())
 
 @media (max-width: 800px) {
   .research-hero { padding: calc(var(--app-bar-h) + env(safe-area-inset-top) + 1.5rem) 1.25rem 2rem; }
-  .research-hero h1 { font-size: clamp(2.65rem, 12.5vw, 4rem); }
-  .research-frame { font-size: 1.08rem; }
+  .research-hero h1 { font-size: clamp(2.1rem, 9.5vw, 2.7rem); line-height: .95; }
+  .research-eyebrow, .chapter-kicker, .detail-label { font-size: .74rem; }
+  .research-lede { margin-top: 1rem; font-size: 1.3rem; }
+  .research-frame { font-size: 1rem; }
   .research-world { padding-top: 0; }
   /* A sticky, swipeable segmented control docked under the app bar. */
   .chapter-index { top: calc(var(--app-bar-h) + env(safe-area-inset-top)); width: 100%; margin: 0 0 2.25rem; padding: .5rem 1.25rem; gap: .4rem; scrollbar-width: none; scroll-snap-type: x proximity; box-shadow: none; border-bottom: .5px solid color-mix(in srgb, var(--color), transparent 86%); background: color-mix(in srgb, var(--background-color), transparent 14%); backdrop-filter: saturate(1.4) blur(18px); -webkit-backdrop-filter: saturate(1.4) blur(18px); }
@@ -273,7 +275,7 @@ onUnmounted(() => observer?.disconnect())
   .chapter-index a.is-current span { color: var(--signal-yellow); }
   .chapter { margin-bottom: 4.5rem; padding: 0 1.25rem; scroll-margin-top: calc(var(--app-bar-h) + env(safe-area-inset-top) + 4rem); }
   .chapter-figure { border-radius: var(--m-radius); }
-  .chapter-heading h2 { font-size: clamp(2.2rem, 10vw, 3.35rem); }
+  .chapter-heading h2 { font-size: clamp(1.75rem, 8vw, 2.2rem); line-height: 1; }
   .research-world {
     --research-panel-note: 1.04rem;
     --research-caption: .96rem;
@@ -284,11 +286,15 @@ onUnmounted(() => observer?.disconnect())
   .chapter-plate { width: 100%; margin: .7rem auto 0; }
   .chapter-plate img { max-height: 12rem; }
   .chapter-portrait { width: 5.6rem; height: 5.6rem; }
-  .chapter-prompt { font-size: 1.35rem; }
-  .chapter-summary { font-size: 1.08rem; }
-  .chapter-takeaways p { font-size: 1rem; }
-  .chapter-conclusion p:last-child { font-size: 1.15rem; }
-  .chapter-resources a, .takeaways a { font-size: .84rem; }
+  .chapter-prompt { font-size: 1.25rem; }
+  .chapter-summary { font-size: 1rem; }
+  .chapter-takeaways span { font-size: .72rem; }
+  .chapter-takeaways p { font-size: 1rem; line-height: 1.5; }
+  .chapter-conclusion p:last-child { font-size: 1.1rem; }
+  .chapter-resources a, .takeaways a { font-size: .76rem; }
+  .resource-label { font-size: .72rem; }
+  .research-close h2 { font-size: 2.1rem; }
+  .takeaways p { font-size: 1rem; }
   .takeaways { grid-template-columns: 1fr; }
   .research-close { padding: 1rem 1.25rem 3rem; }
 }

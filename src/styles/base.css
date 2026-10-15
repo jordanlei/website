@@ -16,7 +16,7 @@ section { position: relative; overflow: hidden; background-color: transparent; }
 @media (max-width: 768px) {
   html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--app-bar-h) + env(safe-area-inset-top) + 12px); }
   html.sheet-open { overflow: hidden; }
-  body { padding-bottom: calc(var(--tab-bar-h) + env(safe-area-inset-bottom)); -webkit-tap-highlight-color: transparent; }
+  body { padding-bottom: calc(var(--tab-bar-h) + max(.75rem, env(safe-area-inset-bottom)) + .75rem); -webkit-tap-highlight-color: transparent; }
   a, button { touch-action: manipulation; }
   a:hover { text-decoration: none; }
 }

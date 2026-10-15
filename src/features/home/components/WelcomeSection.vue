@@ -71,7 +71,7 @@
   }
   .header {
     top: auto;
-    bottom: calc(var(--tab-bar-h) + env(safe-area-inset-bottom) + 2rem);
+    bottom: calc(var(--tab-bar-h) + max(.75rem, env(safe-area-inset-bottom)) + 2rem);
     left: 1.15rem;
     z-index: 1;
     width: min(18.5rem, calc(100vw - 2.3rem));
