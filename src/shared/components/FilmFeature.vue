@@ -1,5 +1,8 @@
 <script setup>
 import { featuredFilm as film } from '../../content/film'
+
+// h3 under the Art page's section h2; h4 when nested under a home subsection head.
+defineProps({ titleTag: { type: String, default: 'h3' } })
 </script>
 
 <template>
@@ -26,11 +29,15 @@ import { featuredFilm as film } from '../../content/film'
     </a>
     <div class="film-copy">
       <p class="film-eyebrow">
-        Short film / {{ film.year }}
+        Symbiosis / {{ film.year }}
       </p>
-      <h3 id="film-title">
+      <component
+        :is="titleTag"
+        id="film-title"
+        class="film-title"
+      >
         {{ film.title }}
-      </h3>
+      </component>
       <p class="film-logline">
         {{ film.logline }}
       </p>
@@ -77,7 +84,7 @@ import { featuredFilm as film } from '../../content/film'
 .film-play { position: absolute; right: .9rem; bottom: .9rem; display: grid; width: 2.75rem; height: 2.75rem; place-items: center; padding-left: .15rem; border-radius: 50%; color: var(--color); background: rgba(255, 253, 248, .9); font-size: .9rem; }
 .film-copy p { margin: 0; }
 .film-copy .film-eyebrow { color: var(--signal-magenta); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
-.film h3 { margin: .35rem 0 .6rem; font-size: clamp(1.9rem, 3vw, 2.6rem); line-height: 1; }
+.film-title { margin: .35rem 0 .6rem; color: var(--color); font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 700; line-height: 1.05; }
 .film-copy .film-logline { font-family: 'Playfair Display', serif; font-size: 1.25rem; line-height: 1.3; }
 .film-copy .film-credits { margin-top: .75rem; color: var(--muted); font-family: var(--mono-font); font-size: .78rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
 .film-copy .film-context { margin-top: .6rem; color: var(--subtitle); font-size: 1rem; line-height: 1.5; }
@@ -95,7 +102,7 @@ import { featuredFilm as film } from '../../content/film'
   .film-still { border-radius: calc(var(--m-radius) - 6px); }
   .film-copy { padding: 0 .45rem; }
   .film-copy .film-eyebrow { font-size: .72rem; }
-  .film h3 { font-size: 1.8rem; }
+  .film-title { font-size: 1.3rem; }
   .film-copy .film-logline { font-size: 1.1rem; }
   .film-copy .film-credits { font-size: .7rem; }
   .film-copy .film-context { font-size: .92rem; }
