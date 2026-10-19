@@ -49,8 +49,7 @@ export const researchAtlas = {
       dynamicFigure: 'stochasticity',
       taskDemo: true,
       resources: [
-        { href: 'https://files.osf.io/v1/resources/bh56p_v1/providers/osfstorage/6813cdf8a74db1488d3cbf6a?action=download&direct&version=1', label: 'Preprint' },
-        { href: '/files/TreasureHuntPoster.pdf', label: 'Poster' },
+        { href: 'https://www.nature.com/articles/s41467-026-78023-9', label: 'Nature Communications' },
       ],
     },
     {

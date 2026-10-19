@@ -381,6 +381,8 @@ const onDragEnd = () => {
 .app-bar, .tab-bar, .sheet-scrim { display: none; }
 
 svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+/* The global `* { color }` rule would otherwise pin icons to ink; follow the parent instead. */
+svg, svg path { color: inherit; }
 
 @media only screen and (max-width: 768px) {
   .menu { display: none; }
@@ -446,8 +448,8 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
   .title-enter-from { opacity: 0; transform: translateY(6px); }
   .title-leave-to { opacity: 0; transform: translateY(-6px); }
 
-  /* Floating tab bar: a dark, inset capsule so it reads as navigation, not page.
-     The active tab carries a light pill, the Material/iOS selection indicator. */
+  /* Floating tab bar: a light frosted capsule in the page's own palette, lifted
+     off the page by a hairline and shadow. The active tab carries an ink pill. */
   .tab-bar {
     position: fixed;
     right: max(.75rem, env(safe-area-inset-right));
@@ -460,8 +462,9 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
     height: var(--tab-bar-h);
     padding: .35rem;
     border-radius: 1.6rem;
-    background: rgba(25, 45, 50, .92);
-    box-shadow: 0 10px 30px rgba(25, 45, 50, .28), 0 2px 6px rgba(25, 45, 50, .18), inset 0 0 0 .5px rgba(255, 255, 255, .12);
+    border: 1px solid color-mix(in srgb, var(--color), transparent 84%);
+    background: rgba(255, 253, 248, .9);
+    box-shadow: 0 10px 28px rgba(25, 45, 50, .16), 0 2px 6px rgba(25, 45, 50, .08);
     backdrop-filter: saturate(1.6) blur(20px);
     -webkit-backdrop-filter: saturate(1.6) blur(20px);
   }
@@ -475,7 +478,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
     padding: 0;
     border: 0;
     border-radius: 1.25rem;
-    color: rgba(247, 245, 239, .82);
+    color: var(--subtitle);
     background: none;
     font: inherit;
     text-decoration: none;
@@ -484,12 +487,12 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round
   }
   .tab svg { width: 1.4rem; height: 1.4rem; stroke-width: 1.9; transition: transform .2s ease; }
   .tab span {
-    font-size: .66rem;
+    font-size: .72rem;
     font-weight: 600;
     letter-spacing: .01em;
     color: inherit;
   }
-  .tab.is-active { color: var(--color); background: var(--background-color); }
+  .tab.is-active { color: var(--background-color); background: var(--color); }
   .tab.is-active svg { stroke-width: 2.1; }
   .tab:active svg { transform: scale(.86); }
   .tab:hover { text-decoration: none; }

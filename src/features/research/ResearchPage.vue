@@ -172,8 +172,7 @@ onUnmounted(() => observer?.disconnect())
           </p>
           <p>
             <span>Stochasticity</span>
-            <a href="https://files.osf.io/v1/resources/bh56p_v1/providers/osfstorage/6813cdf8a74db1488d3cbf6a?action=download&direct&version=1">Preprint</a>
-            <a href="/files/TreasureHuntPoster.pdf">Poster</a>
+            <a href="https://www.nature.com/articles/s41467-026-78023-9">Nature Communications</a>
           </p>
           <p>
             <span>Four-in-a-Row</span>
