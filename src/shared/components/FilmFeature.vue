@@ -86,11 +86,11 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
 .film-copy .film-eyebrow { color: var(--signal-magenta); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
 .film-title { margin: .35rem 0 .6rem; color: var(--color); font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 700; line-height: 1.05; }
 .film-copy .film-logline { font-family: 'Playfair Display', serif; font-size: 1.25rem; line-height: 1.3; }
-.film-copy .film-credits { margin-top: .75rem; color: var(--muted); font-family: var(--mono-font); font-size: .78rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
+.film-copy .film-credits { margin-top: .75rem; color: var(--muted); font-size: .9rem; line-height: 1.45; }
 .film-copy .film-context { margin-top: .6rem; color: var(--subtitle); font-size: 1rem; line-height: 1.5; }
 .film blockquote { margin: 1rem 0 0; padding-left: .9rem; border-left: 2px solid var(--signal-magenta); }
 .film-copy blockquote p { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; line-height: 1.35; }
-.film cite { display: block; margin-top: .3rem; color: var(--muted); font-family: var(--mono-font); font-size: .72rem; font-style: normal; font-weight: 700; letter-spacing: .045em; text-transform: uppercase; }
+.film cite { display: block; margin-top: .3rem; color: var(--muted); font-size: .85rem; font-style: normal; }
 .film-links { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1rem; margin-top: .9rem; }
 .film-note { color: var(--muted); font-size: .8rem; }
 .film-more { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin-top: .85rem; padding-top: .75rem; border-top: 1px solid var(--rule); }
@@ -104,7 +104,7 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
   .film-copy .film-eyebrow { font-size: .72rem; }
   .film-title { font-size: 1.3rem; }
   .film-copy .film-logline { font-size: 1.1rem; }
-  .film-copy .film-credits { font-size: .7rem; }
+  .film-copy .film-credits { font-size: .85rem; }
   .film-copy .film-context { font-size: .92rem; }
   .film-copy blockquote p { font-size: 1rem; }
   .film-links { gap: 0 1rem; }
