@@ -35,7 +35,7 @@ import { featuredFilm as film } from '../../content/film'
         {{ film.logline }}
       </p>
       <p class="film-credits">
-        {{ film.credits }}
+        {{ film.credits }}<br>{{ film.cast }}
       </p>
       <p class="film-context">
         {{ film.context }}
@@ -51,16 +51,20 @@ import { featuredFilm as film } from '../../content/film'
           target="_blank"
           rel="noopener noreferrer"
         >{{ film.watch.label }}</a>
+        <small class="film-note">{{ film.watch.note }}</small>
+      </div>
+      <nav
+        class="film-more"
+        aria-label="More about the film"
+      >
         <a
           v-for="link in film.links"
           :key="link.href"
-          class="button"
           :href="link.href"
           target="_blank"
           rel="noopener noreferrer"
         >{{ link.label }}</a>
-      </div>
-      <small class="film-note">{{ film.watch.note }}</small>
+      </nav>
     </div>
   </article>
 </template>
@@ -80,8 +84,12 @@ import { featuredFilm as film } from '../../content/film'
 .film blockquote { margin: 1rem 0 0; padding-left: .9rem; border-left: 2px solid var(--signal-magenta); }
 .film-copy blockquote p { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; line-height: 1.35; }
 .film cite { display: block; margin-top: .3rem; color: var(--muted); font-family: var(--mono-font); font-size: .72rem; font-style: normal; font-weight: 700; letter-spacing: .045em; text-transform: uppercase; }
-.film-links { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin-top: .9rem; }
-.film-note { display: block; margin-top: .4rem; color: var(--muted); font-size: .8rem; }
+.film-links { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1rem; margin-top: .9rem; }
+.film-note { color: var(--muted); font-size: .8rem; }
+.film-more { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin-top: .85rem; padding-top: .75rem; border-top: 1px solid var(--rule); }
+.film-more a { color: var(--primary-blue); font-family: var(--mono-font); font-size: .74rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
+.film-more a::after { content: "↗"; margin-left: .3em; }
+.film-more a:hover { color: var(--signal-magenta); text-decoration: none; }
 @media (max-width: 700px) {
   .film { grid-template-columns: 1fr; gap: 1rem; padding: .6rem .6rem 1rem; border-radius: var(--m-radius); }
   .film-still { border-radius: calc(var(--m-radius) - 6px); }
@@ -93,5 +101,7 @@ import { featuredFilm as film } from '../../content/film'
   .film-copy .film-context { font-size: .92rem; }
   .film-copy blockquote p { font-size: 1rem; }
   .film-links { gap: 0 1rem; }
+  .film-more { gap: .25rem 1rem; }
+  .film-more a { display: inline-flex; align-items: center; min-height: 44px; font-size: .7rem; }
 }
 </style>
