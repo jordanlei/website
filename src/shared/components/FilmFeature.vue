@@ -1,8 +1,10 @@
 <script setup>
+import { ref } from 'vue'
 import { featuredFilm as film } from '../../content/film'
 
 // h3 under the Art page's section h2; h4 when nested under a home subsection head.
 defineProps({ titleTag: { type: String, default: 'h3' } })
+const isPlaying = ref(false)
 </script>
 
 <template>
@@ -14,11 +16,29 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
       class="film-still"
     >
       <iframe
-        :src="film.watch.embed"
+        v-if="isPlaying"
+        :src="`${film.watch.embed}&autoplay=1`"
         :title="film.title"
         allow="autoplay; fullscreen; picture-in-picture"
         allowfullscreen
       />
+      <button
+        v-else
+        class="film-poster"
+        type="button"
+        :aria-label="`Play ${film.title}`"
+        @click="isPlaying = true"
+      >
+        <img
+          :src="film.still"
+          :alt="film.stillAlt"
+          loading="lazy"
+        >
+        <span
+          class="film-play"
+          aria-hidden="true"
+        >▶</span>
+      </button>
     </div>
     <div class="film-copy">
       <p class="film-eyebrow">
@@ -64,7 +84,11 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
 .film { position: relative; overflow: hidden; background: #111; box-shadow: var(--card-shadow-subtle); }
 .film-still { position: relative; overflow: hidden; background: #111; aspect-ratio: 16 / 9; }
 .film-still iframe { display: block; width: 100%; height: 100%; border: 0; }
-.film-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(1.25rem, 4vw, 3rem); color: #fff; background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, .82)); transition: opacity .25s ease; }
+.film-poster { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; cursor: pointer; }
+.film-poster img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease, filter .25s ease; }
+.film-poster:hover img, .film-poster:focus-visible img { transform: scale(1.02); filter: brightness(.8); }
+.film-play { position: absolute; inset: 50% auto auto 50%; display: grid; width: 4rem; height: 4rem; place-items: center; padding-left: .2rem; border: 2px solid rgba(255, 255, 255, .9); border-radius: 50%; color: #111; background: rgba(255, 255, 255, .92); font-size: 1.1rem; transform: translate(-50%, -50%); }
+.film-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(1.25rem, 4vw, 3rem); color: #fff; background: linear-gradient(180deg, rgba(0, 0, 0, .08) 15%, rgba(0, 0, 0, .92) 100%); text-shadow: 0 1px 2px rgba(0, 0, 0, .75); transition: opacity .25s ease; pointer-events: none; }
 .film:hover .film-copy, .film:focus-within .film-copy { opacity: 0; pointer-events: none; }
 .film-copy p { margin: 0; }
 .film-copy .film-eyebrow { color: var(--signal-magenta); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
@@ -79,6 +103,7 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
 .film-more a { color: var(--primary-blue); font-family: var(--mono-font); font-size: .74rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
 .film-more a::after { content: "↗"; margin-left: .3em; }
 .film-more a:hover { color: var(--signal-magenta); text-decoration: none; }
+.film-more { pointer-events: auto; }
 @media (max-width: 700px) {
   .film { border-radius: var(--m-radius); }
   .film-still { border-radius: calc(var(--m-radius) - 6px); }
