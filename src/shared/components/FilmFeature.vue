@@ -10,6 +10,7 @@ const isPlaying = ref(false)
 <template>
   <article
     class="film"
+    :class="{ 'is-playing': isPlaying }"
     aria-labelledby="film-title"
   >
     <div
@@ -89,7 +90,7 @@ const isPlaying = ref(false)
 .film-poster:hover img, .film-poster:focus-visible img { transform: scale(1.02); filter: brightness(.8); }
 .film-play { position: absolute; inset: 50% auto auto 50%; display: grid; width: 4rem; height: 4rem; place-items: center; padding-left: .2rem; border: 2px solid rgba(255, 255, 255, .9); border-radius: 50%; color: #111; background: rgba(255, 255, 255, .92); font-size: 1.1rem; transform: translate(-50%, -50%); }
 .film-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(1.25rem, 4vw, 3rem); color: #fff; background: linear-gradient(180deg, rgba(0, 0, 0, .08) 15%, rgba(0, 0, 0, .92) 100%); text-shadow: 0 1px 2px rgba(0, 0, 0, .75); transition: opacity .25s ease; pointer-events: none; }
-.film:hover .film-copy, .film:focus-within .film-copy { opacity: 0; pointer-events: none; }
+.film.is-playing .film-copy { opacity: 0; }
 .film-copy p { margin: 0; }
 .film-copy .film-eyebrow { color: var(--signal-magenta); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
 .film-title { margin: .35rem 0 .6rem; color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 700; line-height: 1.05; }
