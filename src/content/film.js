@@ -11,7 +11,7 @@ export const featuredFilm = {
     quote: 'Extremely engaging, futuristic yet frighteningly familiar.',
     source: 'The festival jury, naming it “Best nightmare”',
   },
-  watch: { href: 'https://www.labocine.com/films/access-denied', label: 'Watch on Labocine', note: 'Labocine members only' },
+  watch: { href: 'https://vimeo.com/762955684/c5b6166d3d', label: 'Watch on Vimeo' },
   links: [
     { href: 'https://www.imdb.com/title/tt22938620/', label: 'IMDb' },
     { href: 'https://www.sciencenewwave.com/open-calls/symbiosis', label: 'Symbiosis' },

@@ -58,7 +58,10 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
           target="_blank"
           rel="noopener noreferrer"
         >{{ film.watch.label }}</a>
-        <small class="film-note">{{ film.watch.note }}</small>
+        <small
+          v-if="film.watch.note"
+          class="film-note"
+        >{{ film.watch.note }}</small>
       </div>
       <nav
         class="film-more"
