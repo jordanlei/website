@@ -6,6 +6,7 @@ import { featuredFilm as film } from '../../content/film'
 // h3 under the Art page's section h2; h4 when nested under a home subsection head.
 defineProps({ titleTag: { type: String, default: 'h3' } })
 const isPlaying = ref(false)
+const playbackTime = ref(0)
 const playerFrame = ref(null)
 let player
 
@@ -13,8 +14,17 @@ watch(isPlaying, async (playing) => {
   if (!playing) return
   await nextTick()
   player = new Player(playerFrame.value)
-  player.on('pause', () => { isPlaying.value = false })
-  player.on('ended', () => { isPlaying.value = false })
+  player.on('loaded', async () => {
+    if (playbackTime.value > 0) await player.setCurrentTime(playbackTime.value)
+  })
+  player.on('pause', async () => {
+    playbackTime.value = await player.getCurrentTime()
+    isPlaying.value = false
+  })
+  player.on('ended', () => {
+    playbackTime.value = 0
+    isPlaying.value = false
+  })
 })
 
 onBeforeUnmount(() => player?.destroy())
