@@ -7,11 +7,9 @@ defineProps({
 })
 
 const metaParts = (item) => {
-  const [period, location] = (item.period || '').split(' · ')
   return [
-    { label: period, className: 'record-date' },
+    { label: item.period, className: 'record-date' },
     { label: item.organization, className: 'record-org' },
-    { label: location, className: 'record-location' },
   ].filter((part) => part.label)
 }
 </script>
