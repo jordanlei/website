@@ -109,7 +109,7 @@ onBeforeUnmount(() => player?.destroy())
 .film-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(1.25rem, 4vw, 3rem); color: #fff; background: linear-gradient(180deg, rgba(0, 0, 0, .08) 15%, rgba(0, 0, 0, .92) 100%); text-shadow: 0 1px 2px rgba(0, 0, 0, .75); transition: opacity .25s ease; pointer-events: none; }
 .film.is-playing .film-copy { opacity: 0; }
 .film-copy p { margin: 0; }
-.film-copy .film-eyebrow { margin-bottom: .2rem; color: #ff9fba; font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .045em; line-height: 1.2; text-shadow: 0 1px 3px rgba(0, 0, 0, .9); text-transform: uppercase; }
+.film-copy .film-eyebrow { margin-bottom: .2rem; color: #fff; font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .045em; line-height: 1.2; text-shadow: 0 1px 3px rgba(0, 0, 0, .9); text-transform: uppercase; }
 .film-title { margin: .35rem 0 .6rem; color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 700; line-height: 1.05; }
 .film-copy .film-logline { max-width: 42rem; color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(1.1rem, 2vw, 1.45rem); line-height: 1.25; }
 .film-copy .film-credits { margin-top: .75rem; color: rgba(255, 255, 255, .75); font-size: .9rem; line-height: 1.45; }
