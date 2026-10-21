@@ -10,23 +10,16 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
     class="film"
     aria-labelledby="film-title"
   >
-    <a
+    <div
       class="film-still"
-      :href="film.watch.href"
-      target="_blank"
-      rel="noopener noreferrer"
-      :aria-label="`${film.watch.label}: ${film.title}`"
     >
-      <img
-        :src="film.still"
-        :alt="film.stillAlt"
-        loading="lazy"
-      >
-      <span
-        class="film-play"
-        aria-hidden="true"
-      >▶</span>
-    </a>
+      <iframe
+        :src="film.watch.embed"
+        :title="film.title"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
     <div class="film-copy">
       <p class="film-eyebrow">
         Symbiosis / {{ film.year }}
@@ -51,18 +44,6 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
         <p>“{{ film.press.quote }}”</p>
         <cite>{{ film.press.source }}</cite>
       </blockquote>
-      <div class="film-links">
-        <a
-          class="button"
-          :href="film.watch.href"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{{ film.watch.label }}</a>
-        <small
-          v-if="film.watch.note"
-          class="film-note"
-        >{{ film.watch.note }}</small>
-      </div>
       <nav
         class="film-more"
         aria-label="More about the film"
@@ -81,10 +62,8 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
 
 <style scoped>
 .film { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; padding: 1.25rem; background: rgba(255, 253, 248, .72); box-shadow: var(--card-shadow-subtle); backdrop-filter: blur(var(--card-blur)); }
-.film-still { position: relative; display: block; overflow: hidden; background: #111; }
-.film-still img { display: block !important; width: 100%; aspect-ratio: 1600 / 837; object-fit: cover; transition: transform .4s ease; }
-.film-still:hover img { transform: scale(1.02); }
-.film-play { position: absolute; right: .9rem; bottom: .9rem; display: grid; width: 2.75rem; height: 2.75rem; place-items: center; padding-left: .15rem; border-radius: 50%; color: var(--color); background: rgba(255, 253, 248, .9); font-size: .9rem; }
+.film-still { position: relative; overflow: hidden; background: #111; aspect-ratio: 16 / 9; }
+.film-still iframe { display: block; width: 100%; height: 100%; border: 0; }
 .film-copy p { margin: 0; }
 .film-copy .film-eyebrow { color: var(--signal-magenta); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
 .film-title { margin: .35rem 0 .6rem; color: var(--color); font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 700; line-height: 1.05; }
@@ -94,8 +73,6 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
 .film blockquote { margin: 1rem 0 0; padding-left: .9rem; border-left: 2px solid var(--signal-magenta); }
 .film-copy blockquote p { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; line-height: 1.35; }
 .film cite { display: block; margin-top: .3rem; color: var(--muted); font-size: .85rem; font-style: normal; }
-.film-links { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1rem; margin-top: .9rem; }
-.film-note { color: var(--muted); font-size: .8rem; }
 .film-more { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin-top: .85rem; padding-top: .75rem; border-top: 1px solid var(--rule); }
 .film-more a { color: var(--primary-blue); font-family: var(--mono-font); font-size: .74rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
 .film-more a::after { content: "↗"; margin-left: .3em; }
@@ -110,7 +87,6 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
   .film-copy .film-credits { font-size: .85rem; }
   .film-copy .film-context { font-size: .92rem; }
   .film-copy blockquote p { font-size: 1rem; }
-  .film-links { gap: 0 1rem; }
   .film-more { gap: .25rem 1rem; }
   .film-more a { display: inline-flex; align-items: center; min-height: 44px; font-size: .7rem; }
 }
