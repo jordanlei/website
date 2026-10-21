@@ -61,26 +61,28 @@ defineProps({ titleTag: { type: String, default: 'h3' } })
 </template>
 
 <style scoped>
-.film { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; padding: 1.25rem; background: rgba(255, 253, 248, .72); box-shadow: var(--card-shadow-subtle); backdrop-filter: blur(var(--card-blur)); }
+.film { position: relative; overflow: hidden; background: #111; box-shadow: var(--card-shadow-subtle); }
 .film-still { position: relative; overflow: hidden; background: #111; aspect-ratio: 16 / 9; }
 .film-still iframe { display: block; width: 100%; height: 100%; border: 0; }
+.film-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: clamp(1.25rem, 4vw, 3rem); color: #fff; background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, .82)); transition: opacity .25s ease; }
+.film:hover .film-copy, .film:focus-within .film-copy { opacity: 0; pointer-events: none; }
 .film-copy p { margin: 0; }
 .film-copy .film-eyebrow { color: var(--signal-magenta); font-family: var(--mono-font); font-size: .82rem; font-weight: 800; letter-spacing: .055em; text-transform: uppercase; }
-.film-title { margin: .35rem 0 .6rem; color: var(--color); font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 700; line-height: 1.05; }
+.film-title { margin: .35rem 0 .6rem; color: #fff; font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 2.2vw, 1.85rem); font-weight: 700; line-height: 1.05; }
 .film-copy .film-logline { font-family: 'Playfair Display', serif; font-size: 1.25rem; line-height: 1.3; }
-.film-copy .film-credits { margin-top: .75rem; color: var(--muted); font-size: .9rem; line-height: 1.45; }
-.film-copy .film-context { margin-top: .6rem; color: var(--subtitle); font-size: 1rem; line-height: 1.5; }
+.film-copy .film-credits { margin-top: .75rem; color: rgba(255, 255, 255, .75); font-size: .9rem; line-height: 1.45; }
+.film-copy .film-context { margin-top: .6rem; color: rgba(255, 255, 255, .88); font-size: 1rem; line-height: 1.5; }
 .film blockquote { margin: 1rem 0 0; padding-left: .9rem; border-left: 2px solid var(--signal-magenta); }
 .film-copy blockquote p { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-style: italic; line-height: 1.35; }
-.film cite { display: block; margin-top: .3rem; color: var(--muted); font-size: .85rem; font-style: normal; }
+.film cite { display: block; margin-top: .3rem; color: rgba(255, 255, 255, .65); font-size: .85rem; font-style: normal; }
 .film-more { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; margin-top: .85rem; padding-top: .75rem; border-top: 1px solid var(--rule); }
 .film-more a { color: var(--primary-blue); font-family: var(--mono-font); font-size: .74rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
 .film-more a::after { content: "↗"; margin-left: .3em; }
 .film-more a:hover { color: var(--signal-magenta); text-decoration: none; }
 @media (max-width: 700px) {
-  .film { grid-template-columns: 1fr; gap: 1rem; padding: .6rem .6rem 1rem; border-radius: var(--m-radius); }
+  .film { border-radius: var(--m-radius); }
   .film-still { border-radius: calc(var(--m-radius) - 6px); }
-  .film-copy { padding: 0 .45rem; }
+  .film-copy { padding: 1rem; }
   .film-copy .film-eyebrow { font-size: .72rem; }
   .film-title { font-size: 1.3rem; }
   .film-copy .film-logline { font-size: 1.1rem; }
