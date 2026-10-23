@@ -12,7 +12,7 @@ import { featuredArt } from '../../../content/art'
           title="About"
         />
         <ExternalLink
-          href="/files/Resume_JordanLei.pdf"
+          href="/files/cv.pdf"
           label="View CV"
         />
       </div>

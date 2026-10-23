@@ -53,7 +53,7 @@ const menuLinks = [
 ]
 
 const menuActions = [
-  { href: '/files/Resume_JordanLei.pdf', label: 'CV', external: true },
+  { href: '/files/cv.pdf', label: 'CV', external: true },
   { href: 'https://scholar.google.com/citations?user=GRnnNBYAAAAJ&hl=en', label: 'Scholar', external: true },
   { href: 'mailto:jordanlei.work@gmail.com', label: 'Email' },
 ]

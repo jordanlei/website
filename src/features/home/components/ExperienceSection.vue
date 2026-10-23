@@ -13,7 +13,7 @@ import SectionHeading from '../../../shared/components/SectionHeading.vue'
           title="Experience"
         />
         <ExternalLink
-          href="/files/Resume_JordanLei.pdf"
+          href="/files/cv.pdf"
           label="Download CV"
         />
       </div>

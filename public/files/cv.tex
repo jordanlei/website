@@ -1,0 +1,196 @@
+\documentclass[10pt]{article}
+
+\usepackage{libertinus}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\setlist[itemize]{
+  leftmargin=1.35em,
+  topsep=0.2em,
+  partopsep=0pt,
+  parsep=0pt,
+  itemsep=0.25em,
+}
+\setlist[itemize,2]{leftmargin=1.25em, itemsep=0.15em}
+\urlstyle{same}
+
+\titleformat{\section}
+  {\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{1.1em}{0.45em}
+
+\newcommand{\cvrole}[3]{%
+  \textbf{#1}\hfill #3\\[-0.15em]
+  \textit{#2}\par
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{Jordan Lei}} \\
+    \href{mailto:jordanlei.work@gmail.com}{jordanlei.work@gmail.com} \,|\,
+    \href{https://jordanlei.com}{jordanlei.com} \,|\, \href{https://github.com/jordanlei}{github.com/jordanlei} \\
+\end{center}
+
+%-------------------------
+\section{Overview}
+My research combines human behavioral experiments, primate neurophysiology, and computational modeling to understand how brains and machines select what matters, plan into the future, and decide when further computation is worth it.
+
+%-------------------------
+\section{Research}
+\cvrole{Postdoctoral Researcher, Wolpert and Stachenfeld Labs}{Columbia University, New York, NY}{2026--Present}
+\begin{itemize}
+    \item Studying how people learn the actions an environment makes possible (affordances) and use them to plan goal-directed action sequences, combining behavioral experiments with computational and reinforcement-learning models.
+    \item Contributing to the Simons Collaboration on Ecological Neuroscience (SCENE), a cross-species effort to understand how affordances shape brain representations and guide behavior through coordinated behavioral, computational, and neural studies.
+\end{itemize}
+
+\cvrole{Ph.D. Researcher, Ma Lab}{New York University, New York, NY}{2021--2026}
+\begin{itemize}
+    \item \textbf{Strategic planning in nonhuman primates.} In collaboration with Daeyeol Lee’s lab at Johns Hopkins, studied a rhesus macaque playing Four-in-a-Row by jointly analyzing choices, gaze, and frontostriatal recordings. Developed computational models to test how the animal searches future game states; preliminary behavioral and neural evidence favored feature-based tree search over myopic choice.
+
+    \item \textbf{Human planning under environmental uncertainty.} Designed and analyzed three behavioral experiments varying reward reliability, environmental volatility, and action controllability. Showed that people reduce planning effort as environments become more stochastic; computational model comparison linked this adaptation to less precise, more compressed choice policies.
+    \begin{itemize}
+        \item \textbf{Early life adversity and planning.} Co-mentored an undergraduate researcher through the Training Program in Computational Neuroscience on how early-life adversity may shape sensitivity to environmental stochasticity during planning.
+        \item \textbf{Learning and planning under stochasticity.} Mentored master’s students studying how learning latent environmental structure influences planning strategies and adaptation to uncertainty.
+    \end{itemize}
+
+    \item \textbf{Metaplanning in chess.} With Marcelo Mattar (NYU) and Tom Griffiths (Princeton), developing a graph neural network that learns when to stop or continue search from an evolving chess game tree, modeling how people allocate computation during planning.
+
+    \item \textbf{Research Rotations:}
+    \begin{itemize}
+        \item \textit{Simoncelli Lab, 2022:} Studied visual illusions (metamers) of the ventral stream; analyzed perceptual similarity under different noise priors.
+        \item \textit{Froemke Lab, 2021:} Developed Hebbian learning models for auditory discrimination; compared predictions with behavioral data. Presented at COSYNE 2022.
+    \end{itemize}
+\end{itemize}
+\cvrole{Research Assistant, Kording and Gold Labs}{University of Pennsylvania, Philadelphia, PA}{2020--2021}
+\begin{itemize}
+    \item Built a biologically inspired neural network with bidirectional recurrent gating that learns object recognition, grouping, orienting, tracking, pop-out, inhibition of return, and top-down search, reproducing signatures from psychophysics and neural modulation.
+    \item MINDCORE Summer Fellowship. Collaboration with Konrad Kording, Vijay Balasubramanian, Blake Richards (McGill). Compared biologically plausible and artificial learning algorithms; identified limitations of linear learning agents. Presented at Neuromatch 2020.
+\end{itemize}
+
+\cvrole{Undergraduate Research, Balasubramanian Lab}{University of Pennsylvania, Philadelphia, PA}{2017}
+\begin{itemize}
+    \item Penn Undergraduate Research Mentorship Fellowship. Modeled visual pathway of the brain using deep neural networks trained on classic computer vision tasks. Modeled visual stimuli and retinal behavior.
+\end{itemize}
+
+
+%-------------------------
+\section{Fellowships}
+\begin{itemize}
+    \item NIH/NINDS Postdoctoral Training Program in Integrated Computational and Experimental Sensorimotor Control (Sensorimotor Control T32), 2026
+    \item NYU Training Program in Computational Neuroscience (TPCN) Fellowship, 2023
+    \item Henry M. MacCracken Fellowship, 2021
+    \item IVADO PhD Excellence Scholarship, 2021 (awarded but declined)
+    \item Lila R. Gleitman Undergraduate Summer Fellowship, 2020
+    \item Penn Undergraduate Research Mentoring Program (PURM), 2017
+\end{itemize}
+
+%-------------------------
+\section{Education}
+
+\textbf{New York University}, New York, NY \hfill Defended 2026 \\
+Ph.D. in Neuroscience, Center for Neural Science, Advisor: Wei Ji Ma \\
+Thesis: ``Computational Cognitive Models of Adaptive Planning''
+
+\textbf{University of Pennsylvania}, Philadelphia, PA \hfill 2021 \\
+M.S.E. in Computer Science, Thesis: ``Object-Based Attention Through Internal Gating'', Advisor: Konrad Kording
+
+\textbf{University of Pennsylvania}, Philadelphia, PA \hfill 2020 \\
+B.S.E. in Computer Science (SEAS); B.S. in Economics (Wharton) \\
+Jerome Fisher Program in Management and Technology (M\&T)
+
+%-------------------------
+\section{Publications}
+\begin{itemize}
+    \item \textbf{Lei, J.}, Olieslagers, J., Arfaei, N., Lin, D. X., \& Ma, W. J. (2026). Environmental stochasticity reduces human planning effort. \textit{Nature Communications}. \url{https://doi.org/10.1038/s41467-026-78023-9}.
+    \item Salehi, S., \textbf{Lei, J.}, Benjamin, A. S., Müller, K. R., \& Körding, K. P. (2026). Modeling attention and binding in the brain through bidirectional recurrent gating. \textit{Nature Communications, 17}, 4072. \url{https://doi.org/10.1038/s41467-026-72146-9}.
+    \item \textbf{Lei, J.}, \& Ma, W. J. (2024). Uncertainty affects planning effort, but not plans. In \textit{Proceedings of the 46th Annual Meeting of the Cognitive Science Society}.
+\end{itemize}
+
+%-------------------------
+\section{Talks}
+\begin{itemize}
+    \item \textbf{Lei, J.}, Park, M.-Y., Oemisch, M., Liang, H., van Opheusden, B., Osborne, K., Mittler, D., Lee, D., \& Ma, W. J. (2025). \textit{Choice and deliberation in a strategic planning game in monkeys}. Contributed talk, RLDM.
+    \item \textbf{Lei, J.}, Park, M.-Y., Oemisch, M., Liang, H., van Opheusden, B., Osborne, K., Mittler, D., Lee, D., \& Ma, W. J. (2025). \textit{What monkeys playing board games reveals about the neuroscience of planning}. Invited talk, Google Dublin.
+    \item \textbf{Lei, J.}, Park, M.-Y., Oemisch, M., Liang, H., van Opheusden, B., Ma, W. J., \& Lee, D. (2023). \textit{Complex planning in nonhuman primates: Choice and deliberation}. Invited talk, Minds \& Brains Institute, Johns Hopkins University.
+    \item \textbf{Lei, J.}, \& Ma, W. J. (2024). \textit{How does uncertainty affect planning effort?} Invited talk, Causal Cognition Lab, UCL.
+\end{itemize}
+
+%-------------------------
+\section{Presentations}
+\begin{itemize}
+    \item \textbf{Lei, J.}, Park, M.-Y., Oemisch, M., van Opheusden, B., Osborne, K., Liang, H., Ferguson, M., Lee, D., \& Ma, W. J. (2024). \textit{Choice and deliberation in a complex planning game in monkeys}. Poster, COSYNE.
+    \item Park, M.-Y., \textbf{Lei, J.}, Oemisch, M., Liang, H., van Opheusden, B., Ma, W. J., \& Lee, D. (2024). \textit{Multiplexing of value signals in the primate frontostriatal network during a strategy board game}. Poster, SfN.
+    \item \textbf{Lei, J.}, \& Ma, W. J. (2024). \textit{Uncertainty affects planning effort, but not plans}. Poster, Cognitive Science Society Conference.
+    \item \textbf{Lei, J.}, \& Ma, W. J. (2023). \textit{Effect of environmental stochasticity on planning depth}. Poster, Cognitive Computational Neuroscience (CCN).
+    \item Martin, K., Bredenberg, C., Savin, C., \textbf{Lei, J.}, Simoncelli, E., \& Froemke, R. (2022). \textit{Experience early in auditory conditioning impacts across-animal variability in neural tuning}. Poster, COSYNE.
+    \item \textbf{Lei, J.}, Kording, K., Richards, B., Balasubramanian, V., \& Gold, J. (2020). \textit{Assessing limitations of three-factor Hebbian learning relative to deep RL}. Poster, Neuromatch Conference.
+\end{itemize}
+
+%-------------------------
+\section{Teaching}
+\begin{itemize}
+    \item TA, Training Program in Computational Neuroscience Bootcamp, 2024
+    \item TA, Mathematical Tools for Neural and Cognitive Science (NYU), 2022
+    \item Lead TA and Curriculum Developer, CIS 522 Deep Learning, University of Pennsylvania, 2021
+    \item TA, CIS 519 Machine Learning (Penn)
+\end{itemize}
+
+%-------------------------
+\section{Skills}
+
+\textbf{Programming:} Python (PyTorch, TensorFlow), MATLAB, Java, C/C++\\
+\textbf{Research computing:} Slurm, xarray, pandas, Polars
+
+%-------------------------
+\section{Industry}
+
+\cvrole{Quantitative Research Analyst Intern, Point72 Asset Management}{New York, NY}{2025}
+\begin{itemize}
+    \item Modeled portfolio-manager performance and cognitive biases; developed an Elo-style rating system that improved simulated GMV by \$180M and Sharpe by 4 basis points (2017--2023 backtest).
+\end{itemize}
+
+\cvrole{Sales and Operations Planning Intern, Unilever}{Englewood Cliffs, NJ}{2019}
+\begin{itemize}
+    \item Built a Python web application to automate cash-flow reporting across 6,000+ products and 10 brands, speeding reporting 20-fold and correcting up to \$4M in annual errors.
+\end{itemize}
+
+\cvrole{Financial Forecasting Intern, Tovala}{Chicago, IL}{2018}
+\begin{itemize}
+    \item Built Python models that accelerated customer-acquisition-cost estimates more than fivefold and packaging-cost forecasts tenfold.
+\end{itemize}
+
+
+
+%-------------------------
+\section{Outreach}
+
+\begin{itemize}
+\item \textbf{Lead Web Developer}, Growing Up in Science, 2022--present. Built and maintained the website for a conversation series sharing the personal stories behind scientists and scientific careers.
+\item \textbf{Co-President}, NYU Neuroscience Predoctoral Interest League (NeuroPIL), 2022--2024. Helped lead a graduate student organization focused on community, student advocacy, accountability, and an inclusive and accessible neuroscience program.
+\item \textbf{Admissions Committee Student Representative}, NYU Neuroscience, 2023. Represented student perspectives in neuroscience graduate admissions.
+\item \textbf{Lead Web Developer}, The Percentage Project, 2020. Developed the nonprofit’s web presence supporting campus survey data and advocacy for belonging and inclusion in computer science education.
+\item \textbf{Member}, Student Wellness Advisory Group, University of Pennsylvania, 2020. Shared student feedback to inform Penn Wellness services, resources, and programming.
+\end{itemize}
+
+\section{Open Science}
+\begin{itemize}
+    \item \textbf{Co-Director}, \href{https://vimeo.com/762955684/c5b6166d3d}{``Access Denied"}, a Short Film for the Simons-Foundation funded \href{https://www.labocine.com/spotlights/symbiosis-and-the-science-new-wave}{SYMBIOSIS Initiative} \\
+    \textit{Selected for a competitive filmmaking program that pairs scientists with filmmakers to create new forms of science cinema. Premiered on Labocine.}
+
+    \item \textbf{Science writer}, Medium / The Startup. Wrote for general audiences on neuroscience, artificial intelligence, and their social implications, including \href{https://medium.com/swlh/machine-minds-a59cfb8d8d14}{``Machine Minds''} and \href{https://medium.com/swlh/human-domain-expertise-in-the-age-of-deep-learning-89b3381c5cba}{``(Human) Domain Expertise in the Age of Deep Learning.''}
+
+    \item \textbf{Developer}, Open-Source Tutorials in AI Architectures \\
+    \textit{A suite of public repositories implementing foundational models from scratch to explain key concepts in modern AI. Projects include:}
+    \begin{itemize}
+        \item \href{https://github.com/jordanlei/steerable-transformer-vae}{\textbf{Steerable Transformer-VAE:}} A novel architecture combining steerable CNNs with Transformers for generative modeling.
+        \item \href{https://github.com/jordanlei/vision-transformer}{\textbf{Vision Transformer (ViT):}} An implementation of the model that established Transformers as a state-of-the-art architecture for computer vision.
+        \item \href{https://github.com/jordanlei/deep-reinforcement-learning-cartpole}{\textbf{Deep Reinforcement Learning:}} A series of tutorials on core DRL algorithms, including Policy Gradients and Actor-Critic models.
+    \end{itemize}
+\end{itemize}
+
+\end{document}
